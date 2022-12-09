@@ -1,0 +1,183 @@
+html,
+.site-footer {
+  background-color: $dark-gray;
+}
+
+.site-footer {
+  color: transparentize($base-background-color, 0.3);
+
+  .primary {
+    @include outer-container;
+    text-align: center;
+
+    a {
+      color: inherit;
+
+      &:hover {
+        color: $base-background-color;
+      }
+    }
+
+    svg {
+      fill: currentColor;
+    }
+
+
+    .links,
+    .social {
+      padding: $base-spacing;
+
+      li {
+        display: inline-block;
+        font-size: em(13);
+      }
+    }
+
+    .links {
+      li {
+        a {
+          padding-right: $small-spacing;
+          margin-right: $small-spacing;
+          border-right: solid 1px transparentize($base-background-color, 0.3);
+        }
+
+        &:last-of-type a {
+          border: none;
+        }
+      }
+    }
+
+    .social {
+      li {
+        margin-right: $small-spacing;
+
+        svg {
+          width: 1.5em;
+          height: 1.5em;
+        }
+      }
+    }
+
+    @media only screen and ( min-width: $medium-screen) {
+
+      ul {
+        @include span-columns(6);
+
+        &.links {
+          text-align: left;
+        }
+
+        &.social {
+          text-align: right;
+
+          li {
+            margin-left: $small-spacing;
+            margin-right: 0;
+          }
+        }
+      }
+    }
+  }
+
+  .secondary {
+    @include outer-container;
+    text-align: center;
+
+    @media only screen and ( min-width: $medium-screen) {
+      text-align: right;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      margin: 0;
+      max-width: none;
+    }
+
+    .language {
+      display: inline-block;
+      position: relative;
+      top: -15px;
+      right: $small-spacing;
+
+      li {
+        display: inline-block;
+        font-size: em(12);
+
+        @media only screen and ( min-width: $medium-screen) {
+          color: transparentize($base-font-color, 0.3);
+        }
+
+        &.active {
+          font-weight: bold;
+
+          @media only screen and ( min-width: $medium-screen) {
+            color: $base-font-color;
+          }
+        }
+
+        a {
+          color: inherit;
+          display: inline-block;
+          padding: $small-spacing / 2;
+        }
+      }
+    }
+
+    .results {
+      display: inline-block;
+      width: 80px;
+      background-color: $red;
+
+      @media only screen and ( min-width: $medium-screen) {
+        padding-top: 7px;
+      }
+
+      img {
+        width: 100%;
+        display: block;
+      }
+    }
+
+    & > div {
+      display: inline-block;
+      padding: 0 $base-spacing;
+
+      @media only screen and ( min-width: $medium-screen) {
+        display: block;
+        @include outer-container;
+      }
+    }
+  }
+
+  .credit {
+    @include outer-container;
+    padding: $base-spacing;
+    text-align: center;
+
+    @media only screen and ( min-width: $medium-screen) {
+      padding-top: 0;
+      text-align: left;
+    }
+
+    a {
+      display: block;
+      border-top: solid 1px rgba(#fff, 0.5);
+      padding-top: $small-spacing;
+      color: rgba(#fff, 0.7);
+      font-size: em(12);
+
+      img {
+        height: 34px;
+        opacity: 0.7;
+        vertical-align: middle;
+        padding-left: 0.2em;
+      }
+
+      &:hover {
+        img {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}

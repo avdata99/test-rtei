@@ -1,0 +1,17 @@
+.rich-text {
+
+  body.partners.listing & {
+    h3 + p {
+      margin-left: 0;
+    }
+  }
+
+  .richtext-image.left {
+    float: left;
+    margin-right: $base-spacing;
+  }
+  .richtext-image.right {
+    float: right;
+    margin-left: $base-spacing;
+  }
+}

@@ -1,0 +1,240 @@
+body {
+  background-color: $body-background-color;
+}
+
+.container {
+  @include outer-container;
+}
+
+.main {
+  @include media($medium-screen) {
+    @include outer-container;
+    padding: $base-spacing;
+  }
+
+  & > * {
+    background-color: $base-background-color;
+    @include media($medium-screen) {
+      margin-bottom: $base-spacing;
+    }
+
+    :last-child {
+      margin-bottom: 0;
+    }
+  }
+  & > section,
+  & > article {
+    padding: $base-spacing;
+    @include clearfix;
+
+    &.controls {
+      padding: 0;
+
+      & > button {
+        border-radius: 0;
+        padding: 1em 1.2em;
+        display: block;
+        width: 100%;
+        text-align: left;
+        position: relative;
+        font-size: em(14);
+        border-bottom: solid 1px $body-background-color;
+
+        &:not(.active) {
+          background-color: inherit;
+          color: inherit;
+        }
+      }
+    }
+
+    &.small-screen-controls {
+      margin-bottom: 0;
+    }
+
+    &.map {
+      padding: 0;
+
+      & > .leaflet-container {
+        background-color: $base-background-color;
+      }
+    }
+
+    & > .rich-text:not(:empty) {
+      margin-bottom: $base-spacing;
+    }
+  }
+
+  // siddebar layout
+  @media only screen and ( min-width: $large-screen) {
+    & > section.controls {
+      @include span-columns(3);
+      background-color: transparent;
+
+      & > div {
+        margin-bottom: $base-spacing;
+        background-color: $base-background-color;
+      }
+
+      & + section {
+        @include span-columns(9);
+      }
+    }
+
+    .small-screen-controls {
+      display: none;
+    }
+  }
+
+  .sort {
+    & > button {
+      position: relative;
+      font-size: em(14);
+
+      &:after {
+        position: absolute;
+        right: $base-spacing;
+        background-color: #fff;
+        color: $action-color;
+        display: inline-block;
+        width: 1em;
+        height: 1em;
+        right: 1em;
+        border-radius: 50%;
+        text-align: center;
+        overflow: hidden;
+      }
+
+      &.asc:after {
+        content: '\2193';
+        line-height: 0.3em;
+      }
+      &.desc:after {
+        content: '\2191';
+        line-height: 1.3em;
+      }
+
+      &:not(.active) {
+        background-color: inherit;
+        color: inherit;
+
+        &:after {
+          background-color: $light-gray;
+          color: inherit;
+        }
+      }
+    }
+  }
+
+  .content {
+    .sort {
+      margin-bottom: $small-spacing/2;
+
+      @media only screen and ( min-width: $large-screen) {
+        text-align: right;
+      }
+
+      button {
+        padding-right: 3em;
+        background-color: $base-background-color;
+        color: inherit;
+
+        &:after {
+          color: #fff;
+        }
+
+        &.active {
+          &:after {
+            background-color: $action-color;
+          }
+        }
+      }
+    }
+
+    & > .description {
+      margin-bottom: $base-spacing;
+
+      .icon {
+        float: left;
+        width: 50px;
+        height: 50px;
+        background-color: $index-color;
+        color: #fff;
+        text-align: center;
+        padding: 0.1em;
+        border-radius: 50%;
+
+        .governance & {
+          background-color:$governance-color;
+        }
+        .availability & {
+          background-color:$availability-color;
+        }
+        .accessibility & {
+          background-color:$accessibility-color;
+        }
+        .acceptability & {
+          background-color:$acceptability-color;
+        }
+        .adaptability & {
+          background-color:$adaptability-color;
+        }
+
+        svg {
+          fill: currentColor;
+          width: 60%;
+          height: 100%;
+        }
+      }
+      .text {
+        margin-left: 75px;
+        display: block;
+        font-size: em(14);
+        line-height: 1.2;
+
+        h2 {
+          font-size: 1.8em;
+          margin-bottom: 0.4em;
+        }
+      }
+    }
+  }
+}
+
+.key {
+  @include clearfix;
+  dl {
+    font-size: em(13);
+
+    dt,
+    dd {
+      display: block;
+      margin: 0;
+    }
+
+    dt {
+      clear: left;
+      float: left;
+
+      &:after {
+        content: ':\00a0';
+      }
+    }
+
+    @media only screen and ( min-width: $medium-screen) {
+
+      dt {
+        display: none;
+      }
+
+      dd {
+        width: 25%;
+        float: left;
+
+        &:last-child {
+          float: right;
+          text-align: right;
+        }
+      }
+    }
+  }
+}

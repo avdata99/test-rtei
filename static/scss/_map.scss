@@ -1,0 +1,362 @@
+.rtei-map-popup {
+
+  .leaflet-popup-content-wrapper {
+    color: $base-font-color;
+    border-radius: $base-border-radius;
+    padding: 0;
+    overflow: hidden;
+
+    .leaflet-popup-content {
+      margin: 0;
+
+      .country-score {
+        display: inline-block;
+        background-color: $dark-gray;
+        color: #fff;
+        padding: $small-spacing;
+
+        span {
+          display: none;
+        }
+
+        &.no {
+          background-image: url("../img/no-data.svg");
+          text-indent: -9999em;
+          width: 28px;
+          background-repeat: no-repeat;
+          background-position: center center;
+          background-size: 16px auto;
+        }
+      }
+
+      .country-name {
+        padding: $small-spacing;
+        display: inline-block;
+
+        &.has-properties {
+          margin-right: 30px;
+        }
+      }
+
+      .more-details {
+        position: absolute;
+        width: 15px;
+        height: 15px;
+        top: 10px;
+        right: 10px;
+
+        a {
+          display: block;
+          text-indent: -9999em;
+          overflow: hidden;
+          height: 100%;
+          background-image: url("../img/circle-right.svg");
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: center center;
+        }
+      }
+    }
+  }
+
+  .leaflet-popup-close-button {
+    display: none;
+  }
+}
+
+.template-explore-map {
+  .indicator-switcher {
+
+    label {
+      display: block;
+      cursor: pointer;
+      margin: 0;
+      padding: $base-spacing*0.75 3em $base-spacing*0.75 $base-spacing;
+      font-size: em(14);
+      border-style: solid;
+      border-color: $body-background-color;
+      border-width: 0 1px 0 0;
+      line-height: 1.2;
+    }
+
+    .subindicators input[type="radio"] {
+      display: none;
+
+      &:checked + label {
+        background-color: rgba($index-color, 0.1);
+        color: $base-font-color;
+
+        & + h6:after {
+          border-top-color: $base-background-color;
+        }
+      }
+    }
+
+    & > ul {
+      @include clearfix;
+
+      @media only screen and ( min-width: $large-screen) {
+        @include fill-parent();
+        @include row(table);
+      }
+
+      & > li {
+        display: block;
+        position: relative;
+
+        & > label {
+          font-weight: bold;
+        }
+
+        &.subcat {
+          background-color: $index-color;
+        }
+
+        @media only screen and ( min-width: $large-screen) {
+          @include span-columns(2);
+
+          &:last-child {
+            @include reset-display;
+          }
+        }
+
+        h6 {
+          text-indent: -9999em;
+          overflow: hidden;
+          width: 16px;
+          height: 16px;
+          position: absolute;
+          top: em(18);
+          right: em(18);
+
+          &:after {
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 4px 4px 0 4px;
+            border-color: $base-font-color transparent transparent transparent;
+            content: '';
+            position: absolute;
+            left: 4px;
+            top: 7px;
+          }
+        }
+
+        ul {
+          background-color: $base-background-color;
+          display: none;
+
+          label {
+            border-width: 0 1px 1px 1px;
+            padding: $small-spacing /1.5 $base-spacing * 1.5;
+          }
+
+          @media only screen and ( min-width: $large-screen) {
+            position: absolute;
+            z-index: 1;
+          }
+        }
+
+        &:hover {
+          background-color: $light-gray;
+
+          & > ul {
+            display: block;
+
+            li:hover {
+              background-color: $light-gray;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .map {
+    position: relative;
+
+    .description {
+      @include clearfix;
+      padding: $small-spacing;
+      margin: $small-spacing;
+      background-color: rgba($base-background-color, 0.7);
+
+      @media only screen and ( min-width: $medium-screen) {
+        left: 0;
+        margin-right: $base-spacing * 3;
+        position: absolute;
+        z-index: 1;
+      }
+    }
+
+    .leaflet-container {
+      height: 450px;
+
+      @media only screen and ( min-width: $medium-screen) {
+        height: 575px;
+      }
+    }
+
+    .key {
+      padding: $small-spacing $base-spacing $base-spacing $base-spacing;
+      background-color: rgba($base-background-color, 0.5);
+
+      h5 {
+        font-size: em(13);
+        font-weight: normal;
+        margin: 0;
+      }
+
+      ul {
+        @include fill-parent();
+        @include row(table);
+        padding-top: $small-spacing;
+
+        li {
+          @include span-columns(2);
+          border-top: solid 1.2em #fff;
+          text-indent: -0.5em;
+          font-size: em(12);
+
+          &:nth-child(1) {
+            border-color: lighten($index-color, 39);
+            text-indent: 0;
+          }
+          &:nth-child(2) {
+            border-color: lighten($index-color, 30);
+          }
+          &:nth-child(3) {
+            border-color: lighten($index-color, 21);
+          }
+          &:nth-child(4) {
+            border-color: lighten($index-color, 12);
+          }
+          &:nth-child(5) {
+            border-color: $index-color;
+            @include reset-display;
+            &:after {
+              content: '100';
+              float: right;
+            }
+          }
+        }
+      }
+    }
+
+    .indicators-map {
+      padding: 0 24px;
+      margin-bottom: 24px;
+
+      .indicators-for-country {
+         margin-top: 0;
+      }
+    }
+
+    .leaflet-control-zoom {
+      box-shadow: none;
+      border-radius: $base-border-radius;
+      overflow: hidden;
+      margin-top: $base-spacing;
+      margin-right: $base-spacing;
+
+      a {
+        background: $light-gray;
+        color: #fff;
+        border-radius: 0;
+        border: solid 1px #fff;
+        line-height: 22px;
+
+        &:hover {
+          background-color: $medium-gray;
+        }
+      }
+    }
+  }
+
+  // sidebar layout
+  .indicator-switcher {
+    & > ul > li {
+      display: block;
+      width: auto;
+
+      label {
+        border-width: 0 0 1px 0;
+      }
+
+      h6 {
+        cursor: pointer;
+        border-radius: 50%;
+        @include transform(rotate(-90deg));
+
+        &:hover {
+          background-color: $dark-gray;
+
+          &:after {
+            border-top-color: $base-background-color;
+          }
+        }
+
+        &.expanded {
+          @include transform(rotate(0deg));
+        }
+      }
+
+      ul {
+        position: static;
+        display: block;
+      }
+    }
+  }
+
+  @mixin map-colours($colour){
+    .indicator-switcher {
+      input[type="radio"]:checked + label {
+        background-color: $colour;
+        color: $base-background-color;
+      }
+      .subindicators input[type="radio"]:checked + label {
+        background-color: rgba($colour, 0.1);
+        color: $base-font-color;
+      }
+      & > ul  > li.subcat {
+        background-color: colour;
+      }
+    }
+    .map {
+      .key {
+        ul li {
+          &:nth-child(1) {
+            border-color: lighten($colour, 39);
+          }
+          &:nth-child(2) {
+            border-color: lighten($colour, 30);
+          }
+          &:nth-child(3) {
+            border-color: lighten($colour, 21);
+          }
+          &:nth-child(4) {
+            border-color: lighten($colour, 12);
+          }
+          &:nth-child(5) {
+            border-color: $colour;
+          }
+        }
+      }
+    }
+  }
+  &.governance {
+    @include map-colours($governance-color);
+  }
+  &.availability {
+    @include map-colours($availability-color);
+  }
+  &.accessibility {
+    @include map-colours($accessibility-color);
+  }
+  &.acceptability {
+    @include map-colours($acceptability-color);
+  }
+  &.adaptability {
+    @include map-colours($adaptability-color);
+  }
+}

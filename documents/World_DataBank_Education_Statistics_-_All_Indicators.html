@@ -1,0 +1,3199 @@
+
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html class="ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html dir="ltr">
+<!--<![endif]-->
+
+<head>
+    <title>Education Statistics - All Indicators| World DataBank</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/data/images/favicon.ico" type="image/x-icon" />
+    
+    <!-- Bootstrap -->
+    <link href="/data/styles/reports/bootstrap.css" rel="stylesheet" />
+    <link href="/data/styles/reports/bootstrap-switch.css" rel="stylesheet" />
+
+    <link href="/data/styles/reports/jPicker-dialog.css" rel="stylesheet" />
+    <link href="/data/styles/reports/1.10.3/themes/smoothness/jquery-ui.css" rel="stylesheet" />
+    <link href="/data/styles/reports/jqx.base.css" rel="stylesheet" />
+
+    <link href="/data/styles/style-Header-Footer-nonArabic.css" rel="stylesheet" />
+    <link href="/data/styles/reports/selectvariable.css"  rel="stylesheet" />
+    <link href="/data/styles/reports/selectvariableIE.css" rel="stylesheet" />
+
+    
+    <style id="customstyles" type="text/css">
+        .custom-cell-selection
+        {
+            color: black !important;
+            background-color: #E6E6E6 !important;
+        }
+        .rollover-cell
+        {
+            font-style: italic;
+            font-weight: bold;
+        }
+    </style>
+    <style id="antiClickjack">body{display:none !important;}</style>
+    <script type="text/javascript">
+        if (self == top) {
+            var antiClickjack = document.getElementById("antiClickjack");
+            antiClickjack.parentNode.removeChild(antiClickjack);
+        } else {
+            top.location = self.location;
+        }
+        var gbl_preview_on="ON";
+        var gbl_preview_off="OFF";
+    </script>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 element and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>     
+    <![endif]-->
+    <script type="text/javascript">
+        var gbl_error_file = '/data/ddperror.aspx';
+        var gbl_report_methods = '/data/AjaxServices/AjaxReportMethods.asmx';
+        var gbl_fileinfo_url = '/data/AjaxDownload/FileInfoHandler.ashx';
+        var gbl_filedown_url = '/data/AjaxDownload/FileDownloadHandler.ashx';
+        var gbl_select_variables_url = '/data/AjaxDownload/SelectVariableHandler.ashx';
+        var gbl_imagepath = '/data/images/';
+        var gbl_embedpath = '/data/views/';
+        var gbl_baseurl = 'databank.worldbank.org/data/';
+        var gbl_basepath = 'http://databank.worldbank.org/data/';
+        var gbl_common_chglang = '/data/changelang.aspx';
+        var gbl_common_culture = 'en';
+        var gbl_common_loginparam = '?t=reports&source=education-statistics-~-all-indicators&l=en';
+        var gbl_common_refpath = 'http://databank.worldbank.org/data/loginint.aspx';
+        var gbl_common_loggedin = ('False' == 'True' ? true : false);
+        var gbl_common_login = 'http://databank.worldbank.org/data/login.aspx?t=reports&source=education-statistics-~-all-indicators&savedlg=1&l=en';
+        var gbl_common_labels= eval('(' + '{"Reports_Alert_OKtocont":"Press OK to continue","Reports_Label_Selection_Modified":"Selections have been modified. Click on \u0026quot;Apply Changes\u0026quot; at any time to refresh the report with the changes made. Otherwise, click on \u0026quot;Cancel\u0026quot; to go back to previous selections.","Reports_Label_Selection_UnitModified":"Selections have been modified and indicators\u0027 units are different. Click on \u0026quot;Apply Changes\u0026quot; at any time to refresh the report with the changes made. Otherwise, click on \u0026quot;Cancel\u0026quot; to go back to the previous selections."}' + ')') ;
+        var gbl_tooltip_loginsave = 'Please log in to save';
+        var gbl_maplayer = 'http://wbmaps.worldbank.org/arcgis/rest/services/basemaps/ADM0_25km/MapServer/0';
+        var gbl_zoom_maplayer = 'http://wbmaps.worldbank.org/arcgis/rest/services/basemaps/ADM0_1km/MapServer/0';
+        var gbl_1_maplayer = 'http://wbmaps.worldbank.org/arcgis/rest/services/basemaps/ADM0_25km/MapServer/0';
+        var gbl_1_zoom_maplayer = 'http://wbmaps.worldbank.org/arcgis/rest/services/basemaps/ADM0_1km/MapServer/0';
+        var gbl_2_maplayer = 'http://wbmaps.worldbank.org/arcgis/rest/services/basemaps/ADM1_1km/MapServer/0';
+        var gbl_2_zoom_maplayer = 'http://wbmaps.worldbank.org/arcgis/rest/services/basemaps/ADM1_1km/MapServer/0';
+        var gbl_IsSubnational = "N" == "Y";
+        var gbl_subnat_loadextent = true;
+        var gbl_HasIndicatorUnit = "N" == "Y";
+        var gbl_SubnationalCubeid = '1267,1274,1279,';
+
+        var gbl_msg_save_table = "To embed or share, please save table as shared";
+        var gbl_msg_save_chart = "To embed or share, please save chart as shared";
+        var gbl_msg_save_map = "To embed or share, please save map as shared";
+        var gbl_msg_dimenion_selection="Please select the dimension members for all dimensions to proceed further.";
+        var gbl_msg_clear_selection="Are you sure you want to clear all selections?";
+        var gbl_report_Cell_Limit='2500000';
+        var gbl_download_Cell_Limit='5000000';
+        var gbl_msg_report_Cell_Limit='Your selection (__ cells) exceeds the maximum report limit (2500000 cells). Please use "Download Options" or remove some variables to continue.';
+        var gbl_msg_new_label="Please enter new folder";
+        var gbl_msg_select_label="Please select a folder";
+        var gbl_metadata_pagesize='250';
+
+        var gbl_common_internal = false;
+        var gbl_msg_report_Download_Limit='Your selection ( __  cells) exceeds the maximum report limit ( 2500000 cells) and download limit (5000000 cells). Please remove some variables to continue.';
+
+        
+        function onEndCallBack(s, e) {
+            setReportOptions(s, e);
+        }
+
+        function doGridMenuAction(s, e) {
+            if(gbl_common_internal)
+                doGridMenuActionEx(s, e);
+            else
+                doGridMenuActionSort(s, e);
+        }
+    </script>
+</head>
+
+<body dir="ltr">
+<form method="post" action="./reports.aspx?source=education-statistics-%7e-all-indicators" id="frmMain">
+<div class="aspNetHidden">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__LASTFOCUS" id="__LASTFOCUS" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUJNjA5NDA5NDM3D2QWAmYPZBYKAgIPZBYCZg9kFgxmDw8WAh4HVmlzaWJsZWhkZAIBDxYCHwBoZAIDDxYCHwBoFgICAQ8WAh8AaGQCBA8WAh8AaBYCAgEPFgIfAGhkAgUPFgIfAGgWAgIBDxYCHwBoZAIGDxYCHwBoFgICAQ8WAh8AaGQCAw8WAh8AaGQCBA9kFgJmD2QWCGYPFgIeBWNsYXNzBQZhY3RpdmUWAgIBDw8WAh4HVG9vbFRpcAUNVmlldyBhcyB0YWJsZWRkAgEPFgIfAWUWAgIBDw8WAh8CBQ1WaWV3IGFzIGNoYXJ0ZGQCAg8WAh8BZRYCAgEPDxYCHwIFC1ZpZXcgYXMgbWFwZGQCAw8WAh8BZRYCAgEPDxYCHwIFDVZpZXcgTWV0YWRhdGFkZAIGD2QWAmYPZBYCZg8WAh8AaGQCDQ9kFgJmD2QWAmYPZBYCZg9kFgICAw9kFgJmD2QWAgIDDzwrAAkCAA8WAh4OXyFVc2VWaWV3U3RhdGVnZAYPFgIeCklzU2F2ZWRBbGxnDxQrAAE8KwAMAQAWCh4EVGV4dAULUmVtb3ZlIFNvcnQeBE5hbWUFB3JlbXNvcnQeC05hdmlnYXRlVXJsZR4GVGFyZ2V0ZR4OUnVudGltZUNyZWF0ZWRnZGQYAQUeX19Db250cm9sc1JlcXVpcmVQb3N0QmFja0tleV9fFgEFHWNicFJlcG9ydFZpZXckY3RsMDMkcE1lbnVHcmlkT/i/xDEKDMJASK7iWRdaInF0M0z05W28QmLpflp1MUM=" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['frmMain'];
+if (!theForm) {
+    theForm = document.frmMain;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="/data/WebResource.axd?d=EsU04CcZKJFVbqsdlasdXKtMgsJCSD7fUknPcPOp2sv5BRS66L1nSeMgJhnfj_iwPNtjsDnfIJzp04O9Ri8jV_3vYhswgbgToQTdioxsV3Y1&amp;t=635823488460000000" type="text/javascript"></script>
+
+
+<script src="/data/ScriptResource.axd?d=al-Fdw6dfumn6Gr9Xf36Bfadf9ndbRaawszbIuo6nNwXdOdmo12Lt7YaZNJi03x68Ve_S1xpPTRjHnWjVd4rXtXXYKch_nZ5AdvsrP469HyAI5Z-IJRhlIOdLqxwvVBcmPoWlVem-OKsQ_hbZM_nqtO1JqJcX_0qp48tJ8Eta8w1&amp;t=ffffffffcc58dd65" type="text/javascript"></script>
+<script src="/data/ScriptResource.axd?d=xKCP-WiaAfcNmqETCzxhviIFOu8RB8uq1rAqpeldUYeVBi9trkJZeyJ4AWigAXXhS5T2pbblq20Zxw_6jQBBg8c_LwicA2BbA5AoxXsqX19HsEWI4by7GQtJbSiS99AdRkRa46BIIOiJUODp1ftIwYKkb0kbcfXZRzr4PM7ErwPi8fMsBRRnKYdXMEJt6BLP0&amp;t=ffffffffcc58dd65" type="text/javascript"></script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="27D612B2" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdACygfZem3T03kvBMr9nU8NQZfVhsJMa+dGwoTq3DQoQIJvXbw8NHZyiHvFx6g4esw5IUDn7iQh0cZo7mm/BtfDodBrbcVCqey1GUA4P8ydYYhIjGm2wY4yYr/+ZRR/dAibcQfuz7OCyvzbISDLiEmeUu4qOEsnBO67g+l/rWTKMDKg6V8wqV/kLQgfFj0fHyDbeqNGFjMd7tNIuPfk78ZviwtfavNX8126BtwK1POLaNvrd+shbOoO15cTHTTRB7L/Bkh/BQOrO7JrE+BNqlnNoFbnsHBsSHpHAZRQZoGsRXuY10rjt5FlS6IeSbE1y6Qo9XUE+DFxSJxZ8fr8CQWcTJOYcCAp9KHoVcWBzhwlg28nIzFKeE6wsrldnqQ38bM+3ZcoJXJJv1M9XoEdRPSYb/+IvtTJxK8XopriEN4j8dovrFuW/5zA11NFFjMjPoar88ntOsuffJ0yUCe8pxEOJifR+G1zEyc3qGTG1IeDHwQG1J1q0/j0vyj09zbSGOODA52W6AFv9AjCryd1iEigazW4cdvOVzouMkgTms7CpCi8H0FkTrVrYjTuBkgHGEsvhdThxGut5xXHJiAyHjwWoQHV9rNVErtZDQKjXMPSrxJmUFwEtVZV6XfHrnsO2ALWsk2XYWJ6dIsh+PE8qTDmx/whsf5f5aOeo/bJZQXUKe6akl/rPG+WMkxYOS0GFs+v+NTlJtJ16+WJC05lEMa3MUqxxiymettZUSsKnpQeNiCbIysl+p/lLuHg2DSG2VCq2OLCrii0ewFoXuwUWR9g21lsISH6Talz5n0iw4/F1tNhNg5QfVF+e/kJX2JryFy46+vc0W74z9kUHrBTG96qSmdJ7x01yU7Tf22PA98QrlXb89ZxFpD170+LKqDWDVGPVafbMA0OO55HmAWyfIJSXsXbTiOZyQTvKCspc9LBMYY9Mp3YpK92OOdx6Gbm9Itg+o1zl4A4yvumsICsvm6cTT" />
+</div>
+    <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ScriptManager1', 'frmMain', ['tupReportCSS','upReportCSS','tupReportLinks','upReportLinks','tupReportUpdate','upReportUpdate','tupReportTabs','upReportTabs','tupReportOptions','upReportOptions','tupReportStyles','upReportStyles','tupReportName','upReportName','tupReportDD','upReportDD','tupReportHidden','upReportHidden','tupReportScript','upReportScript'], ['lnkTable','lnkTable','lnkChart','lnkChart','lnkMap','lnkMap','lnkMetadata','lnkMetadata','lnkUpdateVarsOpts','lnkUpdateVarsOpts'], [], 90, '');
+//]]>
+</script>
+
+
+    <div id="upReportCSS">
+	
+            
+            
+            <link href="/data/App_Themes/GridTheme/GridDefaultTheme.css" rel="stylesheet" />
+            
+</div>
+
+    
+    
+<div role="banner" class="navbar navbar-inverse navbar-fixed-top bs-docs-nav" id="bannerStrip">
+ <div id="wbg-header" class="wbg-en clear-block">
+
+            <div class="clear-block wbg-logo">
+				<a class="wbg-logo" title="The World Bank Working for a World Free of Poverty" href="http://www.worldbank.org"></a>
+                
+               
+               <div class="exit-options exit-optionsen exit-optionsen pull-right">
+               
+                <div class="align-signin pull-right">
+                <a class="back-btn">
+                 
+                </a>
+                <a class="selecthomelink pull-left" href="/data/home.aspx" title="Go to home page"></a>
+                  
+                    
+                    <a id='lnkSign_InOut' href='#'  class='login-btn pull-left' OnClick='Javascript:onLangSelectionLogin("en")'><span class='signOut'></span><span class='login-width'> Sign In</span></a>
+                    
+                    <a class="back-btn pull-left" title="Go back to previous screen"><span class="icon-back-w img-width"></span>
+                    <span class="welcome-align pull-left" style="cursor: default;">&nbsp;</span>
+                   
+                    </a>
+                </div>
+
+                 <div class="align-welcome pull-right">
+                    <span id="lblWelcome" class="welcome-align" style="cursor: default;"></span>
+                    
+                    </div>
+            </div>
+           
+            </div>
+            <div class="clearfix"></div>
+      
+       
+       </div>
+        </div>
+        
+            <div class="language language-sv clearfix">
+                
+                <ul>
+                    
+                    
+                    
+                    
+                    
+                </ul>
+            </div>
+            
+
+    
+    <div class="secondaryHeader">
+        
+        <div class="dbname">
+            <h2>
+                <a href="/data/home.aspx" title="Go to Databank home page">
+                    World DataBank</a></h2>
+        </div>
+        
+
+        <div class="database">
+            <h2>
+                Education Statistics - All Indicators</h2>
+          
+        </div>
+
+        
+        
+        <div id="upReportLinks">
+	
+                <div class="formatListWrapper">
+                    <ul class="nav nav-tabs formatList">
+                        <li id="liTable" class="active">
+                            <a onclick="return onReportClicked(this);" id="lnkTable" title="View as table" href="javascript:__doPostBack(&#39;lnkTable&#39;,&#39;&#39;)"><span class="glyphicon glyphicon-th"></span> Table</a>
+                        </li>
+                        <li id="liChart" class="">
+                            <a onclick="return onReportClicked(this);" id="lnkChart" title="View as chart" href="javascript:__doPostBack(&#39;lnkChart&#39;,&#39;&#39;)"><span class="glyphicon glyphicon-stats"></span> Chart</a>
+                        </li>
+                        <li id="liMap" class="">
+                            <a onclick="return onReportClicked(this);" id="lnkMap" title="View as map" href="javascript:__doPostBack(&#39;lnkMap&#39;,&#39;&#39;)"><span class="glyphicon glyphicon-globe"></span> Map</a>
+                        </li>
+                        <li id="liMetadata" class="">
+                            <a onclick="return onReportClicked(this);" id="lnkMetadata" title="View Metadata" href="javascript:__doPostBack(&#39;lnkMetadata&#39;,&#39;&#39;)"><span class="glyphicon glyphicon-info-sign"></span> Metadata</a>
+                        </li>
+                        <li class="download"><a href="#" class="" data-toggle="" title="Download options">
+                            <span class="glyphicon glyphicon-download"></span>
+                            Download options<span class="caret"></span></a>
+                            <ul class="dropdown-menu pull-right" id="downloadDropdown">
+                                <li id="liExcelDownload"><a href="#" title="Download Excel Format" onclick="return  onDataDownload('excel');">
+                                    Excel</a></li>
+                                <li id="liCSVDownload"><a href="#" title="Download CSV Format" onclick="return  onDataDownload('csv');">
+                                    CSV</a></li>
+                                <li id="liTabDownload"><a href="#" title="Download Tabbed Txt Format" onclick="return  onDataDownload('tab');">
+                                    Tabbed TXT</a></li>
+                                
+                                <li class="divider"></li>
+                                <li id="liFormattedDownload"><a href="#" onclick="return  onFormattedDownload();">
+                                    Data on this page only - formatted</a></li>
+                                
+                                <li class="divider"></li>
+                                <li id="liMetadataDownload"><a href="#" title="Metadata" onclick="return  onDataDownload('metadata');">
+                                    Metadata</a></li>
+                                
+                                <li class="divider"></li>
+                                <li id="liAdvancedDownload"><a href="#advancedDownloadOptions" data-toggle="modal" data-target="#advancedDownloadOptions"
+                                    title="View Advanced Options for Download" id="btnDownloadAdvanced">
+                                    Advanced options</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            
+</div>
+    </div>
+
+    <div id="contentWrapper">
+        <div class="clearfix">
+        </div>
+        <div id="splitter" class="row">
+            
+            <div class="col-md-5 colTools" id="leftmainpanel">
+                <div class="pull-right dispNone" style="width: 165px;">
+                    <div id="upReportUpdate">
+	
+                            <a id="lnkUpdateVarsOpts" class="actionBtn" href="javascript:__doPostBack(&#39;lnkUpdateVarsOpts&#39;,&#39;&#39;)">Update</a>
+                        
+</div>
+                </div>
+                <div class="clearfix">
+                </div>
+                <h3 class="exploreTxt">Explore. Create. Share</h3>
+
+                <div class="tools">
+                    
+                    <div id="upReportTabs">
+	
+                            <ul class="nav nav-tabs toolsList" id="liPrimaryToolTab">
+                                <li class="active first" id="liVariables"><a href="javascript:void()" title="Select/unselect variables for your report."
+                                    onclick="onVarTabClick()">
+                                    Variables</a></li>
+                                <li id="liLayout"><a href="javascript:void(0)" title="Define the Layout of your report."
+                                    onclick="onLayoutTabClick()">
+                                    Layout</a></li>
+                                
+                                <li class="group2" id="liSave"><a href="javascript:void(0)" title="Save your report."
+                                    onclick="onSaveTabClick()" id="hplSave">
+                                    Save</a></li>
+                                <li id="liShare"><a href="javascript:void(0)" title="Share your report."
+                                    onclick="return onShareTabClick()">
+                                    Share</a></li>
+                                <li class="last" id="liEmbed"><a href="javascript:void(0)" title="Embed report in external website."
+                                    onclick="return onEmbedTabClick()">
+                                    Embed</a></li>
+                            </ul>
+                        
+</div>
+
+                    
+                    <div class="tab-content">
+                        
+
+<div class="tab-pane active" id="selection">
+
+    <div class="panel-group" id="nonMetadataReportVariables">
+        
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h4 class="panel-title pull-left main-title-panel">
+            <a id="databaseLink" title="Database List" data-toggle="collapse" data-parent="#nonMetadataReportVariables"
+                href="#selectedDimension_DBList" class="collapsed pull-left expandPanel" onclick="loadDatabaseList(this)">
+                Database</a>
+        </h4>
+        <div class="statsWrapper">
+            <div class="statsInner">
+                <div class="toggleSelectionViews stats pull-right">
+                    <div class="element statName">
+                        <a href="javascript:void(0)" class="showAvailable " title="Available Databases" onclick="loadAvailableDBList(this)">
+                            Available</a></div>
+                    <div class="element badge availableCount">
+                        &nbsp;
+                    </div>
+                    <div class="element">
+                        |</div>
+                    <div class="element statName">
+                        <a href="javascript:void(0)" class="showSelected" title="Selected Database" onclick="loadSelectedDBList(this)">
+                            Selected</a></div>
+                    <div class="selectionCount element badge">
+                        1
+                    </div>
+                </div>
+                <div class="clearfix">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="clearfix">
+    </div>
+    <div id="selectedDimension_DBList" class="panel-collapse selectedDimensionPanel  collapse">
+        <div class="panel-body">
+            <div class="clearfix">
+            </div>
+            <div id="newSelection_DBList">
+                <div class="row">
+                    <div class=" col-md-12">
+                        <div class="variableListWrapper">
+                            <div class="additionalTools">
+                                <div class="availableViewTools">
+                                <div class="pull-left">
+                                <span class="db-preview-text">Database preview</span>
+                                <input id="previewSwitchDb" type="checkbox" data-size="mini"  /> 
+                                <a href="javascript:void(0)"  title="When its on, the report gets displayed with a default selection of data." class="toolTipLeft"><span class="icon-questionmark"></span></a>
+
+
+                                </div>
+
+
+                                    <div class="pull-right">
+                                       
+                                        
+                                         <div class="filterResults pull-left">
+                                                    <a href="javascript:void(0)" class="removeFilter" data-source="DBList"
+                                                        target-id="#tbl_DBList>" metadata="false" custom-option="false" title="Clear"> <span class='glyphicon glyphicon-remove-circle'>
+                                                        </span>Filter</a>
+                                                </div>
+
+
+
+                                                  
+                                                <div class="searchResults pull-left">
+                                                    <a href="javascript:void(0)" class="removeSearch" data-source="DBList"
+                                                        target-id="#tbl_DBList>" metadata="false" custom-option="false" title="Clear"> <span class='glyphicon glyphicon-remove-circle'>
+                                                        </span>Search</a>
+                                                </div>
+                                        
+                                        
+                                        <div class="pull-left searchDiv" id="searchControl_DBList">
+                                            <input type="text" class=" searchInput pull-left" placeholder="Enter Keywords for Search"
+                                                id="searchBox_DBList" />
+                                            
+                                            <a href="javascript:void(0)" class="pull-left searchBtn pull-left" id="searchBtn_DBList"
+                                                title="Search" data-input="#searchBox_DBList" data-source="DBList" target-id="#tbl_DBList">
+                                                <span class="glyphicon glyphicon-search"></span></a>
+                                        </div>
+                                        <div class="pull-left filterBy">
+                                            <div class="filterWrapper">
+                                                <a class="btn btn-xs toggleFilter btn-default" title="Filter"><span class="glyphicon glyphicon-filter">
+                                                </span>  <span class="text">Filter</span>  <span class="caret"></span></a>
+                                                <div class="filterTree">
+                                                    <div class='tree'>
+                                                        <ul id="lstFilterItems_DBList">
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="clearfix">
+                                </div>
+                            </div>
+                            <div class="clearfix">
+                            </div>
+                            <div class="variableList">
+                                <ul class="variableTable availableView" id="tbl_DBList" data-type="D" data-text="Database"
+                                    data-value="DBList">
+                                </ul>
+                                <ul class="variableTable selectedView" id="tbl_sel_DBList">
+                                </ul>
+                            </div>
+                            <div class="clearfix">
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="dbMetadata" tabindex="-1" role="dialog" aria-labelledby="dbMetadata"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="dbMetadataLbl">
+                        Metadata</h4>
+                </div>
+                <div class="modal-body">
+                    
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="actionBtn pull-right " data-dismiss="modal">
+                        Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+        
+
+<div class="panel panel-default" id="panel_Stat_Ctry_Ext">
+    <div class="panel-heading">
+        <h4 class="panel-title pull-left main-title-panel">
+            <a data-toggle="collapse" data-parent="#nonMetadataReportVariables" href="#selectedDimension_Stat_Ctry_Ext"
+                title="Country" class="collapsed pull-left expandPanel" onclick="loadDimensionList('Stat_Ctry_Ext', '[Stat_Ctry_Ext].[List]', this)">
+                Country
+            </a>
+        </h4>
+        <div class="statsWrapper">
+            <div class="statsInner">
+                <div class="toggleSelectionViews stats pull-right">
+                    <div class="element statName">
+                        <a href="javascript:void(0)" class="showAvailable " title="Available Country  Variables." onclick="loadAvailableList('Stat_Ctry_Ext', '[Stat_Ctry_Ext].[List]', this)">Available</a></div>
+                    <div class="element badge availableCount">254
+                    </div>
+                    <div class="element">
+                        |</div>
+                    <div class="element statName">
+                        <a href="javascript:void(0)" class="showSelected" title="Selected Country  Variables." onclick="loadSelectedList('Stat_Ctry_Ext', '[Stat_Ctry_Ext].[List]', this)">Selected</a></div>
+                    <div class="selectionCount element badge forDimension" title=" Country"  >
+                        0
+                    </div>
+                </div>
+                <div class="clearfix">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="clearfix"></div>
+
+    <div id="selectedDimension_Stat_Ctry_Ext" class="panel-collapse collapse selectedDimensionPanel">
+        <div class="panel-body">
+            <div class="clearfix">
+            </div>
+            <div id="newSelection_Stat_Ctry_Ext" class="newSelection">
+                <div class="dimensionHolder">
+                    <div class="dimensionHolderInner">
+                        <div class="row">
+                            <div class=" col-md-12">
+                                <div class="variableListWrapper modal-leftCol">
+
+
+
+                                <div class="aggregatesFilter">
+
+                                    <div class="nonclassification" id="showCountryAggOption_Stat_Ctry_Ext">
+                                        <div class="btn-group" data-toggle="buttons" >
+                                           
+                                            <label class="btn showCountryAggOption active" data-value="All" controlId="Stat_Ctry_Ext">
+                                                <input type="radio" name="showCountryAggOption" id="showAll_Stat_Ctry_Ext" checked="checked">
+                                                All
+                                            </label>
+                                            <label class="btn showCountryAggOption" data-value="Countries" controlId="Stat_Ctry_Ext">
+                                                <input type="radio" name="showCountryAggOption" id="showCountries_Stat_Ctry_Ext" checked="checked">
+                                                Countries
+                                            </label>
+                                            <label class="btn showCountryAggOption" data-value="Aggregates" controlId="Stat_Ctry_Ext">
+                                                <input type="radio" name="showCountryAggOption" id="showAggregate_Stat_Ctry_Ext">
+                                                Aggregates
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                   <div class="dispNone classification" id="CtryAgg_Classification_Stat_Ctry_Ext">
+                                        <div class="btn-group" data-toggle="buttons">
+                                            
+                                            <label class="btn CtryAgg_Classification active" data-value="All">
+                                                <input type="radio" name="CtryAgg_Classification" id="Ctry_Classification_Stat_Ctry_Ext" checked="checked">
+                                                All
+                                            </label> 
+                                            <label class="btn CtryAgg_Classification" data-value="Countries">
+                                                <input type="radio" name="CtryAgg_Classification" id="Ctry_Classification_Stat_Ctry_Ext">
+                                                Countries
+                                            </label>
+                                            <label class="btn CtryAgg_Classification" data-value="Aggregates">
+                                                <input type="radio" name="CtryAgg_Classification" id="Agg_Classification_Stat_Ctry_Ext">
+                                                Aggregates
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                    </div>
+
+
+
+                                    <div class="clearfix"></div>
+                                    <div class="additionalTools">
+                                        <div class="availableViewTools">
+                                            <div class="pull-left mB5">
+                                                <div class="btn-group pull-left">
+                                                    <a class="btn selectAll btn-default" title="Select all">
+                                                        <span class="glyphicon  glyphicon-check"></span>
+                                                        <span class="text">Select all</span>
+                                                    </a>
+                                                    <a class="btn unselectAll btn-default" title="Unselect all">
+                                                        <span class="glyphicon glyphicon-remove"></span>
+                                                        <span class="text">Unselect all</span>
+                                                    </a>
+                                                    <a class="btn invertSelection btn-default" title="Invert selection">
+                                                        <span class="glyphicon glyphicon-sort"></span>
+                                                        <span class="text">Invert selection</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="pull-right mB5">
+                                                <div class="filterResults pull-left" id="filterResults_Stat_Ctry_Ext">
+                                                    <a href="javascript:void(0)" class="removeFilter" data-source="Stat_Ctry_Ext" target-id="#tbl_Stat_Ctry_Ext" metadata="false" custom-option="false" title="Remove Search">
+                                                        <span class='glyphicon glyphicon-remove-circle'></span>Filter
+                                                    </a>
+                                                </div>
+                                                <div class="searchResults pull-left">
+                                                    <a href="javascript:void(0)" class="removeSearch" data-source="Stat_Ctry_Ext" target-id="#tbl_Stat_Ctry_Ext" metadata="false" custom-option="false" title="Remove Search">
+                                                        <span class='glyphicon glyphicon-remove-circle'></span>Search
+                                                    </a>
+                                                </div>
+                                                <div class="pull-left searchDiv" id="searchControl_Stat_Ctry_Ext">
+                                                    <input type="text" class="searchInput pull-left" placeholder="Enter Keywords for Search" id="searchBox_Stat_Ctry_Ext" />
+                                                    <a href="javascript:void(0)"  title="Search" class="pull-left searchBtn" id="searchBtn_Stat_Ctry_Ext"
+                                                        data-input="#searchBox_Stat_Ctry_Ext" data-source="Stat_Ctry_Ext" target-id="#tbl_Stat_Ctry_Ext"
+                                                        metadata="false" custom-option="false"><span class="glyphicon glyphicon-search">
+                                                        </span></a>
+                                                </div>
+                                                <div class="variableFilter">
+                                                    <div class="pull-left filterBy">
+                                                        <div class="filterWrapper">
+                                                            <a class="btn btn-xs toggleFilter btn-default" title="Filter" id="toggleFilter_Stat_Ctry_Ext"><span class="glyphicon glyphicon-filter">
+                                                            </span> <span class="text">Filter</span> <span class="caret"></span></a>
+                                                            <div class="filterTree" id="_filterTree_Stat_Ctry_Ext">
+                                                                <div class='hierarchy' id="hierarchy_Stat_Ctry_Ext">
+                                                                    <span>
+                                                                        Hierarchy</span>
+                                                                    <select id="ddlDimHierarchy_Stat_Ctry_Ext" class="dimension-hierarchy dimension-hierarchy-Stat_Ctry_Ext"
+                                                                        data-type="Stat_Ctry_Ext">
+                                                                    </select>
+                                                                </div>
+                                                                <div class='tree'>
+                                                                    <ul id="lstFilterItems_Stat_Ctry_Ext">
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="zoomWrapper pull-left">
+                                                    <button type="button"  title="Detail view" class="btn btn-default btn-xs zoom pull-left" data-toggle="modal" parent-li="#li_hidden_Stat_Ctry_Ext"
+                                                        data-target="#zoomView" target_panel="#panel_Stat_Ctry_Ext" destination_panel="#selectedDimension_Stat_Ctry_Ext">
+                                                        <span class="glyphicon glyphicon-fullscreen"></span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="clearfix">
+                                            </div>
+                                            <div class="alphabet alphabet-C">
+                                                <ul class="list-inline list-unstyled pull-left" id="ulJumpToList_Stat_Ctry_Ext">
+                                                </ul>
+                                                <div class="pull-right customPagination">
+                                                    <select class="goTo" id="goTo_Stat_Ctry_Ext" data-source="Stat_Ctry_Ext" target-id="#tbl_Stat_Ctry_Ext"  metadata="false" custom-option="false"></select>
+                                                    Showing <span class="start"></span>- <span class="end"></span> of  <span class="totalCount">
+                                                    </span>
+                                                    <div class="btn-group">
+                                                        <a class="showPrev  btn btn-default btn-xs" href="javascript:void(0)" data-source="Stat_Ctry_Ext" target-id="#tbl_Stat_Ctry_Ext"  metadata="false" custom-option="false"><span class="icon"></span></a>
+                                                        <a class="showNext btn btn-default btn-xs" href="javascript:void(0)" data-source="Stat_Ctry_Ext" target-id="#tbl_Stat_Ctry_Ext"  metadata="false" custom-option="false"><span class="icon"></span></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="selectedViewTools">
+                                            <div class="pull-left mB5">
+                                                <div class="btn-group pull-left">
+                                                    <a class="btn sort asc btn-default" title="Sort">
+                                                       <span class="text">  Sort</span>
+                                                    </a><a class="btn removeAll btn-default" title="Remove All">
+                                                      <span class="text">   Remove all </span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="pull-right mB5">
+                                                <div class="zoomWrapper">
+                                                    <button type="button" class="btn btn-default btn-xs zoom pull-left" data-toggle="modal" title="Detail view" 
+                                                        data-target="#zoomView" target_panel="#panel_Stat_Ctry_Ext" destination_panel="#selectedDimension_Stat_Ctry_Ext">
+                                                        <span class="glyphicon glyphicon-fullscreen"></span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="clearfix"></div>
+                                            <p class='noVariableTxt'>No variables selected</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="clearfix"></div>
+                                    <div class="variableList">
+                                        <ul class="variableTable availableView table-dimension-C" id="tbl_Stat_Ctry_Ext" data-type="C" data-text="Country" data-value="Stat_Ctry_Ext">
+                                        </ul>
+                                        <ul class="variableTable selectedView" id="tbl_sel_Stat_Ctry_Ext" data-type="C" data-text="Country" data-value="Stat_Ctry_Ext">
+                                        </ul>
+                                    </div>
+
+                                    <div class="clearfix"></div>
+                                    <hr class="mainSreenView" />
+                                </div>
+
+                                
+
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <ul class="dispNone">
+        <li class="addMoreHiddenDiv" id="li_hidden_Stat_Ctry_Ext"><a href="javascript:void(0)" data-toggle="modal" data-target="#zoomView"
+            class="addMoreRHS zoom" title="Add Country" target_panel="#panel_Stat_Ctry_Ext"
+            destination_panel="#selectedDimension_Stat_Ctry_Ext" onclick="loadDimensionList('Stat_Ctry_Ext', '[Stat_Ctry_Ext].[List]', this)" parent-li="#li_hidden_Stat_Ctry_Ext">
+            Add
+            Country  <span class="selectionCountRHS" id="Stat_Ctry_Ext_selectCountRHS">0</span></a>    
+        </li>
+    </ul>
+</div> 
+
+<div class="panel panel-default" id="panel_STATS_Series_Ext">
+    <div class="panel-heading">
+        <h4 class="panel-title pull-left main-title-panel">
+            <a data-toggle="collapse" data-parent="#nonMetadataReportVariables" href="#selectedDimension_STATS_Series_Ext"
+                title="Series" class="collapsed pull-left expandPanel" onclick="loadDimensionList('STATS_Series_Ext', '[STATS_Series_Ext].[Topic]', this)">
+                Series
+            </a>
+        </h4>
+        <div class="statsWrapper">
+            <div class="statsInner">
+                <div class="toggleSelectionViews stats pull-right">
+                    <div class="element statName">
+                        <a href="javascript:void(0)" class="showAvailable " title="Available Series  Variables." onclick="loadAvailableList('STATS_Series_Ext', '[STATS_Series_Ext].[Topic]', this)">Available</a></div>
+                    <div class="element badge availableCount">4502
+                    </div>
+                    <div class="element">
+                        |</div>
+                    <div class="element statName">
+                        <a href="javascript:void(0)" class="showSelected" title="Selected Series  Variables." onclick="loadSelectedList('STATS_Series_Ext', '[STATS_Series_Ext].[Topic]', this)">Selected</a></div>
+                    <div class="selectionCount element badge forDimension" title=" Series"  >
+                        0
+                    </div>
+                </div>
+                <div class="clearfix">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="clearfix"></div>
+
+    <div id="selectedDimension_STATS_Series_Ext" class="panel-collapse collapse selectedDimensionPanel">
+        <div class="panel-body">
+            <div class="clearfix">
+            </div>
+            <div id="newSelection_STATS_Series_Ext" class="newSelection">
+                <div class="dimensionHolder">
+                    <div class="dimensionHolderInner">
+                        <div class="row">
+                            <div class=" col-md-12">
+                                <div class="variableListWrapper modal-leftCol">
+
+
+
+                                <div class="aggregatesFilter">
+
+                                    <div class="nonclassification" id="showCountryAggOption_STATS_Series_Ext">
+                                        <div class="btn-group" data-toggle="buttons" >
+                                           
+                                            <label class="btn showCountryAggOption active" data-value="All" controlId="STATS_Series_Ext">
+                                                <input type="radio" name="showCountryAggOption" id="showAll_STATS_Series_Ext" checked="checked">
+                                                All
+                                            </label>
+                                            <label class="btn showCountryAggOption" data-value="Countries" controlId="STATS_Series_Ext">
+                                                <input type="radio" name="showCountryAggOption" id="showCountries_STATS_Series_Ext" checked="checked">
+                                                Countries
+                                            </label>
+                                            <label class="btn showCountryAggOption" data-value="Aggregates" controlId="STATS_Series_Ext">
+                                                <input type="radio" name="showCountryAggOption" id="showAggregate_STATS_Series_Ext">
+                                                Aggregates
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                   <div class="dispNone classification" id="CtryAgg_Classification_STATS_Series_Ext">
+                                        <div class="btn-group" data-toggle="buttons">
+                                            
+                                            <label class="btn CtryAgg_Classification active" data-value="All">
+                                                <input type="radio" name="CtryAgg_Classification" id="Ctry_Classification_STATS_Series_Ext" checked="checked">
+                                                All
+                                            </label> 
+                                            <label class="btn CtryAgg_Classification" data-value="Countries">
+                                                <input type="radio" name="CtryAgg_Classification" id="Ctry_Classification_STATS_Series_Ext">
+                                                Countries
+                                            </label>
+                                            <label class="btn CtryAgg_Classification" data-value="Aggregates">
+                                                <input type="radio" name="CtryAgg_Classification" id="Agg_Classification_STATS_Series_Ext">
+                                                Aggregates
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                    </div>
+
+
+
+                                    <div class="clearfix"></div>
+                                    <div class="additionalTools">
+                                        <div class="availableViewTools">
+                                            <div class="pull-left mB5">
+                                                <div class="btn-group pull-left">
+                                                    <a class="btn selectAll btn-default" title="Select all">
+                                                        <span class="glyphicon  glyphicon-check"></span>
+                                                        <span class="text">Select all</span>
+                                                    </a>
+                                                    <a class="btn unselectAll btn-default" title="Unselect all">
+                                                        <span class="glyphicon glyphicon-remove"></span>
+                                                        <span class="text">Unselect all</span>
+                                                    </a>
+                                                    <a class="btn invertSelection btn-default" title="Invert selection">
+                                                        <span class="glyphicon glyphicon-sort"></span>
+                                                        <span class="text">Invert selection</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="pull-right mB5">
+                                                <div class="filterResults pull-left" id="filterResults_STATS_Series_Ext">
+                                                    <a href="javascript:void(0)" class="removeFilter" data-source="STATS_Series_Ext" target-id="#tbl_STATS_Series_Ext" metadata="false" custom-option="false" title="Remove Search">
+                                                        <span class='glyphicon glyphicon-remove-circle'></span>Filter
+                                                    </a>
+                                                </div>
+                                                <div class="searchResults pull-left">
+                                                    <a href="javascript:void(0)" class="removeSearch" data-source="STATS_Series_Ext" target-id="#tbl_STATS_Series_Ext" metadata="false" custom-option="false" title="Remove Search">
+                                                        <span class='glyphicon glyphicon-remove-circle'></span>Search
+                                                    </a>
+                                                </div>
+                                                <div class="pull-left searchDiv" id="searchControl_STATS_Series_Ext">
+                                                    <input type="text" class="searchInput pull-left" placeholder="Enter Keywords for Search" id="searchBox_STATS_Series_Ext" />
+                                                    <a href="javascript:void(0)"  title="Search" class="pull-left searchBtn" id="searchBtn_STATS_Series_Ext"
+                                                        data-input="#searchBox_STATS_Series_Ext" data-source="STATS_Series_Ext" target-id="#tbl_STATS_Series_Ext"
+                                                        metadata="false" custom-option="false"><span class="glyphicon glyphicon-search">
+                                                        </span></a>
+                                                </div>
+                                                <div class="variableFilter">
+                                                    <div class="pull-left filterBy">
+                                                        <div class="filterWrapper">
+                                                            <a class="btn btn-xs toggleFilter btn-default" title="Filter" id="toggleFilter_STATS_Series_Ext"><span class="glyphicon glyphicon-filter">
+                                                            </span> <span class="text">Filter</span> <span class="caret"></span></a>
+                                                            <div class="filterTree" id="_filterTree_STATS_Series_Ext">
+                                                                <div class='hierarchy' id="hierarchy_STATS_Series_Ext">
+                                                                    <span>
+                                                                        Hierarchy</span>
+                                                                    <select id="ddlDimHierarchy_STATS_Series_Ext" class="dimension-hierarchy dimension-hierarchy-STATS_Series_Ext"
+                                                                        data-type="STATS_Series_Ext">
+                                                                    </select>
+                                                                </div>
+                                                                <div class='tree'>
+                                                                    <ul id="lstFilterItems_STATS_Series_Ext">
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="zoomWrapper pull-left">
+                                                    <button type="button"  title="Detail view" class="btn btn-default btn-xs zoom pull-left" data-toggle="modal" parent-li="#li_hidden_STATS_Series_Ext"
+                                                        data-target="#zoomView" target_panel="#panel_STATS_Series_Ext" destination_panel="#selectedDimension_STATS_Series_Ext">
+                                                        <span class="glyphicon glyphicon-fullscreen"></span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="clearfix">
+                                            </div>
+                                            <div class="alphabet alphabet-S">
+                                                <ul class="list-inline list-unstyled pull-left" id="ulJumpToList_STATS_Series_Ext">
+                                                </ul>
+                                                <div class="pull-right customPagination">
+                                                    <select class="goTo" id="goTo_STATS_Series_Ext" data-source="STATS_Series_Ext" target-id="#tbl_STATS_Series_Ext"  metadata="false" custom-option="false"></select>
+                                                    Showing <span class="start"></span>- <span class="end"></span> of  <span class="totalCount">
+                                                    </span>
+                                                    <div class="btn-group">
+                                                        <a class="showPrev  btn btn-default btn-xs" href="javascript:void(0)" data-source="STATS_Series_Ext" target-id="#tbl_STATS_Series_Ext"  metadata="false" custom-option="false"><span class="icon"></span></a>
+                                                        <a class="showNext btn btn-default btn-xs" href="javascript:void(0)" data-source="STATS_Series_Ext" target-id="#tbl_STATS_Series_Ext"  metadata="false" custom-option="false"><span class="icon"></span></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="selectedViewTools">
+                                            <div class="pull-left mB5">
+                                                <div class="btn-group pull-left">
+                                                    <a class="btn sort asc btn-default" title="Sort">
+                                                       <span class="text">  Sort</span>
+                                                    </a><a class="btn removeAll btn-default" title="Remove All">
+                                                      <span class="text">   Remove all </span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="pull-right mB5">
+                                                <div class="zoomWrapper">
+                                                    <button type="button" class="btn btn-default btn-xs zoom pull-left" data-toggle="modal" title="Detail view" 
+                                                        data-target="#zoomView" target_panel="#panel_STATS_Series_Ext" destination_panel="#selectedDimension_STATS_Series_Ext">
+                                                        <span class="glyphicon glyphicon-fullscreen"></span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="clearfix"></div>
+                                            <p class='noVariableTxt'>No variables selected</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="clearfix"></div>
+                                    <div class="variableList">
+                                        <ul class="variableTable availableView table-dimension-S" id="tbl_STATS_Series_Ext" data-type="S" data-text="Series" data-value="STATS_Series_Ext">
+                                        </ul>
+                                        <ul class="variableTable selectedView" id="tbl_sel_STATS_Series_Ext" data-type="S" data-text="Series" data-value="STATS_Series_Ext">
+                                        </ul>
+                                    </div>
+
+                                    <div class="clearfix"></div>
+                                    <hr class="mainSreenView" />
+                                </div>
+
+                                
+
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <ul class="dispNone">
+        <li class="addMoreHiddenDiv" id="li_hidden_STATS_Series_Ext"><a href="javascript:void(0)" data-toggle="modal" data-target="#zoomView"
+            class="addMoreRHS zoom" title="Add Series" target_panel="#panel_STATS_Series_Ext"
+            destination_panel="#selectedDimension_STATS_Series_Ext" onclick="loadDimensionList('STATS_Series_Ext', '[STATS_Series_Ext].[Topic]', this)" parent-li="#li_hidden_STATS_Series_Ext">
+            Add
+            Series  <span class="selectionCountRHS" id="STATS_Series_Ext_selectCountRHS">0</span></a>    
+        </li>
+    </ul>
+</div> 
+
+<div class="panel panel-default" id="panel_Stat_Time_Ext">
+    <div class="panel-heading">
+        <h4 class="panel-title pull-left main-title-panel">
+            <a title="Time" data-toggle="collapse" data-parent="#nonMetadataReportVariables"
+                href="#selectedDimension_Stat_Time_Ext" class="collapsed pull-left expandPanel" onclick="loadDimensionList('Stat_Time_Ext', '[Stat_Time_Ext].[Year]', this)">
+                Time</a>
+        </h4>
+        <div class="statsWrapper">
+            <div class="statsInner">
+                <div class="pull-right stats toggleSelectionViews">
+                    <div class="element statName">
+                        <a href="javascript:void(0)" class="showAvailable" title="Available Time"
+                            onclick="loadAvailableList('Stat_Time_Ext', '[Stat_Time_Ext].[Year]', this)">
+                            Available</a></div>
+                    <div class="availableCount element badge">
+                        64
+                    </div>
+                    <div class="element">
+                        |</div>
+                    <div class="element statName">
+                        <a href="javascript:void(0)" class="showSelected" title="Selected Time"
+                            onclick="loadSelectedList('Stat_Time_Ext', '[Stat_Time_Ext].[Year]', this)">
+                            Selected</a></div>
+                    <div class="selectionCount element badge forDimension" title=" Time">
+                        0
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="clearfix">
+        </div>
+    </div>
+    <div class="clearfix">
+    </div>
+    <div id="selectedDimension_Stat_Time_Ext" class="panel-collapse collapse selectedDimensionTime selectedDimensionPanel">
+        <div class="panel-body">
+              
+            <div id="newTimeSelection" class="newSelection">
+              <div class="dimensionHolder">
+                       <div class="dimensionHolderInner" id="rowTimeDim">
+                <div class="row">
+                   
+                    <div class=" col-md-12">
+                   
+                        
+                        <div class="clearfix"></div>
+                         <div class="variableListWrapper modal-leftCol">
+                         <p>
+                            <label for="amount" class="normalFont">Availability Range: Year</label>
+                           <b> [<span id="year"></span>]</b>
+                        </p>
+                        <div id="slider-range" data-source="Stat_Time_Ext" target-id="#tbl_Stat_Time_Ext">
+                        </div>
+                            <div class="additionalTools">
+                                <div class="availableViewTools">
+                                      <div class="pull-left mB5">
+                                                <div class="btn-group pull-left">
+                                                    <a class="btn selectAll btn-default" title="Select all">
+                                                        
+                                                        <span class="glyphicon  glyphicon-check"></span>
+                                                           <span class="text">Select all</span>
+                                                    </a>
+                                                    <a class="btn unselectAll btn-default" title="Unselect all">
+                                                       
+                                                        <span class="glyphicon glyphicon-remove"></span>
+                                                          <span class="text">Unselect all</span>
+                                                    </a>
+                                                    <a class="btn invertSelection btn-default" title="Invert selection">
+                                                      
+                                                        <span class="glyphicon glyphicon-sort"></span>
+                                                           <span class="text">Invert selection</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                    <div class="pull-right">
+                                     <div class="searchResults pull-left">
+                                        <a href="javascript:void(0)" destination_type="T" title="Filter" class="removeSearch" data-source="Stat_Time_Ext" target-id="#tbl_Stat_Time_Ext" metadata="false" custom-option="false"><span class='glyphicon glyphicon-remove-circle'></span> Filter</a>
+                                        </div>
+                                         <div class="pull-left searchDiv" id="searchControl_Stat_Time_Ext">
+                                                    <input type="text" class="searchInput pull-left" placeholder="Enter Keywords for Search"
+                                                        id="searchBox_Stat_Time_Ext" />
+                                                    
+                                                    <a href="javascript:void(0)" class="pull-left searchBtn" id="searchBtn_Stat_Time_Ext"
+                                                        data-input="#searchBox_Stat_Time_Ext" data-source="Stat_Time_Ext" target-id="#tbl_Stat_Time_Ext"
+                                                        metadata="false" custom-option="false" title="Search" destination_type="T"><span class="glyphicon glyphicon-search">
+                                                        </span></a>
+                                                </div>
+                                      <div class="zoomWrapper">
+                                     <button type="button" title="Detail View" class="btn btn-default btn-xs zoom pull-left" data-toggle="modal" data-target="#zoomView"  data-target="#zoomView" target_panel="#panel_Stat_Time_Ext" parent-li="#li_hidden_Stat_Time_Ext"
+            destination_panel="#selectedDimension_Stat_Time_Ext" destination_type="T">
+                                            <span class="glyphicon glyphicon-fullscreen"></span>
+                                        </button>
+                                     </div>
+                                      
+                                       
+                                    </div>
+                                    <div class="clearfix"></div>
+                                    <div class="timeRange">
+                                        <ul class="list-inline list-unstyled pull-left">
+                                           <li>VIEW RECENT YEARS</li>
+                                        <li class="range" data-source="Stat_Time_Ext" target-id="#tbl_Stat_Time_Ext"  data-range="5"><a href="javascript:void(0)">5</a></li>
+                                        <li class="range" data-source="Stat_Time_Ext" target-id="#tbl_Stat_Time_Ext" data-range="10" id="Li1"><a href="javascript:void(0)">10</a></li>
+                                        <li class="range" data-source="Stat_Time_Ext" target-id="#tbl_Stat_Time_Ext" data-range="15" id="Li2"><a href="javascript:void(0)">15</a></li>
+                                        <li class="range" data-source="Stat_Time_Ext" target-id="#tbl_Stat_Time_Ext" data-range="20" id="Li3"><a href="javascript:void(0)">20</a></li>
+                                        <li class="range" data-source="Stat_Time_Ext" target-id="#tbl_Stat_Time_Ext"  data-range="25" id="Li4"><a href="javascript:void(0)">25</a></li>
+                                        <li class="range" data-source="Stat_Time_Ext" target-id="#tbl_Stat_Time_Ext" data-range="50" id="Li5"><a href="javascript:void(0)">50</a></li>
+                                        </ul>
+
+                                         <div class="pull-right customPagination">
+                                           <select class="goTo" id="goTo_Stat_Time_Ext" data-source="Stat_Time_Ext" target-id="#tbl_Stat_Time_Ext"  metadata="false" custom-option="false"></select>
+                                                   
+
+
+                                                    Showing <span class="start"></span>- <span class="end"></span> of  <span class="totalCount">
+                                                    </span>
+                                                   
+                                                   
+
+                                                    <div class="btn-group">
+                                                        <a class="showPrev_Time  btn btn-default btn-xs" href="javascript:void(0)" data-source="Stat_Time_Ext" target-id="#tbl_Stat_Time_Ext"  metadata="false" custom-option="false"><span class="icon"></span></a>
+                                                        <a class="showNext_Time btn btn-default btn-xs" href="javascript:void(0)" data-source="Stat_Time_Ext" target-id="#tbl_Stat_Time_Ext"  metadata="false" custom-option="false"><span class="icon"></span></a>
+                                                    </div>
+                                                   
+                                                </div>
+                                    </div>
+                                </div>
+                                <div class="selectedViewTools">
+                                    <div class="btn-group pull-left">
+                                                    <a class="btn sort asc btn-default" title="Sort">
+                                                     <span class="text">    Sort</span>
+                                                    </a><a class="btn removeAll btn-default" title="Remove All">
+                                                       <span class="text">  Remove all</span>
+                                                    </a>
+                                                </div>
+
+
+                                    <div class="pull-right mB5">
+                                       <div class="pull-left">
+                                        <input type="checkbox" checked="checked" id="ascendingChkBox" />
+                                        Ascending
+                                        </div>
+                                         <div class="zoomWrapper">
+                                                    <button title="Detail view" type="button" class="btn btn-default btn-xs zoom pull-left" data-toggle="modal"
+                                                        data-target="#zoomView" target_panel="#panel_Stat_Time_Ext" destination_panel="#selectedDimension_Stat_Time_Ext" destination_type="T">
+                                                        <span class="glyphicon glyphicon-fullscreen"></span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="clearfix">
+                                            </div>
+                                            <p class='noVariableTxt'>
+                                                No variables selected</p>
+                                        </div>
+                                    </div>
+                                    <div class="variableList">
+                                        <ul class="variableTable availableView table-dimension-T" id="tbl_Stat_Time_Ext"
+                                            data-type="T" data-text="Time" data-value="Stat_Time_Ext">
+                                        </ul>
+                                        <ul class="variableTable selectedView" id="tbl_sel_Stat_Time_Ext" data-type="T"
+                                            data-text="Time" data-value="Stat_Time_Ext">
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="clearfix modal-noClear">
+                                </div>
+                                <hr class="mainSreenView" />
+                                <div class="clearfix modal-noClear">
+                                </div>
+                                <div class="panel-group modal-rightCol" id="createTimeFunctionAcc">
+                                    <div class="panel panel-default">
+                                        
+                                <div class="panel-heading">
+                                    <a data-toggle="collapse" data-parent="#createTimeFunctionAcc" href="#createTimeFunction"
+                                        class="collapsed btn btn-default btn-xs">Create Time Function<span class="caret">
+                                        </span></a>
+
+                                             <a href="javascript:void(0)" data-toggle="modal" data-target="#timeFunctionHelpTxt">
+                    <span class="glyphicon glyphicon-question-sign"></span></a>
+
+
+                                </div>
+                                <div class="clearfix">
+                                </div>
+                                <div id="createTimeFunction" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <div class="formulaWrapper" id="timeFunctionWrapper">
+                                            <div class="pd10">
+                                                <div class="row controls">
+                                                    <div class="col-md-12 ">
+                                                        <label class="w80">Type</label>
+                                                        <select class="w160" id="selPeriodFunctionType">
+                                                            <option value="Exponential" selected="">Exponential growth rate</option>
+                                                            <option value="LeastSquares">Least squares growth rate</option>
+                                                            <option value="Geometric">Geometric growth rate</option>
+                                                            <option value="Avg">Average</option>
+                                                            <option value="Median">Median</option>
+                                                            <option value="Max">Maximum</option>
+                                                            <option value="Min">Minimum</option>
+                                                            <option value="Stddev">Standard deviation</option>
+                                                            <option value="Sum">Sum</option>
+                                                            <option value="Variance">Variance</option>
+                                                            <option value="MRV">Most recent value</option>
+                                                            <option value="MRVRight">MRV (with year-Right)</option>
+                                                            <option value="MRVLeft">MRV (with year-Left)</option>
+                                                            <option value="DynYear">Dynamic period</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="row controls" id="rowSpan">
+                                                    <div class="col-md-12">
+                                                        <label class="w80">Span</label>
+                                                        <label class="mR10">From</label>
+                                                        <select class="mR20 w60" id="selCustomTime_From">
+                                                        </select>
+                                                        <label class="mR10">To</label>
+                                                        <select class="mR20 w60" id="selCustomTime_To">
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="row controls dispNone" id="rowOrder">
+                                                    <div class="col-md-12">
+                                                        <label class="w80">Order</label>
+                                                        <select class="w60" id="selMRVOrder">
+                                                            <option value="1">First</option>
+                                                            <option value="2">Second</option>
+                                                            <option value="3">Third</option>
+                                                            <option value="4">Fourth</option>
+                                                            <option value="5">Fifth</option>
+                                                            <option value="6">Sixth</option>
+                                                            <option value="7">Seventh</option>
+                                                            <option value="8">Eighth</option>
+                                                            <option value="9">Nineth</option>
+                                                            <option value="10">Tenth</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="row controls dispNone" id="rowLabel">
+                                                    <div class="col-md-12">
+                                                        <label class="w80 pull-left">Label</label>
+                                                        <input type="text" class="form-control pull-left w120" id="txtMRVLabel" />
+                                                    </div>
+                                                </div>
+                                                <div class="row controls dispNone" id="rowDynPeriod">
+                                                    <div class="col-md-12">
+                                                        <label class="w80">Total periods</label>
+                                                        <select class="mR20 w60" id="selDynPeriodTotal">
+                                                            <option value="1">1</option>
+                                                            <option value="2">2</option>
+                                                            <option value="3">3</option>
+                                                            <option value="4">4</option>
+                                                            <option value="5">5</option>
+                                                            <option value="6">6</option>
+                                                            <option value="7">7</option>
+                                                            <option value="8">8</option>
+                                                            <option value="9">9</option>
+                                                            <option value="10">10</option>
+                                                        </select>
+                                                        <label class="mR10">Latest period</label>
+                                                        <select class="w60 mR10" id="selDynPeriodLatest">
+                                                            <option value="0">Default</option>
+                                                            <option value="1">-1</option>
+                                                            <option value="2">-2</option>
+                                                            <option value="3">-3</option>
+                                                            <option value="4">-4</option>
+                                                            <option value="5">-5</option>
+                                                            <option value="6">-6</option>
+                                                            <option value="7">-7</option>
+                                                            <option value="8">-8</option>
+                                                            <option value="9">-9</option>
+                                                            <option value="10">-10</option>
+                                                        </select>
+                                                        <em>(Optional)</em>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="clearfix">
+                                            </div>
+                                            <hr class="dottedBdrs"/>
+                                            <div class="pd10" id="divTimeAddtOptions">
+                                                <a class="btn btn-default btn-xs mB10 collapsed" data-toggle="collapse" href="#addtionalCustomTimeFunctionOptions"
+                                                    aria-expanded="false" aria-controls="addtionalCustomTimeFunctionOptions">Additional options<span class="caret"></span></a>
+                                                <div class="collapse" id="addtionalCustomTimeFunctionOptions">
+                                                    <div class="well">
+                                                        <div class="pd10">
+                                                            <div class="row">
+                                                                <div class="col-md-3">
+                                                                    <label>Metadata (Optional)</label>
+                                                                </div>
+                                                                <div class="col-md-9">
+                                                                    <textarea rows="2" class="form-control" id="txtTimeMetadata"></textarea>
+                                                                </div>
+                                                            </div>
+                                                            <hr>
+                                                            <div class="row">
+                                                                <div class="col-md-12 ">
+                                                                    <input type="checkbox" id="chkTimeDisplayDef">
+                                                                    Display function definition
+                                                                </div>
+                                                            </div>
+                                                            
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="formulaBtnSet">
+                                                <input type="text" class="form-control" placeholder="Enter Function Title" id="txtTimeFunctionName" />
+                                                <a href="javascript:void(0)" class="actionBtn pull-right" onclick="clearCustomPeriod()" title="Clear">Clear</a> 
+                                                <a href="javascript:void(0)" class="actionBtn pull-right" onclick="addCustomPeriod('Stat_Time_Ext')" title="Add">Add</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clearfix">
+                        </div>
+                    </div>
+                </div></div></div>
+            </div>
+        </div>
+    </div>
+
+     <ul class="dispNone">
+        <li class="addMoreHiddenDiv" id="li_hidden_Stat_Time_Ext"> <a href="javascript:void(0)" data-toggle="modal" data-target="#zoomView" id="addTimeBtn" parent-li="#li_hidden_Stat_Time_Ext"
+            class="addMoreRHS zoom" title="Add Time" target_panel="#panel_Stat_Time_Ext"
+            destination_panel="#selectedDimension_Stat_Time_Ext" onclick="loadDimensionList('Stat_Time_Ext', '[Stat_Time_Ext].[Year]', this)" destination_type="T">
+            Add
+            Time
+             <span class="selectionCountRHS" id="Stat_Time_Ext_selectCountRHS">0</span>
+            
+            </a> </li>
+        
+    </ul>
+</div>
+
+
+
+
+<div class="modal fade" id="timeFunctionHelpTxt" tabindex="-1" role="dialog" aria-labelledby="timeFunctionHelpTxt"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-sm">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="timeFunctionHelpTxtLbl">
+                  Functions</h4>
+            </div>
+            <div class="modal-body">
+             
+
+
+             <div class="helpcontent mT10">
+             
+             
+             
+To perform mathematical functions on the data over a specified time period, choose the type of operation from the dropdown menu, and then choose your time period. Give a name to your custom function and click Add. Note: The operation will be performed on all selected series. You should be aware that some results may be inappropriate (e.g., growth rates on current price series).
+<br><br>
+
+<ul class="list-unstyled bulleted">
+
+<li>
+<b>Exponential growth rate:</b> the growth rate, r, between two points in time calculated from the equation r = ln(pn/p0)/n, where pn and p0 are the last and first observations in the period, n is the number of years in the period range, and ln is the natural logarithm operator. This growth rate is based on a model of continuous, exponential growth between two points in time. It does not take into account the intermediate values of the series.
+</li>
+<li>
+<b>Least-squares growth rate:</b> the growth rate estimated by fitting a linear regression trend line to the logarithmic annual values of the variable in the relevant period. No growth rate is calculated if more than half the observations in a period are missing. The calculated growth rate is an average rate that is representative of the available observations over the entire period. It does not necessarily match the actual growth rate between any two periods.
+</li>
+
+<li>
+<b>Geometric growth rate:</b> the growth rate over n periods calculated as r = exp[ln(pn/p0)/n] - 1. It is applicable to compound growth over discrete periods. Like the exponential growth rate, it does not take into account intermediate values of the series.
+</li>
+
+<li>
+<b>Average (or mean):</b> the sum of values in the period divided by the number of values. Observations that are not available are ignored, however zero values are included. 
+</li>
+
+<li>
+<b>Median:</b> the middle value in the period.
+</li>
+
+<li>
+<b>Maximum:</b> the highest value in the period.
+</li>
+
+<li>
+<b>Minimum:</b> the lowest value in the period.
+</li>
+
+<li>
+<b>Standard deviation:</b> the square root of the variance. Standard deviation is a measure of how widely values are dispersed from the average value (the mean).
+</li>
+
+<li>
+<b>Sum:</b> the sum of the values in the period.
+</li>
+
+<li>
+<b>Variance:</b> the mean of all squared deviations from the mean.
+</li>
+
+<li>
+<b>Most recent value:</b> The most recent value (MRV) function will display a value in the specified year range according to the selected order (observation sequence). The default order is "First" which will display the most recent value available in the period.  Selecting a different order, such as "Second" for example, will display the second-most recent value in the period, etc. MRV options are also available to display the year of the data, either to the left or right of the data value.
+</li>
+
+</ul>
+</div>
+
+
+<br />
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="actionBtn pull-right " data-dismiss="modal">
+                    Close</button>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+
+        
+
+<div class="panel panel-default" id="metadataReportVariables">
+    <div class="panel-heading">
+        <h4 class="panel-title pull-left main-title-panel">
+            <a data-toggle="collapse" data-parent="#nonMetadataReportVariables" href="#metadataAttributes" class="collapsed">Metadata Attributes</a>
+        </h4>
+        <div class="statsWrapper">
+            <div class="statsInner">
+                <div class="pull-right stats toggleSelectionViews">
+                    <div class="element statName">
+                        <a href="javascript:void(0)" class="showAvailableMeta">Available</a></div>
+                    <div class="availableCount element badge">&nbsp;</div>
+                    <div class="element">
+                        |</div>
+                    <div class="element statName">
+                        <a href="javascript:void(0)" class="showSelectedMeta">Selected</a></div>
+                    <div class="selectionCount element badge">&nbsp;</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="clearfix">
+    </div>
+
+    <div id="metadataAttributes" class="panel-collapse collapse selectedDimensionTime selectedDimensionPanel">
+        <div class="panel-body">
+            <div class="dimensionHolder">
+                <div class="dimensionHolderInner" id="metadataDimInner">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="variableListWrapper">
+                                <div class="additionalTools">
+                                    
+
+                                    <div class="clearfix">
+                                    </div>
+
+                                    <div class="availableViewTools">
+                                        <div class="btn-group pull-left" data-toggle="buttons">
+                                            <a class="btn selectAll_Meta btn-default" title="Select All">
+                                                <span class="glyphicon  glyphicon-check"></span>
+                                                <span class="text">Select All</span>
+                                            </a>
+                                            <a class="btn unselectAll_Meta btn-default" title="Unselect All">
+                                                <span class="glyphicon glyphicon-remove"></span>
+                                                <span class="text">Unselect All</span>
+                                            </a>
+                                            <a class="btn invertSelection_Meta btn-default" title="Invert Selection">
+                                                <span class="glyphicon glyphicon-sort"></span>
+                                                <span class="text">Invert Selection</span>
+                                            </a>
+                                        </div>
+                                        <div class="pull-right mB5">
+                                        <div class="filterResults pull-left">
+                                                <a href="#javascript:void(0)" class="removeFilter_Meta" data-source="MetaAttr" target-id="#metadataAttrTable" metadata="false" custom-option="false"><span class='glyphicon glyphicon-remove-circle'></span>Clear</a>
+                                            </div>
+                                            
+                                            <div class="pull-left searchDiv" id="searchControl_MetaAttr">
+                                                    <input type="text" class="searchInput pull-left" placeholder="Enter Keywords for Search" id="searchBox_MetaAttr"/>
+                                                    <a href="javascript:void(0)" title="Search" class="pull-left searchBtn_Meta" id="searchBtn_MetaAttr" data-input="#searchBox_MetaAttr" data-source="MetaAttr" target-id="#metadataAttrTable" metadata="false" custom-option="false"><span class="glyphicon glyphicon-search">
+                                                        </span></a>
+                                                </div>
+                                                <div class="zoomWrapper">
+                                                <button type="button" class="btn btn-default btn-xs zoom pull-left" data-toggle="modal"
+                                                    data-target="#zoomView" target_panel="#metadataReportVariables"
+            destination_panel="#metadataAttributes" destination_type="M">
+                                                    <span class="glyphicon glyphicon-fullscreen"></span>
+                                                </button>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="selectedViewTools">
+                                        <div class="pull-left">
+                                            <div class="element">
+                                                <a href="javascript:void(0)" class="sort asc">Sort</a>
+                                            </div>
+                                            <div class="element">
+                                                |
+                                            </div>
+                                            <div class="element">
+                                                <a href="javascript:void(0)" class="removeAll">Remove All</a>
+                                            </div>
+                                        </div>
+                                        <div class="pull-right">
+                                            <div class="zoomWrapper">
+                                                <button type="button" class="btn btn-default btn-xs zoom pull-left" data-toggle="modal"
+                                                    data-target="#zoomView">
+                                                    <span class="glyphicon glyphicon-fullscreen"></span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="clearfix">
+                                    </div>
+
+                                    <div class="alphabet">
+                                        <ul class="list-inline list-unstyled" id="jumptolistmeta">
+                                                    <li class="jumpTo"><a href="javascript:void(0)">A</a></li><li class="jumpTo"><a href="javascript:void(0)">
+                                                        B</a></li><li class="jumpTo"><a href="javascript:void(0)">C</a></li><li class="jumpTo">
+                                                            <a href="javascript:void(0)">D</a></li><li class="jumpTo"><a href="javascript:void(0)">
+                                                                E</a></li><li class="jumpTo"><a href="javascript:void(0)">F</a></li><li class="jumpTo">
+                                                                    <a href="javascript:void(0)">G</a></li><li class="jumpTo"><a href="javascript:void(0)">
+                                                                        H</a></li><li class="jumpTo"><a href="javascript:void(0)">I</a></li><li class="jumpTo">
+                                                                            <a href="javascript:void(0)">J</a></li><li class="jumpTo"><a href="javascript:void(0)">
+                                                                                K</a></li><li class="jumpTo"><a href="javascript:void(0)">L</a></li><li class="jumpTo">
+                                                                                    <a href="javascript:void(0)">M</a></li><li class="jumpTo"><a href="javascript:void(0)">
+                                                                                        N</a></li><li class="jumpTo"><a href="javascript:void(0)">O</a></li><li class="jumpTo">
+                                                                                            <a href="javascript:void(0)">P</a></li><li class="jumpTo"><a href="javascript:void(0)">
+                                                                                                Q</a></li><li class="jumpTo"><a href="javascript:void(0)">R</a></li><li class="jumpTo">
+                                                                                                    <a href="javascript:void(0)">S</a></li><li class="jumpTo"><a href="javascript:void(0)">
+                                                                                                        T</a></li><li class="jumpTo"><a href="javascript:void(0)">U</a></li><li class="jumpTo">
+                                                                                                            <a href="javascript:void(0)">V</a></li><li class="jumpTo"><a href="javascript:void(0)">
+                                                                                                                W</a></li><li class="jumpTo"><a href="javascript:void(0)">Y</a></li><li class="jumpTo">
+                                                                                                                    <a href="javascript:void(0)">Z</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="clearfix">
+                                </div>
+                                <div class="variableList">
+                                    <ul class="variableTable availableView" id="metadataAttrTable">
+                                    </ul>
+                                    <ul class="variableTable selectedView" id="tbl_sel_MetaAttr">
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    </div>
+</div>
+
+<div class="toolTipContent">
+</div>
+
+
+                        <div class="tab-pane" id="reportOptions">
+                            <div id="upReportOptions">
+	
+                                    
+
+<div class="panel-group" id="tableOptionsAccordion">
+
+    
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#tableOptionsAccordion" href="#tableOrientationOption">Orientation</a>
+            </h4>
+        </div>
+        <div id="tableOrientationOption" class="panel-collapse collapse in">
+            <div class="panel-body">
+                <div class="btn-group mB10" data-toggle="buttons">
+                    <label class="btn active radioBtnTabs" data-target="tablePopularOrientation" id="liOrienationPopular">
+                        <input type="radio" name="options" id="radioTablePopularOrientation" />
+                        Popular
+                    </label>
+                    <label class="btn radioBtnTabs" data-target="tableCustomOrientation" id="liOrienationCustom">
+                        <input type="radio" name="options" id="radioTableCustomOrientation" />
+                        Custom
+                    </label>
+                </div>
+                <div class="radioTabContentWrapper">
+                    <div class="radioTabContent" id="tablePopularOrientation">
+                        <div class="btn-group" data-toggle="buttons" id="divTablePopularOrientation">
+                            <label class="btn active">
+                                <input type="radio" name="options" id="rb_template_orientation1" />
+                                <img src="/data/images/o1.png" alt="Orientation 1 (Time on Page, Country on Column, Series on Row)" />
+                            </label>
+                            <label class="btn ">
+                                <input type="radio" name="options" id="rb_template_orientation2" />
+                                <img src="/data/images/o2.png" alt="Orientation 2 (Series on Page, Country on Column, Time on Row)" />
+                            </label>
+                            <label class="btn ">
+                                <input type="radio" name="options" id="rb_template_orientation3" />
+                                <img src="/data/images/o3.png" alt="Orientation 3 (Time on Page, Series on Column, Country on Row)" />
+                            </label>
+                            <label class="btn ">
+                                <input type="radio" name="options" id="rb_template_orientation4" />
+                                <img src="/data/images/o4.png" alt="Orientation 4 (Series on Page, Time on Column, Country on Row)" />
+                            </label>
+                            <label class="btn ">
+                                <input type="radio" name="options" id="rb_template_orientation5" />
+                                <img src="/data/images/o5.png" alt="Orientation 5" />
+                            </label>
+                        </div>
+                    </div>
+                    <div id="tableCustomOrientation" class="radioTabContent"><p class="sortable-orientation-p">Drag to rearrange the order</p><ul id="customorientation-sortable-list"><li class="row controls sortable-orientation-li"><div class="col-md-12"><label class="w80 group-label sortable-orientation-li-label">Time</label><select name="ctl15$custom-orientation-Stat_Time_Ext" id="custom-orientation-Stat_Time_Ext" class="custom-orientation-ddl dropdown sortable-orientation-li-select">
+		<option value="0">Column</option>
+		<option value="1">Row</option>
+		<option value="2">Page</option>
+
+	</select></div></li><li class="row controls sortable-orientation-li"><div class="col-md-12"><label class="w80 group-label sortable-orientation-li-label">Series</label><select name="ctl15$custom-orientation-STATS_Series_Ext" id="custom-orientation-STATS_Series_Ext" class="custom-orientation-ddl dropdown sortable-orientation-li-select">
+		<option value="0">Column</option>
+		<option value="1">Row</option>
+		<option value="2">Page</option>
+
+	</select></div></li><li class="row controls sortable-orientation-li"><div class="col-md-12"><label class="w80 group-label sortable-orientation-li-label">Country</label><select name="ctl15$custom-orientation-Stat_Ctry_Ext" id="custom-orientation-Stat_Ctry_Ext" class="custom-orientation-ddl dropdown sortable-orientation-li-select">
+		<option value="0">Column</option>
+		<option value="1">Row</option>
+		<option value="2">Page</option>
+
+	</select></div></li></ul></div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#tableOptionsAccordion" href="#tableDisplayOption"
+                    class="collapsed">Display</a>
+            </h4>
+        </div>
+        <div id="tableDisplayOption" class="panel-collapse collapse">
+            <div class="panel-body">
+                <div class="row controls">
+                    <div class="col-md-12">
+                        <label>Rows per page</label>
+                        <div class="btn-group" data-toggle="buttons" id="divRowsPerPage">
+                            <label class="btn active">
+                                <input type="radio" name="rowPerPage" id="row50">
+                                50
+                            </label>
+                            <label class="btn">
+                                <input type="radio" name="rowPerPage" id="row100">
+                                100
+                            </label>
+                            <label class="btn">
+                                <input type="radio" name="rowPerPage" id="row250">
+                                250
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <hr />
+                <div class="clearfix">
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <span class="">
+                            <input type="checkbox" id="chkShowNotes" />
+                        </span>
+                        <label>Show notes</label>
+                    </div>
+                </div>
+            
+                
+            
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#tableOptionsAccordion" href="#tableFormatNumberOption"
+                    class="collapsed">Format Numbers</a>
+            </h4>
+        </div>
+        <div id="tableFormatNumberOption" class="panel-collapse collapse">
+            <div class="panel-body">
+                <div class="row controls">
+                    <div class="col-md-12">
+                        <label class="w100">NA preference</label>
+                        <select class="w80" id="ddlNAPref">
+                            <option selected="selected" value="..">..</option>
+                            <option value="blank">Blank</option>
+                            <option value="NA">NA</option>
+                            <option value="#N/A">#N/A</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="row controls">
+                    <div class="col-md-12">
+                        <label class="w100">Scale </label>
+                        <select class="w80" id="ddlScale">
+                            <option value="1">Units</option>
+                            <option value="1000">Thousands</option>
+                            <option value="1000000">Millions</option>
+                            <option value="1000000000">Billions</option>
+                            <option value="Scientific">Scientific</option>
+                            <option selected="selected" value="..">..</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="row controls">
+                    <div class="col-md-12">
+                        <label class="w100">Precision</label>
+                        <select class="w80" id="ddlPrecision">
+                            <option value="0">0</option>
+                            <option value="0.0">0.0</option>
+                            <option value="0.00">0.00</option>
+                            <option value="0.000">0.000</option>
+                            <option value="0.0000">0.0000</option>
+                            <option selected="selected" value="..">..</option>
+                        </select>
+                    </div>
+                </div>
+
+                <hr />
+                <div class="row controls">
+                    <div class="col-md-12">
+                        <input type="checkbox" id="chkCommaSep" />Separate thousands by commas
+                    </div>
+                </div>
+
+                <!--Format Series -->
+                 <hr />
+                <div class="panel-group customGroup" id="formatSeriesPanel">
+                    <div class="panel panel-default">
+                        <h4 class="panel-title">
+                            Format series</h4>
+                        <div class="panel-heading">
+                            <a data-toggle="collapse" data-parent="#formatSeriesPanel" href="#formatSeries" class="collapsed btn btn-xs btn-default"
+                                id="btnFormatSeries">Define format<span class="caret"></span></a>
+                        </div>
+                        <div id="formatSeries" class="panel-collapse collapse">
+                            
+                        </div>
+                    </div>
+                    <div class="clearfix">
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#tableOptionsAccordion" href="#tableHeaderFooterOption"
+                    class="collapsed">Table Header & Footer</a>
+            </h4>
+        </div>
+        <div id="tableHeaderFooterOption" class="panel-collapse collapse">
+            <div class="panel-body">
+                <div class="row controls">
+                    <div class="col-md-12">
+                        <label class="w100 pull-left">Report header</label>
+                        <input type="text" class="form-control w200 pull-left" id="txtReportHeader" />
+                    </div>
+                </div>
+                <div class="row controls">
+                    <div class="col-md-12">
+                        <label class="w100 pull-left">Report footer</label>
+                        <input type="text" class="form-control w200 pull-left" id="txtReportFooter" />
+                    </div>
+                </div>
+                <div class="row controls">
+                    <div class="col-md-12">
+                        <label class="w100 pull-left">Report Notes</label>
+                        <input type="text" class="form-control w200 pull-left" id="txtReportNotes" />
+                    </div>
+                </div>
+                
+            
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#tableOptionsAccordion" href="#tableAdvancedOptions"
+                    class="collapsed">Advanced options</a>
+            </h4>
+        </div>
+        <div id="tableAdvancedOptions" class="panel-collapse collapse">
+            <div class="panel-body">
+                <div class="row controls">
+                    <div class="col-md-12">
+                        <label class="wadv pull-left">
+                            Hierarchy</label>
+                        <select id="ddlTableHierarchy" class="w100">
+                            <option value="NONE">None</option>
+                            <option value="ROW">Row</option>
+                            <option value="COLUMN">Column</option>
+                            <option value="BOTH">Both</option>
+                            <option value="BOTH SORTED">Both Sorted</option>
+                            <option value="ROW SORTED">Row Sorted</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row controls">
+                    <div class="col-md-12">
+                        <label class="wadv pull-left">
+                            Most Recent Value Function</label>
+                        <select id="ddlTableMRVFunc" class="w100 mR10">
+                            <option value="NONE">None</option>
+                            <option value="BACKWARD">Backward</option>
+                            <option value="FORWARD">Forward</option>
+                            <option value="BOTH-B">Both - Start Back</option>
+                            <option value="BOTH-F">Both - Start Forward</option>
+                            <option value="BACK-FORWARD">Back then Forward</option>
+                            <option value="FORWARD-BACK">Forward then Back</option>
+                        </select>
+                        <select class="w100" id="ddlTableMRVInt" disabled="disabled">
+                            <option value="0">0 periods</option>
+                            <option value="1">1 periods</option>
+                            <option value="2">2 periods</option>
+                            <option value="3">3 periods</option>
+                            <option value="4">4 periods</option>
+                            <option value="5">5 periods</option>
+                            <option value="6">6 periods</option>
+                            <option value="7">7 periods</option>
+                            <option value="8">8 periods</option>
+                            <option value="9">9 periods</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="row controls">
+                    <div class="col-md-12">
+                        <label class="wadv pull-left">
+                            Hide Empty Row</label>
+                        <input id="chkTableHideEmptyRow" type="checkbox" name="checkbox" />
+                    </div>
+                </div>
+
+                <div class="row controls">
+                    <div class="col-md-12">
+                        <label class="wadv pull-left">
+                            Hide Empty Column</label>
+                        <input id="chkTableHideEmptyCol" type="checkbox" name="checkbox" />
+                    </div>
+                </div>
+                
+                <hr />
+                <div class="panel-group customGroup" id="comparatorReportPanel">
+                    <div class="panel panel-default">
+                        <h4 class="panel-title">
+                            Comparator Report</h4>
+                        <div class="panel-heading">
+                            <a id="btnComparatorReport" data-toggle="collapse" data-parent="#comparatorReportPanel"
+                                href="#comparatorReport" class="collapsed btn btn-xs btn-default">Select Variables
+                                for Comparison <span class="caret"></span></a>
+                        </div>
+                        <div id="comparatorReport" class="panel-collapse collapse">
+                        </div>
+                    </div>
+                    <div class="clearfix">
+                    </div>
+                </div>
+                <div class="clearfix">
+                </div>
+                <hr />
+                <div class="panel-group customGroup" id="hideColumnPanel">
+                    <div class="panel panel-default">
+                        <h4 class="panel-title">
+                            Hide Columns</h4>
+                        <div class="panel-heading">
+                            <a id="btnHideColumns" data-toggle="collapse" data-parent="#hideColumnPanel" href="#hideColumns"
+                                class="collapsed btn btn-xs btn-default">Choose columns to hide <span class="caret">
+                                </span></a>
+                        </div>
+                        <div id="hideColumns" class="panel-collapse collapse">
+                        </div>
+                    </div>
+                    <div class="clearfix">
+                    </div>
+                    
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+</div>
+                                
+</div>
+                        </div>
+
+                        <div class="tab-pane" id="themes">
+                            <div id="upReportStyles">
+	
+                                    
+                                
+</div>
+                        </div>
+
+                        
+
+<div class="tab-pane" id="embed">
+    <div class="panel-group" id="embedOptionsAccordion">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title pull-left">
+                    <a data-toggle="collapse" data-parent="#embedOptionsAccordion" href="#embedDimensions">
+                        Embed Dimensions</a>
+                </h4>
+                <div class="clearfix">
+                </div>
+            </div>
+            <div class="clearfix">
+            </div>
+            <div id="embedDimensions" class="panel-collapse collapse in">
+                <div class="panel-body">
+                    <div class="row mB10">
+                        <div class="col-md-4">
+                            <label>
+                                Preset</label>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="btn-group" data-toggle="buttons" id="divEmbedDimensions">
+                                <label class="btn active btnEmbedSize" id="embedSmallSize" embed-size="500X425">
+                                    <input type="radio" name="embedSizeOptions" />
+                                    Small
+                                    <br />
+                                    500X425
+                                </label>
+                                <label class="btn btnEmbedSize" id="embedMediumSize" embed-size="750X575">
+                                    <input type="radio" name="embedSizeOptions" />
+                                    Medium
+                                    <br />
+                                    750X575
+                                </label>
+                                <label class="btn btnEmbedSize" id="embedLargeSize" embed-size="950X800">
+                                    <input type="radio" name="embedSizeOptions" />
+                                    Large
+                                    <br />
+                                    950X800
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mB10">
+                        <div class="col-md-4">
+                            <label>
+                                Custom Width (px)</label></div>
+                        <div class="col-md-6">
+                            <input type="text" class="form-control" value="500" id="inputEmbedWidth" placeholder="500" />
+                        </div>
+                    </div>
+                    <div class="row mB10">
+                        <div class="col-md-4">
+                            <label>
+                                Custom Height (px)</label></div>
+                        <div class="col-md-6">
+                            <input type="text" class="form-control" value="425" id="inputEmbedHeight" placeholder="425" />
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title pull-left">
+                    <a data-toggle="collapse" data-parent="#embedOptionsAccordion" href="#embedElements"
+                        class="collapsed">Choose Elements to Display</a>
+                </h4>
+                <div class="clearfix">
+                </div>
+            </div>
+            <div class="clearfix">
+            </div>
+            <div id="embedElements" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" value="" id="chkDimensionDpDwn" checked="checked" />
+                           Dimension Dropdown
+                        </label>
+                    </div>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" value="" id="chkLinkBar" checked="checked" />
+                            Tool Bar
+                        </label>
+                    </div>
+                    <div class="checkbox mL20">
+                        <label>
+                            <input type="checkbox" value="" class="secondary" id="chkShareLink" checked="checked" />
+                            Share
+                        </label>
+                    </div>
+                    <div class="checkbox mL20">
+                        <label>
+                            <input type="checkbox" value="" class="secondary" checked="checked" id="chkDownloadLink" />
+                            Download
+                        </label>
+                    </div>
+                    <div class="checkbox mL40">
+                        <label>
+                            <input type="checkbox" value="" checked="checked" class="tertiary downloadopt" id="chkExcel" />
+                            Excel
+                        </label>
+                    </div>
+                    <div class="checkbox mL40">
+                        <label>
+                            <input type="checkbox" value="" checked="checked" class="tertiary downloadopt" id="chkCSV" />
+                            CSV
+                        </label>
+                    </div>
+                    <div class="checkbox mL40">
+                        <label>
+                            <input type="checkbox" value="" checked="checked" class="tertiary downloadopt" id="chkTabbedTxt" />
+                            Tabbed TXT
+                        </label>
+                    </div>
+                    <div class="checkbox mL20">
+                        <label>
+                            <input type="checkbox" value="" class="secondary" checked="checked" id="chkInfoLink" />
+                            Info
+                        </label>
+                    </div>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" value="" checked="checked" id="chkPrintLink" />
+                            Print
+                        </label>
+                    </div>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" value="" id="chkNavigator" />
+                            Navigator
+                        </label>
+                    </div>
+                    <div class="checkbox" style="display: none;">
+                        <label>
+                            <input type="checkbox" value="" checked="checked" id="chkEmbedShowZoombar" />
+                            Show Zoombar
+                        </label>
+                    </div>
+                    <div class="checkbox" style="display: none;">
+                        <label>
+                            <input type="checkbox" value="" checked="checked" id="chkEmbedShowLegend" />
+                            Show legend
+                        </label>
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+        <div class="panel panel-default" id="availableThemes">
+            <div class="panel-heading">
+                <h4 class="panel-title pull-left">
+                    <a data-toggle="collapse" data-parent="#embedOptionsAccordion" href="#embedThemes"
+                        class="collapsed">Toolbar Themes</a>
+                </h4>
+                <div class="clearfix">
+                </div>
+            </div>
+            <div class="clearfix">
+            </div>
+            <div id="embedThemes" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <ul class="availableThemeList">
+                        <li id="darkGrey" class="active"><a href="javascript:void(0)" class="active"></a>
+                        </li>
+                        <li id="redTheme" class=""><a href="javascript:void(0)"></a></li>
+                        <li id="blueTheme"><a href="javascript:void(0)"></a></li>
+                    </ul>
+                    <div class="clearfix">
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title pull-left">
+                    <a data-toggle="collapse" data-parent="#embedOptionsAccordion" href="#embedCanvasOptions"
+                        class="collapsed">Canvas Options</a>
+                </h4>
+                <div class="clearfix">
+                </div>
+            </div>
+            <div class="clearfix">
+            </div>
+            <div id="embedCanvasOptions" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <div class="attributes">
+                        <label>
+                            Border</label>
+                        <select id="borderWidth">
+                            <option value="1px">1px</option>
+                            <option value="2px">2px</option>
+                            <option value="3px">3px</option>
+                            <option value="4px">4px</option>
+                            <option value="0px" selected="selected">None</option>
+                        </select>
+                        <select id="borderStyle" class="dispNone">
+                            <option value="solid">Solid</option>
+                            <option value="dashed">Dashed</option>
+                            <option value="dotted">Dotted</option>
+                        </select>
+                        <span class="colorPickerEmdebOpt dispNone" id="canvasBorder"></span>
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title pull-left">
+                    <a data-toggle="collapse" data-parent="#embedOptionsAccordion" href="#embedTitleDesc"
+                        class="collapsed">Title & Description</a>
+                </h4>
+                <div class="clearfix">
+                </div>
+            </div>
+            <div class="clearfix">
+            </div>
+            <div id="embedTitleDesc" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <div class="btn-group mB10" data-toggle="buttons">
+                        <label class="btn radioBtnTabs active" data-target="showEmbedTitle" id="radioBtnShowTitle">
+                            <input type="radio" name="showEmbedTitle" id="radioshowtitle" />
+                            Show Title
+                        </label>
+                        <label class="btn radioBtnTabs" data-target="" id="radioBtnHideTitle">
+                            <input type="radio" name="showEmbedTitle" id="radiohidetitle"/>
+                            Hide Title
+                        </label>
+                    </div>
+                    <div class="radioTabContentWrapper">
+                        <div class="radioTabContent" id="showEmbedTitle">
+                            <div class="well mB10">
+                                <table>
+                                    <tr>
+                                        <td class="w25percent">
+                                            Title
+                                        </td>
+                                        <td class="w25percent" colspan="3">
+                                            <input type="text" class="form-control" placeholder="Enter Text" id="txtTitle" />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="w25percent">
+                                            Font Style
+                                        </td>
+                                        <td class="w25percent">
+                                            <select id="selTitleFontStyle" class="w80">
+                                                <option value="bold" selected="selected">Bold</option>
+                                                <option value="bold italic">Bold Italic</option>
+                                                <option value="italic">Italic</option>
+                                                <option value="normal" >Normal</option>
+                                            </select>
+                                        </td>
+                                        <td class="w25percent">
+                                            Font Type
+                                        </td>
+                                        <td class="w25percent">
+                                            <select id="selTitleFont" class="w80">
+                                                <option value="Arial Black">Arial Black</option>
+                                                <option value="Arial" selected="selected">Arial</option>
+                                                <option value="Comic Sans">Comic Sans</option>
+                                                <option value="Courier New">Courier New</option>
+                                                <option value="Sans Serif">Sans Serif</option>
+                                                <option value="Times New Roman">Times New Roman</option>
+                                                <option value="Verdana">Verdana</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="w25percent">
+                                            Font Color
+                                        </td>
+                                        <td class="w25percent">
+                                            <span class="colorPickerEmdebOpt" id="selTitleFontColor"></span>
+                                        </td>
+                                        <td class="w25percent">
+                                            Font Size
+                                        </td>
+                                        <td class="w25percent">
+                                            <select id="selTitleFontSize" class="w80">
+                                                <option value="8px">8</option>
+                                                <option value="9px">9</option>
+                                                <option value="10px">10</option>
+                                                <option value="11px">11</option>
+                                                <option value="12px">12</option>
+                                                <option value="13px">13</option>
+                                                <option value="14px" selected="selected">14</option>
+                                                <option value="15px">15</option>
+                                                <option value="16px">16</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="w25percent">
+                                            
+                                        </td>
+                                        <td class="w25percent">
+                                            <select id="selTitleAlignment" class="w80">
+                                                <option value="justify">Justify</option>
+                                                <option value="left">Left</option>
+                                                <option value="right">Right</option>
+                                                <option value="center"></option>
+                                            </select>
+                                        </td>
+                                        <td class="w25percent">
+                                        </td>
+                                        <td class="w25percent">
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="radioTabContent" id="hideEmbedTitle">
+                        </div>
+                    </div>
+                    <hr />
+                    <div class="btn-group mB10" data-toggle="buttons">
+                        <label class="btn radioBtnTabs" data-target="showEmbedDesc" id="radioBtnShowDesc">
+                            <input type="radio" name="showEmbedDesc" id="radioshowdesc" />
+                            Show Description
+                        </label>
+                        <label class="btn radioBtnTabs active" data-target="" id="radioBtnHideDesc">
+                            <input type="radio" name="showEmbedDesc" id="radiohidedesc" />
+                            Hide Description
+                        </label>
+                    </div>
+                    <div class="radioTabContentWrapper">
+                        <div class="radioTabContent" id="showEmbedDesc">
+                            <div class="well mB10">
+                                <table>
+                                    <tr>
+                                        <td class="w25percent">
+                                            Description
+                                        </td>
+                                        <td class="w25percent" colspan="3">
+                                            <textarea class="form-control" rows="3" placeholder="Enter Text" id="txtDesc"></textarea>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="w25percent">
+                                            Font Style
+                                        </td>
+                                        <td class="w25percent">
+                                            <select id="selDescFontStyle" class="w80">
+                                                <option value="bold" selected="selected">Bold</option>
+                                                <option value="bold italic">Bold Italic</option>
+                                                <option value="italic">Italic</option>
+                                                <option value="normal" >Normal</option>
+                                            </select>
+                                        </td>
+                                        <td class="w25percent">
+                                            Font Type
+                                        </td>
+                                        <td class="w25percent">
+                                            <select id="selDescFont" class="w80">
+                                                <option value="Arial Black">Arial Black</option>
+                                                <option value="Arial" selected="selected">Arial</option>
+                                                <option value="Comic Sans">Comic Sans</option>
+                                                <option value="Courier New">Courier New</option>
+                                                <option value="Sans Serif">Sans Serif</option>
+                                                <option value="Times New Roman">Times New Roman</option>
+                                                <option value="Verdana">Verdana</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="w25percent">
+                                            Font Color
+                                        </td>
+                                        <td class="w25percent">
+                                            <span class="colorPickerEmdebOpt" id="selDescColor"></span>
+                                        </td>
+                                        <td class="w25percent">
+                                            Font Size
+                                        </td>
+                                        <td class="w25percent">
+                                            <select id="selDescFontSize" class="w80">
+                                                <option value="8px">8</option>
+                                                <option value="9px" selected="selected">9</option>
+                                                <option value="10px">10</option>
+                                                <option value="11px">11</option>
+                                                <option value="12px">12</option>
+                                                <option value="13px">13</option>
+                                                <option value="14px">14</option>
+                                                <option value="15px">15</option>
+                                                <option value="16px">16</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="w25percent">
+                                            
+                                        </td>
+                                        <td class="w25percent">
+                                            <select class="w80" id="selDescAlignment">
+                                                <option value="justify">Justify</option>
+                                                <option value="left">Left</option>
+                                                <option value="right">Right</option>
+                                                <option value="center"></option>
+                                            </select>
+                                        </td>
+                                        <td class="w25percent">
+                                        </td>
+                                        <td class="w25percent">
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="radioTabContent" id="hideEmbedDesc">
+                        </div>
+                    </div>
+                    <div class="clearfix">
+                    </div>
+                    <a class="actionBtn pull-right applyChangesEmbed" href="javascript:void(0)">Apply Changes</a>
+                  
+                </div>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title pull-left">
+                    <a data-toggle="collapse" data-parent="#embedOptionsAccordion" href="#embedIframecode" class="collapsed">Embed Code</a>
+                </h4>
+                <div class="clearfix">
+                </div>
+            </div>
+            <div class="clearfix">
+            </div>
+            <div id="embedIframecode" class="panel-collapse collapse">
+            
+                <div class="panel-body">
+                        
+                    <hr />
+                   <p class="mT10"><b><em> Copy and paste this code to your website</em></b></p>
+                    <textarea class="form-control" rows="6" placeholder="Enter Text" id="txtEmbedCode" style="cursor: text" readonly="readonly"></textarea>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+<div class="tab-pane" id="share">
+    <div class="panel-body">
+        <h5>
+            Permanent link for this report</h5>
+        <a href="javascript:void(0)" id="lnkPermReportLink" target="_blank"></a>
+        
+        <hr />
+        <h5>
+            Share with your friends
+        </h5>
+        <p id="ctlShareURL">
+            <a href="javascript:Enterfacebook();" class="btn btn-sm btn-default">Facebook</a> 
+            <a href="javascript:Entertwitter();" class="btn btn-sm btn-default">Twitter</a> 
+            <a href="javascript:EnterGoogleplus();" class="btn btn-sm btn-default">Google +</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="tab-pane" id="save">
+    <div class="panel-body">
+        <div id="unsecure" class="dispNone">
+            <p>
+                Please log in to save your report
+            </p>
+        </div>
+        <div id="secure">
+            <div class="row mB10">
+                <div class="col-md-12">
+                    <label class="w100 pull-left">
+                        Report title</label>
+                    <input type="text" class="form-control w200 pull-left" id="txtSaveReportTitle" MaxLength="100" />
+                </div>
+            </div>
+            <div class="row mB10">
+                <div class="col-md-12">
+                    <label class="w100 pull-left">
+                        Short description</label>
+                    <textarea class="form-control pull-left w200" rows="3" id="txtSaveReportDesc" ></textarea>
+                </div>
+            </div>
+            <hr />
+            <div class="row ">
+                <div class="col-md-12">
+                    <input type="checkbox" id="chkShareReport">
+                    Share report
+                    <br />
+
+                </div>
+            </div>
+
+            <hr />
+            <div class="btn-group mB10" data-toggle="buttons" id="divLabelSelection">
+                <label class="btn radioBtnTabs active" data-target="divAssignExistingFolder" id="btnAssignExistingFolder">
+                    <input type="radio" name="assignFolder" id="radio3" />
+                    Assign to an existing folder
+                </label>
+                <label class="btn radioBtnTabs" data-target="divCreateNewFolder" id="btnCreateNewFolder">
+                    <input type="radio" name="assignFolder" id="radio4" />
+                    Create new folder
+                </label>
+            </div>
+            <div class="radioTabContentWrapper">
+                <div class="radioTabContent" id="divAssignExistingFolder">
+                    <label class="w100 pull-left">Select folder</label>
+                    <select class="pull-left w100" onclick="loadReportLabels()" id="dpSelectLabel">
+                    <option value="select">Select</option>
+                    </select>
+                </div>
+                <div class="radioTabContent" id="divCreateNewFolder">
+                  <label class="w100 pull-left">Create new</label>
+                    <input type="text" id="txtNewFolderName" MaxLength="40"/>
+                </div>
+            </div>
+            <div class="alert alert-success" role="alert" style="display: none;" id="divReportSaveSucess"><span class="glyphicon glyphicon-ok"></span> <span id="txtReportSaveSucess">Report Saved Successfully.</span></div>
+            <div class="alert alert-danger" role="alert" style="display: none;" id="divReportSaveFailed"><span class="glyphicon glyphicon-exclamation-sign"></span> <span id="txtReportSaveFailed">Report Saved Successfully.</span></div>
+            <hr class="dottedBdr" />
+            <a class="actionBtn pull-right" href="javascript:void(0)" onclick="clearReportSave(true)">Clear</a>
+            <a class="actionBtn pull-right" href="javascript:void(0)" onclick="saveReport()">Save</a>
+        </div>
+    </div>
+</div>
+
+<div id="embedCode">
+</div>
+<div id="embedBtn">
+</div>
+
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="colCanvas col-md-7">
+                <div class="viewToggler closeBtn toolTipLeft" data-toggle="tooltip" title="Hide Options">
+                    <span class="arrows">&laquo;</span>
+                     <span class="arrowsAr">&raquo;</span>
+                    
+                     <span class=" glyphicon glyphicon-cog"></span>
+                </div>
+                <div class="viewToggler openBtn toolTipLeft" data-toggle="tooltip" title="Show Options">
+                    <span class="glyphicon glyphicon-cog"></span><span class="arrows">&raquo;</span> <span class="arrowsAr">&raquo;</span>
+                </div>
+
+                <div id="upReportName">
+	
+                        <div class="reportName">
+                            Preview</div>
+                        <div class="reportSubNatText" style="display: none;">
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Data for admin level 1 are not comparable
+                            across countries. Choose one country at a time to plot chart and maps.</div>
+                    
+</div>
+                <div class="clearfix">
+                </div>
+
+                <div class="addRemoveVariables">
+                    <ul class="list-unstyled list-inline" id="ul-addMoreDimension">
+                        <li><a href="#" class="reset" title="Clear all selections.">
+                            Clear Selection</a></li>
+                        <li>|</li>
+                    </ul>
+                </div>
+                <div class="clearfix">
+                </div>
+                
+                <div class="canvas">
+                    <div id="divReportContent" class="tab-content">
+                        <div id="upReportDD">
+	
+                                <select name="ctl16$ddl_page_Stat_Ctry_Ext" onchange="javascript:setTimeout(&#39;__doPostBack(\&#39;ctl16$ddl_page_Stat_Ctry_Ext\&#39;,\&#39;\&#39;)&#39;, 0)" id="ctl16_ddl_page_Stat_Ctry_Ext" class="page-ddl">
+
+	</select>
+                            
+</div>
+
+                        <script id="dxis_733371902" src="/data/DXR.axd?r=1_157,1_89,1_149,1_88,1_86,1_141,1_147,1_132,1_140-7rMF9" type="text/javascript"></script><link rel="stylesheet" type="text/css" href="/data/DXR.axd?r=1_8,1_9,1_1-7rMF9" /><div id="cbpReportView">
+	
+                                
+
+                                
+    <script type="text/javascript">
+        function showContextMenu(s, e) {
+            showSortMenu(s, e);
+            return true;
+        }
+    </script>
+<input type="hidden" name="cbpReportView$ctl03$hdnTableFormatStyles" id="hdnTableFormatStyles" />
+<input type="hidden" name="cbpReportView$ctl03$hdnTableFormatRows" id="hdnTableFormatRows" />
+<input type="hidden" name="cbpReportView$ctl03$hdnTotalRows" id="hdnTotalRows" value="0" />
+
+<div class="dxmLite dxm-ltr">
+		<div id="pMenuGrid" style="z-index:19998;display:none;">
+			<div class="dxm-popupMain dxm-shadow dxm-popup">
+				<ul class="dx dxm-noImages dxm-gutter">
+					<li class="dxm-item"><div class="dxm-content dxm-hasText">
+						<span class="dx-vam">Remove Sort</span>
+					</div><b class="dx-clear"></b></li>
+				</ul>
+			</div>
+		</div>
+	</div><script id="dxss_412592582" type="text/javascript">
+<!--
+aspxAddHoverItems('pMenuGrid',[[[''],[''],['DXME_']],[['dxm-hovered',''],['',''],['DXI0_'],['','T']]]);
+aspxAddDisabledItems('pMenuGrid',[[['dxm-disabled'],[''],['DXI0_'],['','T']]]);
+
+var dxo = new ASPxClientPopupMenu('pMenuGrid');
+window['pMenuGrid'] = dxo;
+dxo.uniqueID = 'cbpReportView$ctl03$pMenuGrid';
+dxo.ItemClick.AddHandler(doGridMenuAction);
+dxo.renderData={'':[[0]]};
+dxo.shadowVisible=false;
+dxo.CreateItems([['remsort',,,,,[]]]);
+dxo.AfterCreate();
+
+//-->
+</script>
+
+
+                            
+</div><script id="dxss_1450918207" type="text/javascript">
+<!--
+
+var dxo = new ASPxClientCallbackPanel('cbpReportView');
+window['cbpReportView'] = dxo;
+dxo.callBack = function(arg) { WebForm_DoCallback('cbpReportView',arg,aspxCallback,'cbpReportView',aspxCallbackError,true); };
+dxo.EndCallback.AddHandler(onEndCallBack);
+dxo.hideContentOnCallback=false;
+dxo.AfterCreate();
+
+//-->
+</script>
+                        
+                        <div id="divNoDataToDisplay" style="display: none;">
+                            <div class="white-well">
+                                <div class="noDimSelected noPreview">
+                               Database preview is <input id="previewSwitch" type="checkbox"  data-size="mini"  />
+                               <a href="javascript:void(0)"  title="When its on, the report gets displayed with a default selection of data." class="toolTipLeft"><span class="icon-questionmark"></span></a>
+                               <br />     <br />
+                                Please select variables from each of the following dimensions to view a report. You can select from left panel or by clicking the links above.
+                                </div>
+                                <div class="dimSelected noPreview">
+                                    OK. Please select remaining variables to continue.
+                                </div>
+                                <div class="allDimSelected noPreview">
+                                    Please click on Apply Changes to view the report.
+                                </div>
+                                <div class="clearSelTxt">
+                                Please select variables from each of the following dimensions to view a report. You can select from left panel or by clicking the links above.
+                                </div>
+                                <div class="">
+                                    <ul id="availableDimensions" class="mT10"> 
+                                    </ul></div>
+                                       <hr class="dottedBdr" />
+                       <a class="actionBtn pull-right applyChangesDim disabled" href="javascript:void(0)" id="applyChangesNoPreview">
+                                Apply Changes</a>
+                                    
+                                    
+                                    </div>
+                                    </div>
+                                     <div id="faded" class="dispNone"></div>
+                       <div class="selectionModifyTxt">
+                       <span id="selModifyText">
+                     Selections have been modified. Click on &quot;Apply Changes&quot; at any time to refresh the report with the changes made. Otherwise, click on &quot;Cancel&quot; to go back to previous selections.</span>
+                         <hr class="dottedBdr" />
+                         <a class="actionBtn pull-right cancelChangesDim" href="javascript:void(0)">
+                                Cancel</a>
+                       <a class="actionBtn pull-right applyChangesDim" href="javascript:void(0)">
+                                Apply Changes</a>
+                       
+                       </div>
+
+                        <div class="confirmationTxt" style="display: none;">
+                     Selected Indicator units are different, do you want to continue?
+                         <hr class="dottedBdr" />
+                         <a class="actionBtn pull-right cancelChangesDim" href="javascript:void(0)">
+                                Cancel</a>
+                       <a class="actionBtn pull-right confirmOK" href="javascript:void(0)" conf-target="">
+                                OK</a>
+                       
+                       </div>
+
+                       <div class="downloadMsg">
+                       </div>
+                    </div>
+                    <div id="embedIframeWrapper" style="display: none;">
+                        <iframe id="chartWrapper" frameborder="no" src="" width="500" height="425"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        
+
+<div class="footerStrip">
+    <div id="wbg-footer" class="wbg-en clear-block">
+        <div class="footer-fat clear-block">
+            <div class="wbg-partners clear-block">
+                <span class="wbg-logo" title="The World Bank Working for a World Free of Poverty">
+                </span>
+                <div class="worldbank-partner">
+                    <a title="International Bank for Reconstruction and Development" href="http://www.worldbank.org/ibrd">IBRD</a> 
+                    <a title="International Development Association" href="http://www.worldbank.org/ida">IDA</a> 
+                    <a title="International Finance Corporation" href="http://www.ifc.org/">IFC</a>
+                    <a title="Multilateral Investment Guarantee Agency" href="http://www.miga.org/">MIGA</a>
+                    <a title="International Centre for Settlement of Investment Disputes" href="http://icsid.worldbank.org/">ICSID</a>
+                </div>
+                <div class="ieClearFix">
+                </div>
+            </div>
+            <div class="wbg-misc-links clear-block">
+                <ul class="misc-links-list pull-left">
+                    <li class="links">
+                        <a href="http://www.worldbank.org/legalinfo">Legal</a> | 
+                        <a href="http://go.worldbank.org/TRCDVYJ440">Access to Information</a> | 
+                        <a href="http://www.worldbank.org/jobs">Jobs</a> | 
+                        <a href="http://www.worldbank.org/sitemap">Site Map</a> | 
+                        <a href="http://www.worldbank.org/contacts">Contact</a>
+                    </li>
+                    <li class="copyright">
+                        <a href="http://www.worldbank.org/">
+                            &copy;
+                            <script language="JavaScript">
+                                <!-- Begin
+                                var time = new Date();
+                                var year = time.getYear();
+                                if (year < 2000)
+                                    year = year + 1900;
+                                document.write(year);// End -->
+                            </script>
+                            The World Bank Group, All Rights Reserved.
+                        </a>
+                    </li>
+                </ul>
+                <div class="hotlineNumber">
+                    <a href="http://web.worldbank.org/WBSITE/EXTERNAL/EXTABOUTUS/ORGANIZATION/ORGUNITS/EXTDOII/0,,contentMDK:20659616~menuPK:1702202~pagePK:64168445~piPK:64168309~theSitePK:588921,00.html">
+                        <strong>Fraud & Corruption Hotline</strong><br>
+                        <span>1-202-458-7677</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    </div>
+
+    
+    
+
+<iframe id="dlgDownloadFrame" style="display: none;"></iframe>
+
+<!-- Modal - Metadata Control -->
+<div class="modal fade" id="divMetadataCtl" tabindex="-1" role="dialog" aria-labelledby="lblMetadataLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title" id="lblMetadataLabel">Metadata</h4>
+            </div>
+            <div class="modal-body">
+                
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="actionBtn pull-right" data-dismiss="modal">Close</button>
+                <button type="button" class="actionBtn pull-right btn-meta-download mR10" onclick="return onMetadataDownload();">Download</button>
+           
+           
+           
+            </div>
+
+            
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+
+<!--Advanced Download Options-->
+<div class="modal fade" id="advancedDownloadOptions" tabindex="-1" role="dialog" aria-labelledby="advancedDownloadOptionsLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+        
+        <div id="divDownloadAdvanced">
+        </div>
+        
+        <div class="modal-footer">
+        <div class="alert alert-success" role="alert" style="display: none;" id="divDatasetSaveSucess"><span class="glyphicon"></span><span id="txtDatasetSaveSucess" style="float:left;"></span></div>
+            <div class="alert alert-danger" role="alert" style="display: none;" id="divDatasetSaveFailed"><span class="glyphicon"></span> <span id="txtDatasetSaveFailed" style="float:left;"></span></div>
+            <button type="button" class="actionBtn pull-right" data-dismiss="modal">
+                Close</button>
+            <button type="button" class="actionBtn mR10 pull-right" id="btnAdvancedDownload1" onclick="downloadadvanced();">
+                Download</button>
+        </div>
+    </div>
+</div>
+<!-- /.modal-content -->
+</div>
+
+<!--We are not suppose to load below things here----->
+
+<!--custom group help----->
+<div class="modal fade" id="customGroupHelp" tabindex="-1" role="dialog" aria-labelledby="customGroupHelpLabel"
+    aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                    &times;</button>
+                <h4 class="modal-title" id="customGroupHelpLabel">
+                    Custom Country
+                </h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    The Custom Country option allows you to create your own customized country groups
+                    from country selection panel.
+                </p>
+                <p>
+                    Click on Custom Country. A new box will open. Click on the desired countries listed
+                    in the country selection panel. Enter the group name in the Enter Group Title box
+                    and click on Add. The new country group will be added to the right panel.</p>
+                <p>
+                    To edit an existing country group, click on the Edit link in the current selection
+                    panel in right side.</p>
+                <p>
+                    Now you can add new countries or remove the countries to an existing customized
+                    group. 1. Click on the additional countries listed in the country selection panel.
+                    2. To remove the country from the group double click on the country or select the
+                    country and click Remove button. 3. Click on Add to save changes to your customized
+                    group. Note: Editing the group name will create a new custom group. You can remove
+                    the customized group by clicking on the Delete button in the current selection panel
+                    in right side</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="actionBtn pull-right" data-dismiss="modal">
+                    Close</button>
+            </div>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+
+<!--Custom Indicator Help -------->
+<div class="modal fade" id="customIndicatorHelp" tabindex="-1" role="dialog" aria-labelledby="customIndicatorHelpLabel"
+    aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                    &times;</button>
+                <h4 class="modal-title" id="customIndicatorHelpLabel">
+                    Custom Indicator</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    myDataBank allows you to derive your own <strong>Custom Indicators</strong> from existing
+                    series.
+                    <br />
+                    Click on Custom Indicators. Choose input indicators by clicking on the desired series
+                    in the panel and use the calculator functions to construct your custom indicator
+                    formula.
+                    <br>
+                    <br>
+                    For example, for a series that shows the percentage of female population, double-click
+                    on the series Population, Female. Then create a formula by clicking*100/ from the
+                    key pad. Then double click on the series Population, Total.
+                    <br>
+                    <br>
+                    After the formula is complete, you can verify its syntax by clicking the
+                    <img alt="Validate" src="/data/images/validate.png" %>">
+                    Validate icon. Give a name to your custom indicator and click on Add.
+                    <br>
+                    <br>
+                    Similarly you can create custom indicators such as GDP per Capita as GDP/Population,
+                    and annual growth rates for population as AGR(Population, Total), etc. To have "not
+                    available" values in the database treated as zero within your formula, use the NA
+                    function.
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="actionBtn pull-right" data-dismiss="modal">
+                    Close</button>
+            </div>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+
+<!---Aggregation Rule --->
+<div class="modal fade" id="aggregationRule" tabindex="-1" role="dialog" aria-labelledby=""
+    aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                    &times;</button>
+                <h4 class="modal-title" id="H3">
+                    Aggregation Rule</h4>
+            </div>
+            <div class="modal-body">
+                <div class="helpcontent">
+                    <div style="padding-top: 10px;">
+                        The <strong>Aggregation Rules</strong> function defines the methodologies to be
+                        used when deriving custom aggregates. These rules apply only to custom country groups
+                        you have created. They do not apply to official groups presented in your selected
+                        database.
+                    </div>
+                    <br>
+                    <div style="padding-top: 10px;">
+                        For each selected series, choose your <strong>Aggregation Rule</strong> and <strong>
+                            Weight Indicator</strong> (if needed) from the corresponding drop-down boxes.
+                        Check the Apply to all box if you wish to use the same methodology for all selected
+                        series.
+                    </div>
+                    <br>
+                    <div style="padding-top: 10px;">
+                        Aggregation Rules include:<br>
+                        1. <span style="text-decoration: underline;"><strong>Max:</strong></span> Aggregates
+                        are set to the highest available value for each time period.<br>
+                        2. <span style="text-decoration: underline;"><strong>Mean:</strong></span> Aggregates
+                        are calculated as the average of available data for each time period.<br>
+                        3. <span style="text-decoration: underline;"><strong>Mean 66:</strong></span> Aggregates
+                        are calculated as the average of available data for each time period. Values are
+                        not shown if more than one third of the observations in the series are missing.<br>
+                        4. <span style="text-decoration: underline;"><strong>Median:</strong></span> Aggregates
+                        are calculated as the median of available data for each time period.<br>
+                        5. <span style="text-decoration: underline;"><strong>Median 66:</strong></span>
+                        Aggregates are calculated as the median of available data for each time period.
+                        Values are not computed if more than a third of the observations in the series are
+                        missing.<br>
+                        6. <span style="text-decoration: underline;"><strong>Min:</strong></span> Aggregates
+                        are set to the lowest available value for each time period.<br>
+                        7. <span style="text-decoration: underline;"><strong>Sum:</strong></span> Aggregates
+                        are calculated as the sum of available data for each time period.<br>
+                        8. <span style="text-decoration: underline;"><strong>Sum 66:</strong></span> Aggregates
+                        are calculated as the sum of available data for each time period. Sums are not shown
+                        if more than one third of the observations in the series are missing.<br>
+                        9. <span style="text-decoration: underline;"><strong>Weighted Mean:</strong></span>
+                        Aggregates are calculated as weighted averages of available data for each time period.
+                        Select an appropriate weight variable (GNI, population, GDP, exports, imports, labor
+                        force or land area) from the Weight Indicator box, as shown above.<br>
+                        10. <span style="text-decoration: underline;"><strong>Weighted Mean 66:</strong></span>
+                        Aggregates are calculated as weighted averages of available data for each time period.
+                        No aggregate is shown if missing data account for more than one third of the observations
+                        in the series. Select an appropriate weight variable (GNI, population, GDP, exports,
+                        imports, labor force or land area) from the Weight Indicator box, as shown above.<br>
+                        11. <span style="text-decoration: underline;"><strong>Weighted Mean 66POP:</strong></span>
+                        Aggregates are calculated as weighted averages of available data for each time period.
+                        No aggregate is shown if countries with missing data represent more than one third
+                        of the total population of your custom group. Select an appropriate weight variable
+                        (GNI, population, GDP, exports, imports, labor force or land area) from the Weight
+                        Indicator box, as shown above.<br>
+                    </div>
+                    <br>
+                    <div style="padding-top: 10px;">
+                        Note 1: In none of the above methodologies are missing values imputed. Therefore,
+                        aggregates for groups of economies should be treated as approximations of unknown
+                        totals or average values.
+                    </div>
+                    <div style="padding-top: 10px;">
+                        Note 2: Aggregation results apply only to your custom-defined groups and do not
+                        reflect official World Bank aggregates based on regional and income classification
+                        of economies. Results may be inappropriate (e.g., summing series expressed as a
+                        percentage) and caution should be observed when using this function.
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="actionBtn pull-right" data-dismiss="modal">
+                    Close</button>
+            </div>
+        </div>
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+
+    <div id="palette" class="">
+        <div id="block-datafinder_settings-report" class="block block-datafinder_settings">
+            <h2 class="block-title" onclick="javascript:uvClick()">
+            Help/Feedback
+            </h2>
+        </div>
+    </div>
+
+    <div id="report-loading" class="loading">
+        <img src="/data/images/ajax-loader.gif" width="32" height="32" alt='' /><br />
+        <strong>Loading...</strong>
+    </div>
+
+    <div class="modal fade" id="zoomView" tabindex="-1" role="dialog" aria-labelledby="zoomModalHeader"
+        aria-hidden="true" data-backdrop="static" data-keyboard="false">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header panel" id="zoomModalHeader">
+                    <button type="button" class="close closeZoomModal" data-dismiss="modal" aria-label="Close"
+                        title="Close">
+                        <span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="zoomModalTitle">
+                        Modal title</h4>
+                </div>
+                <div class="modal-body panel" id="zoomModalBody">
+                    <div class="viewToggler toolTipRight  openBtnModal" data-toggle="tooltip" title="Show Advanced Options"
+                        data-original-title="Show Advanced Options">
+                        <span class=" glyphicon glyphicon-chevron-left"></span>
+                    </div>
+                    <div class="viewToggler toolTipRight  closeBtnModal" data-toggle="tooltip" title="Hide Advanced Options"
+                        data-original-title="Hide Advanced Options">
+                        <span class=" glyphicon glyphicon-chevron-right"></span>
+                        
+                    </div>
+                    <div class="clearfix">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="archiveDBNotes" tabindex="-1" role="dialog" 
+        aria-hidden="true" data-backdrop="static" data-keyboard="false">
+        <div class="modal-dialog modal-dialog-sm">
+            <div class="modal-content">
+                <div class="modal-header" id="archiveDBNotesLbl">
+                    <button type="button" class="close closeZoomModal" data-dismiss="modal" aria-label="Close"
+                        title="Close">
+                        <span aria-hidden="true">&times;</span></button>
+                    <h4 id="dbNoteHeader" class="modal-title">
+                       </h4>
+                </div>
+                <div class="modal-body">
+                    <p id="dbNote" class="helpcontent">
+                    </p>
+                </div>
+                <div class="modal-footer" id="Div4">
+                    <button type="button" class="actionBtn pull-right"
+                        data-dismiss="modal" title="Close">
+                        Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="upReportHidden">
+	
+            <input type="hidden" name="hdnCubeID" id="hdnCubeID" value="1159" />
+            <input type="hidden" name="hdnReportType" id="hdnReportType" value="TABLE" />
+            <input type="hidden" name="hdnReportID" id="hdnReportID" />
+            <input type="hidden" name="hdnReportDetails" id="hdnReportDetails" />
+            <input type="hidden" name="hdnReportURL" id="hdnReportURL" />
+            <input type="hidden" name="hdnReportOptionsNew" id="hdnReportOptionsNew" />
+            <input type="hidden" name="hdnReportOptionsCur" id="hdnReportOptionsCur" value="{&quot;IsOrientationTemplate&quot;:false,&quot;SelectedOrientation&quot;:&quot;&quot;,&quot;OrientationCustom&quot;:[{&quot;dimensionId&quot;:&quot;Stat_Ctry_Ext&quot;,&quot;dimensionAxis&quot;:&quot;2&quot;},{&quot;dimensionId&quot;:&quot;STATS_Series_Ext&quot;,&quot;dimensionAxis&quot;:&quot;1&quot;},{&quot;dimensionId&quot;:&quot;Stat_Time_Ext&quot;,&quot;dimensionAxis&quot;:&quot;0&quot;}],&quot;NoOfRowsPerPage&quot;:&quot;50&quot;,&quot;ShowNotes&quot;:true,&quot;EmptyFormat&quot;:&quot;..&quot;,&quot;ReportLevelScale&quot;:true,&quot;Scale&quot;:&quot;1&quot;,&quot;Precision&quot;:&quot;0.0&quot;,&quot;ThousandSeparator&quot;:true,&quot;ReportHeader&quot;:null,&quot;ReportFooter&quot;:null,&quot;AdvancedOptions&quot;:{&quot;Hierarchy&quot;:&quot;NONE&quot;,&quot;RolloverDirection&quot;:&quot;none&quot;,&quot;RolloverInterval&quot;:null,&quot;HideEmptyRow&quot;:false,&quot;HideEmptyColumn&quot;:false},&quot;ReportNotes&quot;:null}" />
+            <input type="hidden" name="hdnSelectVars" id="hdnSelectVars" />
+            <input type="hidden" name="hdnSelectMetaAttrib" id="hdnSelectMetaAttrib" />
+            <input type="hidden" name="hdnChartOptions" id="hdnChartOptions" />
+            <input type="hidden" name="hdnDimensionDetails" id="hdnDimensionDetails" />
+            <input type="hidden" name="hdnMetadataFilters" id="hdnMetadataFilters" />
+            <input type="hidden" name="hdnMetadataSelections" id="hdnMetadataSelections" />
+            <input type="hidden" name="hdnChartLabels" id="hdnChartLabels" />
+            <input type="hidden" name="hdnDatasetOptions" id="hdnDatasetOptions" />
+            <input name="hdnuidval" type="hidden" id="hdnuidval" value="4vikrv00yfkagmhq0fmsgeay" />
+            <input name="hdnlangdmnen" type="hidden" id="hdnlangdmnen" value="http://databank.worldbank.org" />
+            <input name="hdnlangdmnzh" type="hidden" id="hdnlangdmnzh" value="http://databank.shihang.org" />
+            <input name="hdnlangdmnes" type="hidden" id="hdnlangdmnes" value="http://databank.bancomundial.org" />
+            <input name="hdnlangdmnfr" type="hidden" id="hdnlangdmnfr" value="http://databank.banquemondiale.org" />
+            <input name="hdnlangdmnar" type="hidden" id="hdnlangdmnar" value="http://databank.albankaldawli.org" />
+            <input name="hdntgpgnam" type="hidden" id="hdntgpgnam" value="/data/reports.aspx?source=education-statistics-~-all-indicators" />
+            <input name="hdntgurl" type="hidden" id="hdntgurl" />
+            <input name="hdnSaveDlg" type="hidden" id="hdnSaveDlg" />
+        
+</div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script type="text/javascript" src="/data/scripts/reports/plugins/jquery-v1.11.1.js"></script>
+    <script type="text/javascript" src="/data/scripts/reports/plugins/jquery-ui-v1.10.3.js"></script>
+    <script type="text/javascript" src="/data/scripts/reports/plugins/jquery.deprecated.js"></script>
+    <script type="text/javascript" src="/data/scripts/reports/plugins/bootstrap.js"></script>
+    <script type="text/javascript" src="/data/scripts/reports/plugins/bootstrap-select.min.js"></script>
+ 
+    <script type="text/javascript" src="/data/scripts/reports/plugins/jqx-all.js"></script>
+    <script type="text/javascript" src="/data/scripts/reports/plugins/jquery.sortcontent.js"></script>
+  
+    <script type="text/javascript" src="/data/scripts/reports/plugins/jpicker.min.js"></script>
+  
+    <script type="text/javascript" src="/data/scripts/reports/plugins/bootstrap-switch.js"></script>   
+   
+    <script type="text/javascript" src="/data/scripts/reports/selectvariable.js"></script>
+
+    <script type="text/javascript" src="/data/scripts/reports/reportcommon.js"></script>
+    <script type="text/javascript" src="/data/scripts/reports/embedOptions.js"></script>
+    <script type="text/javascript" src="/data/scripts/utility.js"></script>
+
+
+    <script type="text/javascript">
+
+        /* Code to add User Voice implementation script. The gnarly string in the URL identifies our account
+
+        There are a couple of simpler alternatives to add the script, including the jQuery.getScript function,
+        or simply linking it with an ordinary <script/> tag. I've used the jQuery option successfully, but the 
+        plain <script/> tag approach tends to cause security certificate issues with IE, IE9 in particular. I'm
+        trying to get more clarity with UserVoice.
+        */
+        (function () {
+            var uv = document.createElement('script');
+            uv.type = 'text/javascript';
+            uv.async = true;
+            uv.src = '//widget.uservoice.com/XzQsWhTqmnE8dYDOJ0HjJQ.js';
+
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(uv, s)
+        })()
+
+    </script>
+
+    <script type="text/javascript">
+
+        function uvClick() {
+            // set following parameter to site identifier: Data, Databank, Finances or DataCatalog
+            var siteIdentifier = 'Databank';
+
+            UserVoice = window.UserVoice || [];
+            UserVoice.push(['setCustomFields', { 'Origin': siteIdentifier}]);
+            UserVoice.push(['showLightbox', 'classic_widget', {
+                mode: 'support',
+                primary_color: '#54584c',
+                link_color: '#a92123'
+            }]);
+        }
+
+    </script>
+
+    <div id="upReportScript">
+	
+            
+            
+            <script type="text/javascript" src="/data/scripts/reports/tableoptions.js"></script>
+            
+</div>
+
+    <script type="text/javascript">
+        //Script to show report loading during postback
+        var gbl_prm = Sys.WebForms.PageRequestManager.getInstance();
+
+        gbl_prm.add_beginRequest(function () {
+            var width = $(window).width();
+            var height = $(window).height();
+
+            $("#report-loading").css({
+                top: ((height / 2) - 25),
+                left: ((width / 2) - 50)
+            }).fadeIn(200);
+        });
+
+        gbl_prm.add_endRequest(function (endRequestHandler) {
+            //debugger;
+            if (gbl_IsSubnational) $('.reportSubNatText').show();
+
+            initCommon();
+            initSelectVariables();
+            cbpReportView.PerformCallback();
+        });
+
+        function setReportOptions(s, e) {
+            //to handle the map situation where the map has to show whole world
+            $('#splitter').height('100%');
+            //debugger;
+            if ($('.openBtn').css('display') == 'block' && $('.openBtn').hasClass('map-view-toggle')) {
+                gbl_map_splitter_initial = true;
+                $('.closeBtn').trigger('click');
+                $('.openBtn').removeClass('map-view-toggle');
+            }
+
+            //debugger;
+            switch ($('#hdnReportType').val().toUpperCase()) {
+                case 'TABLE':
+                    initTableOptions();
+                    break;
+                case 'CHART':
+                    initChartOptions();
+                    break;
+                case 'MAP':
+                    initMapOptions();
+                    generateMapLayers();
+                    break;
+                case 'METADATA':
+                    initMetadataOptions();
+                    break;
+            }
+            $("#report-loading").fadeOut(500);
+            var format = 'Table';
+            if ($(".formatList li.active").attr("id") != null)
+                format = $(".formatList li.active").attr("id").split("li")[1].trim();
+            var rpdbname = $(".database h2").text().trim();
+
+            s_pageName = "DataBank>" + rpdbname + ">" + format;
+
+            if (typeof (s_gs) == typeof (Function)) s_gs(s_account);
+        }
+
+        $(document).ready(function () {
+            if (gbl_common_culture == "ar") {
+                $(".colTools").insertAfter(".colCanvas");
+                $('#splitter').jqxSplitter({ width: '100%', height: '100%', orientation: 'vertical', panels: [{ size: '60%', collapsible: false}] });
+            }
+            else {
+                $('#splitter').jqxSplitter({ width: '100%', height: '100%', orientation: 'vertical', panels: [{ size: '500', min: 480}] });
+            }
+
+            /*setTimeout(function () {
+                $('#splitter').jqxSplitter('expand');  
+             
+              }, 100);*/
+
+            $('.jqx-splitter-collapse-button-vertical').css('margin-top', '140px');
+
+            $('#splitter').on('resize', function (event) {
+                setReportSize(true);
+            });
+
+            $('#splitter').on('expanded', function (event) {
+                $(".closeBtn").show();
+                $(".openBtn").hide();
+
+                $('.jqx-splitter-collapse-button-vertical').tooltip('destroy');
+                $('.jqx-splitter-collapse-button-vertical').prop('title', 'Hide Options');
+                $('.jqx-splitter-collapse-button-vertical').prop('data-toggle', 'tooltip');
+                if (gbl_common_culture == "ar") {
+                    $('.jqx-splitter-collapse-button-vertical').tooltip({ placement: "left" });
+                }
+                else {
+                    $('.jqx-splitter-collapse-button-vertical').tooltip({ placement: "right" });
+                }
+            });
+
+            $('#splitter').on('collapsed', function (event) {
+                $(".closeBtn").hide();
+                $(".openBtn").show();
+                $('.jqx-splitter-collapse-button-vertical').tooltip('destroy');
+                $('.jqx-splitter-collapse-button-vertical').prop('title', 'Show Options');
+                $('.jqx-splitter-collapse-button-vertical').prop('data-toggle', 'tooltip');
+                if (gbl_common_culture == "ar") {
+                    $('.jqx-splitter-collapse-button-vertical').tooltip({ placement: "left"});
+                }
+                else {
+                    $('.jqx-splitter-collapse-button-vertical').tooltip({ placement: "right"});
+                }
+            });
+
+            setReportSize(false);
+
+            $("body").on("click", ".reset", function () {
+                onClearSelections();
+            });
+
+            var nodatareport = 'Y' == 'Y';
+            if (nodatareport) clearselections();
+        });
+
+        $(window).on('resize', function (event) {
+            setReportSize(false);
+        });
+    </script>
+
+
+<script type="text/javascript">
+//<![CDATA[
+
+WebForm_InitCallback();//]]>
+</script>
+</form>
+
+
+
+    <!-- SiteCatalyst code version: G.6. Copyright 1997-2004 Omniture, Inc. More info available at http://www.omniture.com -->
+    <script language="JavaScript" src="http://siteresources.worldbank.org/SITEMGR/Resources/WebStatsUtil.js"
+        type="text/javascript"></script>
+    <script language="JavaScript" type="text/javascript">
+<!--
+    var s_lang = "English";
+    var s_pageName = "";
+    var s_channel = ""
+    var s_hier1 = ""
+    var s_account = ""
+    
+    switch (gbl_common_culture) {
+     case "ar":
+     s_lang = "Arabic"
+     break;
+     case "en":
+     s_lang = "English"
+     break;
+       case "es":
+     s_lang = "Spanish"
+     break;
+
+     case "zh":
+     s_lang = "Chinese"
+     break;
+     case "fr":
+     s_lang = "French"
+     break;
+     default:
+       s_lang = "English"
+    }  
+
+    s_pageName = "Databank>";
+    s_account = "wbnispdecdbdd,wbglobalext";
+    s_channel = "DEC Databank New EXT";
+    s_hier1 = "DEC,DEC Databank New EXT, " + s_lang;
+
+    var s_prop1 = "";
+    var s_prop2 = "Not Available";  /* Author */
+    var s_prop3 = "Not Available";  /* Date */
+    var s_prop4 = "Not Available";  /* Topic */
+    var s_prop5 = "Not Available";  /* Sub Topic */
+    var s_prop6 = "Not Available";  /* Region */
+    var s_prop7 = "Not Available";  /* Country */
+    var s_prop8 = "Not Available";  /* DocType */
+    var s_prop9 = "Not Available";  /* MDK or unique identifier */
+    var s_prop10 = "Live";          /* Site Status */
+    var s_prop11 = "Not Available"; /* Data Source */
+    var s_prop13 = "DEC";           /* VPU */
+    var s_prop16 = s_lang;         /* doc language */
+    var s_prop17 = s_lang;         /* site language */
+
+    var omnitureCookieContent = getCookieValueByName('omniture');
+    var s_prop18 = getVPU(omnitureCookieContent);
+    var s_prop19 = getDutyStation(omnitureCookieContent);
+    var s_prop20 = getUserType(omnitureCookieContent);
+
+    var sTitle = document.title;
+    var asTitleParts = sTitle.split("-");
+    while (sTitle.indexOf(",") > -1)
+        sTitle = sTitle.replace(",", "");
+
+    s_prop1 = sTitle;
+    var viewtype = 'Table';
+    if ($(".formatList li.active").attr("id") != null)
+        viewtype = $(".formatList li.active").attr("id").split("li")[1].trim();
+    var format = viewtype;
+    var rpdbname = $(".database h2").text().trim();
+
+    s_pageName = "DataBank>" + rpdbname + ">" + format;
+
+    s_hier1 += ", " + sTitle;
+    //-->
+</script>
+    <script type="text/javascript" language="JavaScript" src="http://siteresources.worldbank.org/scripts/s_code_remote.js"></script>
+    <!-- End SiteCatalyst code version: G.6. -->
+
+
+</body>
+</html>

@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="es"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang="es"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang="es"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="es"> <!--<![endif]-->
+    <head>        
+                <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e,n){function r(){}function o(t,e,n){return function(){return i(t,[(new Date).getTime()].concat(u(arguments)),e?null:this,n),e?void 0:this}}var i=t("handle"),a=t(2),u=t(3),c=t("ee").get("tracer"),f=NREUM;"undefined"==typeof window.newrelic&&(newrelic=f);var s=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit"],p="api-",l=p+"ixn-";a(s,function(t,e){f[e]=o(p+e,!0,"api")}),f.addPageAction=o(p+"addPageAction",!0),e.exports=newrelic,f.interaction=function(){return(new r).get()};var d=r.prototype={createTracer:function(t,e){var n={},r=this,o="function"==typeof e;return i(l+"tracer",[Date.now(),t,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[Date.now(),r,o],n),o)try{return e.apply(this,arguments)}finally{c.emit("fn-end",[Date.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){d[e]=o(l+e)}),newrelic.noticeError=function(t){"string"==typeof t&&(t=new Error(t)),i("err",[t,(new Date).getTime()])}},{}],2:[function(t,e,n){function r(t,e){var n=[],r="",i=0;for(r in t)o.call(t,r)&&(n[i]=e(r,t[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],3:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(o<0?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=r},{}],ee:[function(t,e,n){function r(){}function o(t){function e(t){return t&&t instanceof r?t:t?u(t,a,i):i()}function n(n,r,o){t&&t(n,r,o);for(var i=e(o),a=l(n),u=a.length,c=0;c<u;c++)a[c].apply(i,r);var s=f[m[n]];return s&&s.push([w,n,r,i]),i}function p(t,e){g[t]=l(t).concat(e)}function l(t){return g[t]||[]}function d(t){return s[t]=s[t]||o(n)}function v(t,e){c(t,function(t,n){e=e||"feature",m[n]=e,e in f||(f[e]=[])})}var g={},m={},w={on:p,emit:n,get:d,listeners:l,context:e,buffer:v};return w}function i(){return new r}var a="nr@context",u=t("gos"),c=t(2),f={},s={},p=e.exports=o();p.backlog=f},{}],gos:[function(t,e,n){function r(t,e,n){if(o.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[e]=r,r}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){o.buffer([t],r),o.emit(t,e,n)}var o=t("ee").get("handle");e.exports=r,r.ee=o},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!h++){var t=y.info=NREUM.info,e=s.getElementsByTagName("script")[0];if(t&&t.licenseKey&&t.applicationID&&e){c(m,function(e,n){t[e]||(t[e]=n)});var n="https"===g.split(":")[0]||t.sslForHttp;y.proto=n?"https://":"http://",u("mark",["onload",a()],null,"api");var r=s.createElement("script");r.src=y.proto+t.agent,e.parentNode.insertBefore(r,e)}}}function o(){"complete"===s.readyState&&i()}function i(){u("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var u=t("handle"),c=t(2),f=window,s=f.document,p="addEventListener",l="attachEvent",d=f.XMLHttpRequest,v=d&&d.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:d,REQ:f.Request,EV:f.Event,PR:f.Promise,MO:f.MutationObserver},t(1);var g=""+location,m={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-974.min.js"},w=d&&v&&v[p]&&!/CriOS/.test(navigator.userAgent),y=e.exports={offset:a(),origin:g,features:{},xhrWrappable:w};s[p]?(s[p]("DOMContentLoaded",i,!1),f[p]("load",r,!1)):(s[l]("onreadystatechange",o),f[l]("onload",r)),u("mark",["firstbyte",a()],null,"api");var h=0},{}]},{},["loader"]);</script>
+                    <title>Inscripción anticipada en el Servicio Militar - ChileAtiende - Personas a tu servicio</title>
+                <link rel="icon" type="image/x-icon" href="https://www.chileatiende.gob.cl/assets_v2/img/favicon.ico" />
+                    <meta name="description" content="Permite a los jóvenes que cumplieron 17 años de edad inscribirse voluntariamente en el Servicio Militar.Las personas seleccionadas podrán:
+
+Aprender un oficio.
+Nivelar estudios.
+Realizar cursos de capacitación laboral.
+Postular a soldado profesional o a una de las escuelas matrices de las Fuerzas Ar" />
+            <meta name="keywords" content="Chileatiende, chile atiende, Trámites, Trámite Fácil, Chile, Clic, ChileClick, Click, Chile, servicios, estado, Gobierno de Chile, transparencia, servicios, beneficios del Estado" />
+            <meta name="author" content="Dirección General de Movilización Nacional" />
+                    <meta name="viewport" content="width=device-width">
+
+        <link rel="stylesheet" href="https://www.chileatiende.gob.cl/assets_v2/css/frontend.css?v=2016082402">
+                <link rel="apple-touch-icon" href="https://www.chileatiende.gob.cl/assets_v2/img/touch-icon-iphone.png" />
+        <link rel="apple-touch-icon" sizes="72x72" href="https://www.chileatiende.gob.cl/assets_v2/img/touch-icon-ipad.png" />
+        <link rel="apple-touch-icon" sizes="114x114" href="https://www.chileatiende.gob.cl/assets_v2/img/touch-icon-iphone-retina.png" />
+        <link rel="apple-touch-icon" sizes="144x144" href="https://www.chileatiende.gob.cl/assets_v2/img/touch-icon-ipad-retina.png" />
+
+        <script src="https://www.chileatiende.gob.cl/assets_v2/js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <!--[if lt IE 9]>
+            <script src="https://www.chileatiende.gob.cl/assets_v2/js/vendor/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body data-spy="scroll" data-target=".contenedor-menu-ficha" class="">
+
+        <!-- HEADER -->
+
+                    <div id='navegacion' class='no-print'>
+    <div class='container wrapper'>
+        <ul class="pull-right">
+            <li class='active' ><a href='/'>ChileAtiende</a></li>
+            <li class=''><a href='/empresas'>ChileAtiende Pymes</a></li>
+            <!-- Deshabilitado hasta lanzamiento -->
+            <!-- <li class='' ><a href='https://www.chileatiende.gob.cl/exterior'>ChileAtiende en el Exterior</a></li> -->
+        </ul>
+	</div>
+</div>
+
+<!-- Emergencia
+<div style="background-color:#EF8D19;">
+	<div class="row">
+		<div class="col-xs-12 text-center">
+			<a href="http://www.onemi.gob.cl" target="_blank"><img src="https://www.chileatiende.gob.cl/assets_v2/img/banners/banner-emergencia-980x80.png" class="img-responsive" /></a>
+		</div>
+	</div>
+</div> -->
+<header class="no-print internal-header">     
+    <div class="container">
+        <div class="header-top">
+            <div class="row-fluid">
+                <div class="span4">
+                    <h1>
+                        <a href="/">
+                            <img src="https://www.chileatiende.gob.cl/assets_v2/img/nueva_home/logo_chileatiende.png" alt="ChileAtiende" />
+                        </a>
+                    </h1>
+                </div>
+                <div class="offset2 span6">
+                    <div class="row-fluid">
+                        <div class="span12">
+                            <div class="cont-busqueda">
+    <form action="https://www.chileatiende.gob.cl/buscar/fichas" method="get" id="main_search">
+        <input title="Escribe aquí lo que buscas" accesskey="b" id="main_search_input" class="main_search_input span12 active_search" autocomplete="off" name="buscar" placeholder="Escribe aquí lo que buscas" type="text"  />
+        <button type="submit" accesskey="s" class="searchbtn">Buscar</button>
+        <input type="hidden" name="e" value="0">
+    </form>
+</div> 
+                        </div>
+                    </div>
+                    <div class="row-fluid">
+                        <div class="span12">
+                            <div class="btn-group pull-right">
+                              <a class="btn btn-primary dropdown-toggle" data-toggle="dropdown" href="#">
+                                Atención y Consultas
+                                <span class="caret"></span>
+                              </a>
+                              <ul class="dropdown-menu">
+                                <li class="internal-shortcut">
+                                    <a class="btn-primary" href="https://www.chileatiende.gob.cl/contenidos/en-linea" data-ga-te-category="Menu Interna" data-ga-te-action="clic" data-ga-te-value="En línea">
+                                    <img src="https://www.chileatiende.gob.cl/assets_v2/img/nueva_home/ico_digital.png" />
+                                    <span>En línea</span></a>
+                                </li>
+                                <li class="internal-shortcut">
+                                    <a class="btn-primary" href="https://www.chileatiende.gob.cl/contenidos/callcenter" data-ga-te-category="Menu Interna" data-ga-te-action="clic" data-ga-te-value="101">
+                                    <img src="https://www.chileatiende.gob.cl/assets_v2/img/nueva_home/ico_101.png" />
+                                    <span>101</span></a>
+                                </li>
+                                <li class="internal-shortcut">
+                                    <a class="btn-primary" href="https://www.chileatiende.gob.cl/contenidos/oficinamovil" data-ga-te-category="Menu Interna" data-ga-te-action="clic" data-ga-te-value="Oficinas móviles">
+                                    <img src="https://www.chileatiende.gob.cl/assets_v2/img/nueva_home/ico_movil.png" />
+                                    <span>Oficinas móviles</span></a>
+                                </li>
+                                <li class="internal-shortcut">
+                                    <a class="btn-primary" href="https://www.chileatiende.gob.cl/oficinas" data-ga-te-category="Menu Interna" data-ga-te-action="clic" data-ga-te-value="Puntos de atención">
+                                    <img src="https://www.chileatiende.gob.cl/assets_v2/img/nueva_home/ico_sucursales.png" />
+                                    <span>Sucursales</span></a>
+                                </li>
+                                <li class="internal-shortcut">
+                                    <a class="btn-primary" href="https://www.chileatiende.gob.cl/contenidos/preguntas-frecuentes" data-ga-te-category="Menu Interna" data-ga-te-action="clic" data-ga-te-value="Preguntas Frecuentes">
+                                    <img width="20" src="https://www.chileatiende.gob.cl/assets_v2/img/nueva_home/ico_preguntas-frecuentes.png" />
+                                    <span>Preguntas Frecuentes</span></a>
+                                </li>
+                                <li class="internal-shortcut lista-contactos">
+                                    <div class="row-fluid">
+                                        <div class="span4 text-center">
+                                            <a class="contactos-facebook" href="https://www.facebook.com/ChileAtiende" target="_blank" data-ga-te-category="Menu Interna" data-ga-te-action="clic" data-ga-te-value="Facebook">Facebook</a>
+                                        </div>
+                                        <div class="span4 text-center">
+                                            <a class="contactos-twitter" href="https://twitter.com/ChileAtiende" target="_blank" data-ga-te-category="Menu Interna" data-ga-te-action="clic" data-ga-te-value="Twitter">Twitter</a>
+                                        </div>
+                                        <div class="span4 text-center">
+                                            <a class="contactos-correo hidden-phone" href="https://contacto.chileatiende.cl/formulario.php?origen=http://www.chileatiende.gob.cl/" data-toggle="modal-chileatiende" data-modal-type="iframe" data-ga-te-category="Menu Interna" data-ga-te-action="clic" data-ga-te-value="Contacto">Contacto</a>
+                                            <a class="visible-phone contactos-correo" href="https://contacto.chileatiende.cl/formulario.php?origen=http://www.chileatiende.gob.cl/" data-ga-te-category="Menu Interna" data-ga-te-action="clic" data-ga-te-value="Contacto">Contacto</a>
+                                        </div>
+                                    </div>
+                                </li>
+                              </ul>
+                            </div>
+                        </div>
+                    </div>
+                
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+</header>
+        
+        <div class="container">
+                                    <div class="main-container">
+                        
+<div class="row-fluid">
+    <div class="breadcrumbs span12 no-print" data-spy="affix" data-offset-top="175">
+        <a href="https://www.chileatiende.gob.cl/">Portada</a> / Inscripción anticipada en el Servicio Militar    </div>
+</div>
+<div id="content" class="ficha">
+    <div id="readspeaker_container" class="readspeaker_container">
+        <div id="readspeaker_button1" class="rs_skip rsbtn rs_preserve">
+            <a class="rsbtn_play" accesskey="L" title="Escuchar esta pagina utilizando ReadSpeaker" href="https://app.readspeaker.com/cgi-bin/rsent?customerid=6404&amp;lang=es_419&amp;readid=maincontent-ficha&amp;url=http%3A%2F%2Fwww.chileatiende.gob.cl%2Ffichas%2Fver%2F934">
+                <span class="rsbtn_left rsimg rspart"><span class="rsbtn_text"><span>Escuchar</span></span></span><span class="rsbtn_right rsimg rsplay rspart"></span>
+            </a>
+        </div>
+    </div>
+    
+        <div class="row-ficha-encabezado" style="display: none"></div>
+    
+    <div class="row-fluid row-ficha">
+        <div class="span8 span-maincontent" id="maincontent-ficha">
+            <div class="ficha-encabezado">
+                <div class="row-fluid print rs_skip">
+                    <div class="pull-left">
+                        <img class="logo-print" src="https://www.chileatiende.gob.cl/assets_v2/img/logo_chileatiende.png" alt="ChileAtiende">
+                    </div>
+                    <div class="pull-right">
+                        <h6>Última actualización</h6>
+                        <p>martes 01 de marzo de 2016</p>
+                    </div>
+                </div>
+                                <h2 class="ficha-titulo">Inscripción anticipada en el Servicio Militar</h2>
+                
+                                <div class="row-fluid">
+                    <h5>Información proporcionada por: <a href="https://www.chileatiende.gob.cl/servicios/ver/AD013">Dirección General de Movilización Nacional (DGMN)</a></h5>
+                    <h6>Última actualización: 
+                                                miércoles 14 de octubre del 2015                    </h6>
+                </div>
+                
+                <div class="clearfix"></div>
+                            </div>
+            <div id="maincontent"  class="row-ficha-contenido" role="main">
+                <div class="opciones-accesibilidad no-print rs_skip">
+                    <ul class="nav nav-pills">
+                        <li class="ajusta-tamano-fuente">
+                            <a href="#" class="tamano-fuente" data-dir="1">+A</a>
+                        </li>
+                        <li class="ajusta-tamano-fuente">
+                            <a href="#" class="tamano-fuente" data-dir="-1">-A</a>
+                        </li>
+                        <li class="escuchar">
+                            <a href="#">Escuchar</a>
+                        </li>
+                        <li class="imprimir hidden-phone">
+                            <a href="javascript:print();">Imprimir</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="clearfix"></div>
+                                                    <div class="text-content">
+                        <a id="descripcion" class="anchor-top">&nbsp;</a>
+                        <h3 class="cabecera">Descripción</h3>                        <html>
+<head>
+<title></title>
+</head>
+<body>
+<p>Permite a los jóvenes que cumplieron 17 años de edad inscribirse
+voluntariamente en el Servicio Militar.Las personas seleccionadas
+podrán:</p>
+<ul>
+<li>Aprender un oficio.</li>
+<li>Nivelar estudios.</li>
+<li>Realizar cursos de capacitación laboral.</li>
+<li>Postular a soldado profesional o a una de las escuelas matrices
+de las Fuerzas Armadas.</li>
+</ul>
+<p><div class="clearfix"></div><div class="mensaje mensaje-reloj">Inscripción: hasta el 28 de febrero de
+2016.</div></p>
+</body>
+</html>                        
+                                                <a href="" class="ver-mas-detalles-metaficha" data-modal-type="div" data-modal-id="mas_informacion#inicio" data-toggle="modal-chileatiende"  data-ga-te-category="Acciones Ficha" data-ga-te-action="Ver Mas Detalles (modal)" data-ga-te-value="934">Ver más detalles</a>
+                                                <div id="mas_informacion" style="display: none">
+                            <a href="" id="inicio" class="anchor"></a>
+                            <h4>Más detalles</h4>
+                            <div class="detalles-content">
+                        <div id="beneficiarios" class="anchor"><h3>1. Beneficiarios</h3><p><html>
+<head>
+<title></title>
+</head>
+<body>
+<p>Chilenos que cumplan 17 años antes de la fecha de
+inscripción.</p>
+<p><strong>Importante</strong>: los postulantes deben realizar el
+trámite acompañados de su tutor legal (padre, madre, etc.).</p>
+</body>
+</html></p></div><div id="doc_requeridos" class="anchor"><h3>2. Documentos Requeridos</h3><p><html>
+<head>
+<title></title>
+</head>
+<body>
+<p>Cédula de identidad vigente.</p>
+</body>
+</html></p></div><div id="costo" class="anchor"><h3>3. Costo</h3><p><html>
+<head>
+<title></title>
+</head>
+<body>
+<p>No tiene costo.</p>
+</body>
+</html></p></div><div id="marco_legal" class="anchor"><h3>4. Marco Legal</h3><p><html>
+<head>
+<title></title>
+</head>
+<body>
+<p><a href="http://www.leychile.cl/Navegar?idNorma=6876" target=
+"_blank">Decreto Ley Nº2.306</a>, que dicta normas sobre el
+reclutamiento y movilización de las fuerzas armadas.</p>
+</body>
+</html></p></div>                            </div>
+                        </div>
+                    </div>
+                
+                
+                                    <div class="canales-tramite">
+                        <a id="como-realizar-el-tramite" class="anchor-top">&nbsp;</a>
+                        <ul class="nav nav-tabs no-print rs_skip" id="tabs-canales-tramite">
+                                                        <li class="oficina"><a href="#oficina" data-toggle="tab" data-ga-te-category="Acciones Ficha" data-ga-te-action="Tab Oficina" data-ga-te-value="934">En oficina</a></li>                                                                                </ul>
+                        <div class="tab-content">
+                                                        <h4 class="print">En Oficina</h4><div class="tab-pane text-content" id="oficina"><html>
+<head>
+<title></title>
+</head>
+<body>
+<ol>
+<li>Reúna el antecedente mencionado en <strong>documentos
+requeridos</strong>.</li>
+<li>Diríjase a una <a href=
+"http://www.serviciomilitar.cl/?portfolio=cantones" target=
+"_blank">oficina del cantón de reclutamiento</a>, acompañado de su
+tutor
+legal.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+<li>Explique el motivo de su visita: solicitar la inscripción
+anticipada en el Servicio Militar.</li>
+<li>Entregue el antecedente requerido.</li>
+<li>Como resultado del trámite, habrá solicitado la inscripción, la
+cual podrá hacerse efectiva inmediatamente.</li>
+</ol>
+<p>Si requiere más información, llame al +56 2 2441 38 71.</p>
+</body>
+</html><div class="btn btn-mejorar-tramite mejora-agradecimiento" style="display:none;">Gracias por su opinión</div><a id="btn-mejora" class="btn btn-quiero-tramite-online rs_skip" href="#" data-ga-te-category="Fichas" data-ga-te-action="Botón Quiero Trámite Online" data-ga-te-value="934">Quisiera este trámite disponible en línea</a><div class="clearfix"></div></div>                                                                                </div>
+                    </div>
+                
+                
+                                    <div class="indice-secciones no-print">
+                        <h4 id="mas-detalles">Más detalles</h4>
+                        <ol class="rs_skip">
+                                                                                        <li>
+                                    <a href="#beneficiarios" data-ga-te-category="Acciones Ficha" data-ga-te-action="Más detalles - beneficiarios" data-ga-te-value="934">Beneficiarios</a>
+                                </li>
+                                                        
+                                                            <li>
+                                    <a href="#documentos-requeridos" data-ga-te-category="Acciones Ficha" data-ga-te-action="Más detalles - documentos-requeridos" data-ga-te-value="934">Documentos requeridos</a>
+                                </li>
+                                                                                        <li>
+                                    <a href="#costo-tramite" data-ga-te-category="Acciones Ficha" data-ga-te-action="Más detalles - costo-tramite" data-ga-te-value="934">Costo del trámite</a>
+                                </li>
+                                                                                        <li>
+                                    <a href="#marco-legal" data-ga-te-category="Acciones Ficha" data-ga-te-action="Más detalles - marco-legal" data-ga-te-value="934">Marco legal</a>
+                                </li>
+                                                                                                            </ol>
+                        <div class="cont-ver-todo rs_skip">
+                            <a href="#ver-todo" class="ver-todo" data-ga-te-category="Acciones Ficha" data-ga-te-action="Más detalles - ver-todo" data-ga-te-value="934">Ver todo</a>
+                        </div>
+                    </div>
+                                                                                    <div class="text-content texto-seccion print " data-seccion="beneficiarios">
+                            <a id="beneficiarios" class="anchor-top">&nbsp;</a>
+                                                            <h3>1. Beneficiarios</h3>
+                                                        <html>
+<head>
+<title></title>
+</head>
+<body>
+<p>Chilenos que cumplan 17 años antes de la fecha de
+inscripción.</p>
+<p><strong>Importante</strong>: los postulantes deben realizar el
+trámite acompañados de su tutor legal (padre, madre, etc.).</p>
+</body>
+</html>                        </div>
+                                                                                    <div class="text-content texto-seccion print" data-seccion="documentos-requeridos">
+                            <a id="documentos-requeridos" class="anchor-top">&nbsp;</a>
+                            <h3>2. Documentos requeridos</h3>
+                                                                                        <html>
+<head>
+<title></title>
+</head>
+<body>
+<p>Cédula de identidad vigente.</p>
+</body>
+</html>                                                    </div>
+                                                                <div class="text-content texto-seccion print" data-seccion="costo-tramite">
+                            <a id="costo-tramite" class="anchor-top">&nbsp;</a>
+                            <h3>3. Costo del trámite</h3>
+                            <div class="mensaje mensaje-costo">
+                                <html>
+<head>
+<title></title>
+</head>
+<body>
+<p>No tiene costo.</p>
+</body>
+</html>                            </div>
+                        </div>
+                                                                <div class="text-content texto-seccion print" data-seccion="marco-legal">
+                            <a id="marco-legal" class="anchor-top">&nbsp;</a>
+                            <h3>4. Marco legal</h3>
+                            <html>
+<head>
+<title></title>
+</head>
+<body>
+<p><a href="http://www.leychile.cl/Navegar?idNorma=6876" target=
+"_blank">Decreto Ley Nº2.306</a>, que dicta normas sobre el
+reclutamiento y movilización de las fuerzas armadas.</p>
+</body>
+</html>                        </div>
+                                                                            
+                                
+                
+                <div class="print rs_skip">
+                    <hr>
+                    <img class="qr" src="https://chart.googleapis.com/chart?chs=220x220&amp;cht=qr&amp;chid=c3faae00e0674ae7615de49b22b07ccd&amp;chl=Tr&aacute;mite:%20Inscripción anticipada en el Servicio Militar%0D%0A%0D%0AURL:%20https://www.chileatiende.gob.cl/fichas/ver/934" alt="Inscripción anticipada en el Servicio Militar" />
+                    <p>https://www.chileatiende.gob.cl/fichas/ver/934</p>
+                </div>
+                <div class="participacion no-print hidden-phone rs_skip">
+    <div class="row-fluid participacion-header">
+        <div class="btn-participacion btn-opina" data-participacion="opina">
+            <a href="#" data-ga-te-category="Acciones Ficha" data-ga-te-action="Participacion - que opinas" data-ga-te-value="934"><div class="opina-icon"></div> ¿Qué opinas de esta información?</a>
+        </div>
+        <div class="btn-participacion btn-reporta-error" data-participacion="reporta-error">
+            <a href="#" data-ga-te-category="Acciones Ficha" data-ga-te-action="Participacion - hay errores" data-ga-te-value="934"><div class="reporta-icon"></div> ¿Hay algún error en esta información?</a>
+        </div>
+    </div>
+    <div class="row-fluid participacion-formularios">
+        <div class="span12 participacion-formulario formulario-opina">
+            <form action="https://www.chileatiende.gob.cl/participaciones/ajax_guarda_participacion_opinion/44363" method="get">
+                <div class="row-fluid">
+                    <div class="span12 informacionutil">
+                        <span>¿Te parece útil esta información?</span>
+                        <label for="informacionutil-s" class="checked"><input type="radio" name="informacionutil" id="informacionutil-s" value="s" checked="checked"> Sí</label>
+                        <label for="informacionutil-n"><input type="radio" name="informacionutil" id="informacionutil-n" value="n"> No</label>
+                    </div>
+                    <div class="span12 busquedafacil">
+                        <span>¿Encuentras fácilmente la información que buscas?</span>
+                        <label for="busquedafacil-s" class="checked"><input type="radio" name="busquedafacil" id="busquedafacil-s" value="s" checked="checked"> Sí</label>
+                        <label for="busquedafacil-n"><input type="radio" name="busquedafacil" id="busquedafacil-n" value="n"> No</label>
+                    </div>
+                    <div class="span12 quemejorar">
+                        <label for="quemejorar">¿Qué podemos mejorar?</label>
+                        <textarea name="quemejorar" class="input-block-level" id="quemejorar" rows="10"></textarea>
+                    </div>
+                    <div class="span12">
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </div>
+                </div>
+                <input type="text" name="nombre" id="name-opina" value="">
+            </form>
+            <div class="ajax-msg"></div>
+        </div>
+        <div class="span12 participacion-formulario formulario-reporta-error">
+            <form action="https://www.chileatiende.gob.cl/participaciones/ajax_guarda_participacion_error/44363" method="get">
+                <div class="row-fluid">
+                    <div class="span12">
+                        <label for="errorestramite">¿Qué errores tiene este trámite?</label>
+                        <textarea name="errorestramite" class="input-block-level" id="errorestramite" rows="10"></textarea>
+                    </div>
+                    <div class="span12">
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </div>
+                </div>
+                <input type="text" name="nombre" id="name-reporta-error" value="">
+            </form>
+            <div class="ajax-msg"></div>
+        </div>
+    </div>
+</div>            </div>
+        </div>
+        <div class="span4 span-side-bar no-print hidden-phone">
+            <div class="side-bar" data-offset-top="174" data-offset-bottom="276">
+                
+                <div class="cont-sociales">
+                    <div class="row-fluid">
+                                                    <div class="span6 valoracion-ficha" data-id-ficha="934" data-modificador="0">
+                                <p>¿Te gusta?:</p>
+                                <div class="voto voto-positivo" data-voto="positivo">
+                                    <a href="#" data-ga-te-category="Acciones Ficha" data-ga-te-action="Voto positivo" data-ga-te-value="934">+</a>
+                                    <span class="total-votos"></span>
+                                </div>
+                                <div class="voto voto-negativo" data-voto="negativo">
+                                    <a href="#" data-ga-te-category="Acciones Ficha" data-ga-te-action="Voto negativo" data-ga-te-value="934">-</a>
+                                    <span class="total-votos"></span>
+                                </div>
+                            </div>
+                                                <div class="span6 visible-desktop">
+                            <p>Compartir:</p>
+                            <ul class="lista-redes-sociales">
+                                <li class="compartir_twitter">
+                                    <a target="_blank" href="http://twitter.com/intent/tweet?text=Inscripci%C3%B3n+anticipada+en+el+Servicio+Militar&url=https://www.chileatiende.gob.cl/fichas/ver/934&via=chileatiende"  data-ga-te-category="Acciones Ficha" data-ga-te-action="Compartir Twitter" data-ga-te-value="934">Twitter</a>
+                                </li>
+                                <li class="compartir_facebook">
+                                    <a  target="_blank" href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fwww.chileatiende.gob.cl%2Ffichas%2Fver%2F934&t=Inscripci%C3%B3n+anticipada+en+el+Servicio+Militar"  data-ga-te-category="Acciones Ficha" data-ga-te-action="Compartir Facebook" data-ga-te-value="934">Facebook</a>
+                                </li>
+                                <li class="compartir_correo">
+                                    <a href="https://www.chileatiende.gob.cl/contacto/enviaramigo" data-toggle="modal-chileatiende"  data-ga-te-category="Acciones Ficha" data-ga-te-action="Compartir Correo" data-ga-te-value="934">Correo</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+
+                                
+                                    <div class="temas-sugerido listado-fichas">
+                        <h4 class="accordion-heading toggle active">Relacionados:</h4>
+                        <ul class="accordion-body" style="display:block;">
+                                                            <div class="ficha-sidebar ficha-relacionada sello_chilesinpapeleo">
+                                                                                                                <img src="https://www.chileatiende.gob.cl/assets_v2/img/label_sello_chileatiende.png" class="label_chilesinpapeleo" alt="Trámite 100% digital de Chile sin papeleo">
+                                                                        <div class="ficha-top">
+                                        <h5>
+                                            <a href="https://www.chileatiende.gob.cl/fichas/ver/1000" data-ga-te-category="Acciones Ficha" data-ga-te-action="Fichas relacionadas" data-ga-te-value="1000">Llamados al Servicio Militar 2016</a>
+                                        </h5>
+                                        <span>Dirección General de Movilización Nacional</span>
+                                    </div>
+                                    <div class="tipotramite">
+                                        <span class="tipo_tramite_online" title="En Línea">En línea</span>                                        <span class="tipo_tramite_oficina" title="En oficina">En oficina</span>                                        <span class="tipo_tramite_telefonico" title="Por teléfono">Por teléfono</span>                                        <span class="tipo_tramite_correo" title="Por correo">Por correo</span>                                        <div class="clearfix"></div>
+                                    </div>
+                                </div>
+                                                            <div class="ficha-sidebar ficha-relacionada sello_chilesinpapeleo">
+                                                                                                                <img src="https://www.chileatiende.gob.cl/assets_v2/img/label_sello_chileatiende.png" class="label_chilesinpapeleo" alt="Trámite 100% digital de Chile sin papeleo">
+                                                                        <div class="ficha-top">
+                                        <h5>
+                                            <a href="https://www.chileatiende.gob.cl/fichas/ver/1036" data-ga-te-category="Acciones Ficha" data-ga-te-action="Fichas relacionadas" data-ga-te-value="1036">Servicio Militar como voluntario</a>
+                                        </h5>
+                                        <span>Dirección General de Movilización Nacional</span>
+                                    </div>
+                                    <div class="tipotramite">
+                                        <span class="tipo_tramite_online" title="En Línea">En línea</span>                                        <span class="tipo_tramite_oficina" title="En oficina">En oficina</span>                                                                                                                        <div class="clearfix"></div>
+                                    </div>
+                                </div>
+                                                    </ul>
+                    </div>
+                                <div class="temas-destacados listado-fichas">
+                    <h4 class="accordion-heading active">Destacados ChileAtiende:</h4>
+                    <ul class="accordion-body" style="display:block;">
+                                                    <div class="ficha-sidebar ficha-destacada sello_chilesinpapeleo">
+                                                                                                    <img src="https://www.chileatiende.gob.cl/assets_v2/img/label_sello_chileatiende.png" class="label_chilesinpapeleo" alt="Trámite 100% digital de Chile sin papeleo">
+                                                                <div class="ficha-top">
+                                    <h5>
+                                        <a href="https://www.chileatiende.gob.cl/fichas/ver/2941" data-ga-te-category="Acciones Ficha" data-ga-te-action="Fichas destacadas" data-ga-te-value="2941">Datos en el registro electoral</a>
+                                    </h5>
+                                    <span>Servicio Electoral</span>
+                                </div>
+                                <div class="tipotramite">
+                                    <span class="tipo_tramite_online" title="En Línea">En línea</span>                                                                        <span class="tipo_tramite_telefonico" title="Por teléfono">Por teléfono</span>                                                                        <div class="clearfix"></div>
+                                </div>
+                            </div>
+                                                    <div class="ficha-sidebar ficha-destacada flujo">
+                                                                    <img src="https://www.chileatiende.gob.cl/assets_v2/img/label_aprende_sobre.png" class="label_flujo" alt="Contenido aprende sobre">
+                                                                                                <div class="ficha-top">
+                                    <h5>
+                                        <a href="https://www.chileatiende.gob.cl/fichas/ver/47065" data-ga-te-category="Acciones Ficha" data-ga-te-action="Fichas destacadas" data-ga-te-value="47065">Apostilla: autenticación de documentos para Chile y el extranjero</a>
+                                    </h5>
+                                    <span>ChileAtiende</span>
+                                </div>
+                                <div class="tipotramite">
+                                                                                                                                                                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                                                    <div class="ficha-sidebar ficha-destacada sello_chilesinpapeleo">
+                                                                                                    <img src="https://www.chileatiende.gob.cl/assets_v2/img/label_sello_chileatiende.png" class="label_chilesinpapeleo" alt="Trámite 100% digital de Chile sin papeleo">
+                                                                <div class="ficha-top">
+                                    <h5>
+                                        <a href="https://www.chileatiende.gob.cl/fichas/ver/39342" data-ga-te-category="Acciones Ficha" data-ga-te-action="Fichas destacadas" data-ga-te-value="39342">Devolución de cotizaciones de salud pagadas en exceso a FONASA</a>
+                                    </h5>
+                                    <span>Fondo Nacional de Salud</span>
+                                </div>
+                                <div class="tipotramite">
+                                    <span class="tipo_tramite_online" title="En Línea">En línea</span>                                    <span class="tipo_tramite_oficina" title="En oficina">En oficina</span>                                                                                                            <div class="clearfix"></div>
+                                </div>
+                            </div>
+                                            </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        $(document).ready(function(){
+                            $.post(site_url+"fichas/ajax_inserta_visita/"+934);
+                        
+                        if($.cookie('idFicha')) {
+                if($.cookie('nombrePaso'))
+                    $('#migapasopaso').html('<a href="/fichas/ver/'+$.cookie('idFicha')+'">Paso a Paso</a> / <a href="/fichas/ver/'+$.cookie('idFicha')+'">'+$.cookie('nombrePaso')+'</a> /');
+                $.removeCookie('nombrePaso');
+            }
+        });
+    </script>
+</div>
+                    </div>
+                        </div>
+        <footer class="no-print">
+            <div class="footer-top">
+                <div class="container">
+                    <div class="row-fluid">
+                        <div class="span3 sobre-chileatiende hidden-phone">
+                            <h4>Sobre ChileAtiende</h4>
+                            <ul class="unstyled">
+                                <li><a href="https://www.chileatiende.gob.cl/contenidos/que-es-chileatiende" alt="Encuentra toda la información relacionada al proyecto ChileAtiende">¿Qué es ChileAtiende?</a></li>
+                                <li><a href="https://www.chileatiende.gob.cl/serviciosdisponibles" alt="Encuentra todos los servicios y beneficios  disponibles en ChileAtiende">Servicios disponibles en sucursales</a></li>
+                                <li><a href="https://www.chileatiende.gob.cl/servicios/directorio" alt="Listado de todas las instituciones en convenio con ChileAtiende">Instituciones asociadas</a></li>
+                                <li><a href="https://www.chileatiende.gob.cl/contenidos/preguntas-frecuentes" rel="help" data-ga-te-category="Acciones" data-ga-te-action="Ayuda" data-ga-te-value="Footer" alt="Preguntas Frecuentes">Preguntas frecuentes</a></li>
+                            </ul>
+                        </div>
+                        <div class="span3 terminos-condiciones">
+                            <h4>
+                                Términos y condiciones
+                            </h4>
+                            <ul class="unstyled">
+                                <li><a href="https://www.chileatiende.gob.cl/contenido/politicadeprivacidad" alt="Política de privacidad">Política de privacidad</a></li>
+                                <li><a href="https://www.chileatiende.gob.cl/contenido/terminosycondiciones" alt="Términos de uso">Términos de uso</a></li>
+                                <li><a href="https://www.chileatiende.gob.cl/contenido/visualizadores" alt="Visualizadores">Visualizadores</a></li>
+                            </ul>
+                        </div>
+                        <div class="span3 accesos-directos hidden-phone">
+                            <h4>
+                                Accesos directos
+                            </h4>
+                            <ul class="unstyled">
+                               <li><a href="https://www.chileatiende.gob.cl/sitemap" alt="Mapa del sitio">Mapa del sitio</a></li>
+                               <li><a target="_blank" href="https://www.chileatiende.gob.cl/desarrolladores" alt="API para desarrolladores">API para desarrolladores</a></li>
+                               <li><a href="https://www.chileatiende.gob.cl/widget" alt="ChileAtiende en tu sitio">ChileAtiende en tu sitio</a></li>
+                            </ul>
+                        </div>
+                        <div class="span3 red-multicanal">
+                            <h4>
+                                Nuestra red multicanal
+                            </h4>
+                            <div class="lista-canales">
+                                <a class="canal-twitter" href="https://twitter.com/ChileAtiende" target="_blank" alt="Twitter"></a>
+                                <a class="canal-facebook" href="https://www.facebook.com/ChileAtiende" target="_blank" alt="Facebook"></a>
+                                <a class="canal-oficina" href="https://www.chileatiende.gob.cl/oficinas" alt="Puntos de atención"></a>
+                                <a class="hidden-phone canal-mail" href="https://contacto.chileatiende.cl/formulario.php?origen=http://www.chileatiende.gob.cl/" data-toggle="modal-chileatiende" data-modal-type="iframe"></a>
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="lista-canales-callcenter">
+                                <a class="canal-callcenter" href="https://www.chileatiende.gob.cl/contenidos/callcenter" alt="Twitter">CallCenter 101</a>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="container">
+                    <div class="row-fluid">
+                        <div class="span8">
+                            <ul>
+                                <li class="creative-commons"><a href="http://creativecommons.org/licenses/by/3.0/cl/" alt="Creative Commons">CC BY 3.0</a></li>
+                            </ul>
+                            <div class="modernizacion">
+                                <span>ChileAtiende es una marca registrada por: <a href="http://www.ips.gob.cl/" target="_blank" alt="Instituto de Previsión Social (MINTRAB)">Instituto de Previsión Social (MINTRAB)</a></span><br />
+                                <span>Portal desarrollado por: <a href="http://www.modernizacion.gob.cl" target="_blank" alt="Unidad de modernización y gobierno digital">Unidad de modernización y gobierno digital </a><a href="http://www.modernizacion.gob.cl" target="_blank" alt="Ministerio Secretaría General de la Presidencia">(MINSEGPRES)</a></span><br />
+                                <span>Portal en <span class="label label-info">BETA</span></span><br />
+                            </div>
+                        </div>
+                        <div class="span4 pull-right cont-logo-footer visible-desktop">
+                            <a class="gobierno-chile" target="_blank" href="http://www.gobiernodechile.cl/" alt="Gobierno de Chile">Gobierno de Chile</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- fondo_7  https://www.flickr.com/photos/stuckincustoms/3410783929/in/photolist-6cpaet-4ipxpv-qkRi2-pdbBa-hdfub-g2dNM-eYHEk-d1RyE-czVDy-c5iRx-bnH5S-dJZDWo-4RxcG8-jjRCQ-edPDSu-e46uko-dTzEcC-dQg5j7-dFx5a4-dB63aF-aTxszF-8JBJb4-7Vv4ks-7HRj55-7DLkTv-7B3ov4-7qzUSW-7ayEja-6RcAQ2-6LEbYs-6B5oYF-6wuWue-6bTA2B-5LRcX2-4TApkj-4GGyAH-47juCF-PMChv-CaQzd-ycupB-x9vi8-jTBjs-iJcSg-bBHBD-9em6u-9WtQcH-7wMAB5-5WZLzz-7vNJcY-4FVZZ8/ -->
+        <a href="https://www.flickr.com/photos/39997856@N03/11398105296" target="_blank" class="sobre-esta-imagen" id="link-sobre-esta-imagen">
+            <img src="https://www.chileatiende.gob.cl/assets_v2/img/sobre_esta_imagen.png" alt="Sobre esta imagen">
+        </a>
+        <div id="modal-chileatiende" class="modal hide fade">
+        </div>
+                <div id="cont-barra-modulo-atencion"></div>
+        <script type="text/javascript">
+            var site_url="https://www.chileatiende.gob.cl/";
+            var base_url="https://www.chileatiende.gob.cl/";
+            var current_url="https://www.chileatiende.gob.cl/fichas/ver/934";
+        </script>
+
+        <script src="https://www.chileatiende.gob.cl/assets_v2/js/vendor/bootstrap.min.js"></script>
+        <script src="https://www.chileatiende.gob.cl/assets_v2/js/vendor/jquery.cookie.min.js"></script>
+        <script src="https://www.chileatiende.gob.cl/assets_v2/js/vendor/jquery.masonry.min.js"></script>
+        <script src="https://www.chileatiende.gob.cl/assets_v2/js/vendor/imagesloaded.pkgd.min.js"></script>
+        <script src="https://www.chileatiende.gob.cl/assets_v2/js/vendor/md5.js"></script>
+        <script src="https://www.chileatiende.gob.cl/assets_v2/js/frontend.js?v=20160707"></script>
+
+        <script type="text/javascript">
+
+            var _gaq = _gaq || [];
+            var pluginUrl = '//www.google-analytics.com/plugins/ga/inpage_linkid.js';
+            _gaq.push(['_require', 'inpage_linkid', pluginUrl]);
+            _gaq.push(['_setAccount', 'UA-28124406-2']);
+            _gaq.push(['_setDomainName', 'chileatiende.gob.cl']);
+
+            (function() {
+                var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            })();
+
+        </script>
+        <script>
+            //Se maraca el origen de navegación en el sitio
+            var origen_navegacion = $.cookie('origen_navegacion') || '';
+            _gaq.push(['_setCustomVar', 3, 'origen_navegacion', origen_navegacion, 2]);
+            if($.cookie('id_modulo') && $.cookie('id_modulo') != 'null'){
+                var id_modulo = $.cookie('id_modulo'),
+                    url_barra_modulo = 'https://www.chileatiende.gob.cl/portada/barramodulo/'+id_modulo+'/1';
+
+                $('#cont-barra-modulo-atencion').load(url_barra_modulo, function () {
+                    $(this).on('click', '.accionModulo a', function (e) {
+                        $.cookie('id_modulo', null, {path: '/'});
+                        window.location = this.href;
+                        e.preventDefault();
+                    });
+                    //El trackPageView se debe hacer despúes de inclur las customVars de la barra de modulos de autoatencion
+                    _gaq.push(['_trackPageview']);
+                });
+            }else{
+                if($('#cont-modal-oficinas').length){
+                    $('#modal-moduloatencion').modal();
+                    $('#modal-moduloatencion').on('submit', 'form', function (e) {
+                        $.cookie('id_modulo', $(this).find('#id_modulo').val(), {path: '/'});
+                        window.location = $(this).attr('action');
+                        e.preventDefault();
+                    });
+                }
+                //Si no se está cargando la barra del modulo de autoatencion, se marca la pagina
+                _gaq.push(['_trackPageview']);
+            }
+        </script>
+
+        
+        <div id="survey-modal" class="modal hide fade" tabindex="-1" role="dialog">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">×</button>
+              <h3>Queremos conocer su Opinión</h3>
+          </div>
+          <div class="modal-body">
+              <iframe id="gform" src="" height="250" frameborder="0"></iframe>
+          </div>
+          <div class="modal-footer">
+            <button class="btn" data-dismiss="modal">Cerrar</button>
+          </div>
+        </div>
+
+        <script src="/assets_v2/js/ReadSpeaker.js?pids=embhl" type="text/javascript"></script>
+
+    <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"47c8f5244a","applicationID":"33946095","transactionName":"M1EGYkdYWkUDVERbVgobMURcFl1YBlJIHEkMRA==","queueTime":0,"applicationTime":1,"atts":"HxYFFA9CSUs=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

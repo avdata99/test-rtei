@@ -1,0 +1,299 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Customary IHL -  Practice Relating to Rule 47. Attacks against Persons Hors de Combat</title><script type='text/javascript' src="/applic/ihl/cihlweb.nsf/jquery-1.12.3.min.js?OpenFileResource"></script><Style TYPE='text/css' media="screen">@import url("/customary-ihl/eng/CSS/CSS");</style>
+<Style TYPE='text/css' media="print">@import url("/customary-ihl/eng/CSS-Print/CSS");</style>
+<meta name="Keywords" CONTENT=",Customary International Law,Droit coutumier,CICR,ICRC,Humanitarian Law">
+
+<script language="JavaScript" type="text/javascript">
+<!-- 
+function highlightSearchTerms(searchText){if (searchText.length>0) {	//split all word with , 	searchArray = searchText.split(",");    	if (!document.body || typeof(document.body.innerHTML) == "undefined") {    		return false;  	}    	var bodyText = document.body.innerHTML;  	for (var i = 0; i < searchArray.length; i++) {    		bodyText = doHighlight(bodyText, searchArray[i]);  	}	    	document.body.innerHTML = bodyText;  	}  	return true;}function doHighlight(bodyText, searchTerm) {	highlightStartTag = "<span class=highlighttext>";    	highlightEndTag = "</span>";    	// find all occurences of the search term in the given text,  	// and add some "highlight" tags to them (we're not using a  	// regular expression search, because we want to filter out  	// matches that occur within HTML tags and script blocks, so  	// we have to do a little extra validation)  	var newText = "";  	var i = -1;  	var lcSearchTerm = searchTerm.toLowerCase();  	var lcBodyText = bodyText.toLowerCase();     	 while (bodyText.length > 0) {    		i = lcBodyText.indexOf(lcSearchTerm, i+1);    		if (i < 0) {     		 newText += bodyText;     		 bodyText = "";    		} else {      		// skip anything inside an HTML tag      if (bodyText.lastIndexOf(">", i) >= bodyText.lastIndexOf("<", i)) {        // skip anything inside a <script> block        if (lcBodyText.lastIndexOf("/script>", i) >= lcBodyText.lastIndexOf("<script", i)) {          newText += bodyText.substring(0, i) + highlightStartTag + bodyText.substr(i, searchTerm.length) + highlightEndTag;          bodyText = bodyText.substr(i + searchTerm.length);          lcBodyText = bodyText.toLowerCase();          i = -1;        }      }    }  }    return newText;}
+// -->
+</script>
+
+<script language="JavaScript" type="text/javascript">
+<!-- 
+document._domino_target = "_self";
+function _doClick(v, o, t) {
+  var returnValue = false;
+  var url="/applic/ihl/cihlweb.nsf/docindexeng/v2_cou_ph_rule47?OpenDocument&Click=" + v;
+  if (o.href != null) {
+    o.href = url;
+    returnValue = true;
+  } else {
+    if (t == null)
+      t = document._domino_target;
+    window.open(url, t);
+  }
+  return returnValue;
+}
+// -->
+</script>
+
+<script language="JavaScript" type="text/javascript" src="/applic/ihl/cihlweb.nsf/yahoo-min.js?OpenJavascriptLibrary">
+</script>
+
+<script language="JavaScript" type="text/javascript" src="/applic/ihl/cihlweb.nsf/dom-min.js?OpenJavascriptLibrary">
+</script>
+
+<script language="JavaScript" type="text/javascript" src="/applic/ihl/cihlweb.nsf/event-min.js?OpenJavascriptLibrary">
+</script>
+
+<script language="JavaScript" type="text/javascript" src="/applic/ihl/cihlweb.nsf/textSizer.js?OpenJavascriptLibrary">
+</script>
+
+<script language="JavaScript" type="text/javascript">
+<!-- 
+/*script to get cursor coords*/var cX = 0; var cY = 0; var rX = 0; var rY = 0;function UpdateCursorPosition(e){ 	cX = e.pageX; 	cY = e.pageY;}function UpdateCursorPositionDocAll(e){ 	cX = event.clientX; 	cY = event.clientY;}if(document.all) { 	document.onmousemove = UpdateCursorPositionDocAll; }else { 	document.onmousemove = UpdateCursorPosition; }function AssignPositionMenuOver(d) {	if(self.pageYOffset) {			rX = self.pageXOffset;			rY = self.pageYOffset;		}else if(document.documentElement && document.documentElement.scrollTop) {			rX = document.documentElement.scrollLeft;		rY = document.documentElement.scrollTop;		}else if(document.body) {			rX = document.body.scrollLeft;		rY = document.body.scrollTop;	}	if(document.all) {			cX += rX; 			cY += rY;		}	var obj = document.getElementById ("Main") ;			if(document.all) {		//IE		d.style.left = (cX- obj.offsetLeft ) + "px";	}else{		//FF		//d.style.left = (cX- obj.offsetLeft + 50) + "px";		d.style.left = (cX+10) + "px";	}		d.style.top = (cY+30) + "px";}function AssignPosition(d) {	if(self.pageYOffset) {			rX = self.pageXOffset;			rY = self.pageYOffset;		}else if(document.documentElement && document.documentElement.scrollTop) {			rX = document.documentElement.scrollLeft;		rY = document.documentElement.scrollTop;		}else if(document.body) {			rX = document.body.scrollLeft;		rY = document.body.scrollTop;	}	if(document.all) {			cX += rX; 			cY += rY;		}var obj = document.getElementById ("rightContent") ;		//var obj = document.getElementById ("Main") ;	if(document.all) {		// IE		d.style.left = (obj.offsetLeft  - 30 ) + "px";		}else{		//FF			d.style.left = (obj.offsetLeft  + 10) + "px";	}	d.style.top = (cY+30) + "px";}function quickSearch(){	var host = window.document.getElementById('hostAddress').value;	var siteAliasRoot = window.document.getElementById('siteAliasRoot').value;	var keyw = window.document.getElementById('query').value;keywCorrect = keyw.replace(/[\\"]/gi," ");	var vAlias = window.document.getElementById('volumeAlias').value;	var qsIntro = window.document.getElementById('qsIntro').value;	var newhref= "/" + siteAliasRoot + "/(QuickSearch)?OpenAgent&keywords=" + keywCorrect+"&volumeAlias="+vAlias;	if (keywCorrect != "" && keywCorrect != qsIntro){ 		window.location.href = newhref;	}}function leftBack(sourceStr, keyStr){	arr = sourceStr.split(keyStr)	arr.pop();	return (keyStr==null | keyStr=='') ? '' : arr.join(keyStr)}function jumpToAnchor(url,  jumperDiv){	//selectObj.selectedIndex = 0;	stopIt();	window.location.hash=url; }function BackToTop(){	window.location.hash="#top"; }function openUrl( shortUrl){	//Get Parameters	var host = window.document.getElementById('hostAddress').value;	var siteAlias = window.document.getElementById('siteAlias').value;	window.location.href= "/" + siteAlias + "/"+shortUrl;}function openUrlLight( shortUrl){	//Get Parameters	var host = window.document.getElementById('hostAddress').value;	var siteAlias = window.document.getElementById('siteAlias').value;	var myPopup =window.open( "/" + siteAlias + "Light/"+shortUrl,"References","location=no,menubar=no,toolbar=no,resizable=yes,scrollbars=yes,status=no,directories=no, width=840px, height=300px");	myPopup.focus();}function openPrintableVersion( shortUrl){	//Get Parameters	var host = window.document.getElementById('hostAddress').value;	var siteAlias = window.document.getElementById('siteAliasRoot').value;	var myPopup = window.open( "/" + siteAlias + "/print/"+shortUrl);	myPopup.focus();}/*This function display a div with message onmouseover*/function showdescr(obj,msg){	if(msg.length>0) {		contentsMenuDetail.innerHTML=msg;  		menuDetail.style.display="block";		AssignPositionMenuOver (menuDetail)	}}function hidedescr(){	menuDetail.style.display='none'}/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - *//*	Javascript function for QuickNavigation	*//* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */iens6=document.all||document.getElementByIdns4=document.layers<!--GLOBAL VARIABLES-->var thenamevar theobjvar thetextvar winHeightvar winWidthvar boxPositionvar headerColorvar tableColorvar timerIDvar seconds=0var offsetx = 2var offsety = 2<!--END GLOBAL VARIABLES-->if(ns4) {	document.captureEvents(Event.MOUSEMOVE)}<!--GLOBAL FUNCTIONS-->function buildText(value,tcolor,bcolor) {	// CHANGE EACH ARRAY ELEMENT BELOW TO YOUR OWN CONTENT. MAKE SURE TO USE SINGLE QUOTES INSIDE DOUBLE QUOTES.	//text="<table width='"+(winWidth-4)+"' height='"+(winHeight-4)+"' border='0' class=quickNavTable>"	text="<table width='"+(winWidth-4)+"'  border='0' class=quickNavTable>"		text+="<tr><td width='"+(winWidth-4)+"' height='20' align='center' valign='top' >"	text+="<span class=QuickNavTitle>"+titleArray[value]+"</span>"	text+="</td></tr>"	text+="<tr><td width='"+winWidth+"' align='left' valign='top'>"	text+="<span class=jumperLink>"+linkArray[value]+"</span>"	text+="</td></tr></table>"	return text}function setObj(textelement,inwidth,inheight,boxpos,titlecolor,boxcolor,tfontcolor,bfontcolor) {	clearTimeout(timerID)	boxPosition=boxpos	tableColor=boxcolor	headerColor=titlecolor	winWidth=inwidth	winHeight=inheight	thetext=buildText(textelement,tfontcolor,bfontcolor)				if(iens6){		thename = "viewer"		theobj=document.getElementById? document.getElementById(thename):document.all.thename		theobj.style.width=winWidth		if(iens6&&document.all) {				theobj.innerHTML = ""				theobj.insertAdjacentHTML("BeforeEnd","<table cellspacing=0 width="+winWidth+"  border=0 class=QuickNavTable><tr><td width=100% valign=top><span class=jumperLink>"+thetext+"</span></td></tr></table>")						}		if(iens6&&!document.all) {				theobj.innerHTML = ""				theobj.innerHTML="<table cellspacing=0 width="+winWidth+"  border=0 class=QuickNavTable><tr><td width=100% valign=top><span class=jumperLink>"+thetext+"</span></td></tr></table>"		}	}	if(ns4){		thename = "nsviewer"		theobj = eval("document."+thename)		theobj.width=winWidth		theobj.clip.width=winWidth		theobj.document.write("<table cellspacing=0 width="+winWidth+"  border=0 class=QuickNavTable><tr><td width=100% valign=top><span class=jumperLink>"+thetext+"</span></td></tr></table>")	}		viewIt()}function viewIt() {	AssignJumperPosition (theobj);		if(iens6) {			theobj.style.visibility="visible"theobj.style.display='block';			//theobj.visibility = 'show';		}		if(ns4) {			theobj.visibility = "visible"		}	}function stopIt() {	if(iens6) {		thename = "viewer"		theobj=document.getElementById? document.getElementById(thename):document.all.thename			theobj.innerHTML = ""		theobj.style.visibility="hidden"	}	if(ns4) {			thename = "nsviewer"		theobj = eval("document."+thename)		theobj.document.write("")		theobj.document.close()		theobj.visibility="hidden"	}}function timer(sec) {	seconds=parseInt(sec)	if(seconds>0) {		seconds--		timerID=setTimeout("timer(seconds)",1000)	}else{		stopIt()	}}function sendPage(defaultLocation){	window.open ('/'+defaultLocation+'/SendToFriend?OpenForm&SourceURL=['+replaceSlash(location.href)+']&SourceTitle=['+document.title+']','','directories=no,location=no,menubar=no,resizable=yes,scrollbars=yes,status=no,toolbar=no,width=700px,height=500px');		//window.open (defaultLocation+'/SendToFriend?OpenForm&lang='+lang+'&SourceURL=['+location.href+']&SourceTitle=['+document.title+']','','directories=no,location=no,menubar=no,resizable=yes,scrollbars=yes,status=no,toolbar=no,width=550px,height=450px');	}function sendFeedBack(defaultLocation){window.open ('/'+defaultLocation+'/SendFeedBack?OpenForm&SourceURL=['+replaceSlash(location.href)+']&SourceTitle=['+document.title+']','','directories=no,location=no,menubar=no,resizable=yes,scrollbars=yes,status=no,toolbar=no,width=700px,height=550px');//	alert ('Under construction functionnality')}function displayHelp(){	//alert ('Under construction functionnality')openUrl ('help_search');}function displayCredit(){	//alert ('Under construction functionnality')openUrl ('credit');}function AssignJumperPosition(d) {	if(self.pageYOffset) {			rX = self.pageXOffset;			rY = self.pageYOffset;		}else if(document.documentElement && document.documentElement.scrollTop) {			rX = document.documentElement.scrollLeft;		rY = document.documentElement.scrollTop;		}else if(document.body) {			rX = document.body.scrollLeft;		rY = document.body.scrollTop;	}	if(document.all) {			cX += rX; 			cY += rY;		}	var obj = document.getElementById ("Main") ;	//	d.style.left = (cX+10) + "px";	d.style.left=  (cX-450)+ "px";	//d.style.right=  (cX)+ "px";		d.style.top = (cY+5) + "px";}/*function dspJumper (jumperId) {	var divDisplay = document.getElementById(jumperId);//	AssignJumperPosition(divDisplay);	divDisplay.style.display = "block";}function hideJumper (jumperId) {	var divDisplay = document.getElementById(jumperId);	divDisplay.style.display = "none";}*/function dspFootNotes (fnId) {	var text = window.document.getElementById(fnId).innerHTML;	var divDisplay = document.getElementById('footNotesDisplay');	divDisplay.innerHTML = text;	AssignPosition(divDisplay);	divDisplay.style.display = "block";}function hideFootNotes () {	var divDisplay = document.getElementById('footNotesDisplay');	divDisplay.style.display = "none";}function replaceSlash  (string) {//Due to issue in production with \, we place "\" by "/" 	var temp = string;    var index = temp.indexOf("/");        while(index != -1){            temp = temp.replace("/","\\");            index = temp.indexOf("/");        }		return temp;	}
+
+// -->
+</script>
+</head>
+<body text="#000000" bgcolor="#FFFFFF" onload="highlightSearchTerms(window.document.getElementById('highlight').value);" onclick="stopIt()">
+
+<form onsubmit="quickSearch();return false;return true;" action="">	<layer name="nsviewer" bgcolor="#cccccc" width=0 height=0 style="border-width:thin;z-index:1"></layer>
+<script language="JavaScript1.2">
+	if (iens6){
+		document.write("<div id='viewer' style='background-color:#cccccc;marginleft:0;visibility:hidden;position:absolute;width:0;;z-index:50;overflow:hidden'></div>")
+	}
+	if (ns4){
+		hideobj = eval("document.nsviewer")
+		hideobj.visibility="hidden"
+	}
+</script>	
+	<center>
+		<div id="Main">
+			<!--Web Site Header--><input type=hidden name=hostAddress id=hostAddress value="ihl-databases.icrc.org">
+<input type=hidden name=siteAlias id=siteAlias value="customary-ihl/eng/docs">
+<input type=hidden name=siteAliasRoot id=siteAliasRoot value="customary-ihl/eng">
+<input type=hidden name=qsIntro id=qsIntro value="Search Practice">
+<input type=hidden name=volumeAlias id=volumeAlias value="volume2">
+<input type=hidden name=volume id=volume value="2. Practice">
+<input type=hidden name=Parameters id=Parameters value="">
+<input type=hidden name=highlight id=highlight value="">
+<div id="menuDetail"><div id="contentsMenuDetail"></div>  </div> 
+<div id="header">
+	<!-- BANNERS-->
+	<a id="icrclogo" title="Go to the ICRC homepage" href="http://www.icrc.org">
+<div id=bannerLink>
+
+</div></a>
+<div id=topLinks><span class=bannerSmallLink onClick="javascript:sendFeedBack('applic/ihl/cihlweb.nsf')">Send feedback</span>|<span class=bannerSmallLink onClick="javascript:displayHelp()">Search tips</span> |<span class=bannerSmallLink onClick="javascript:openUrl ('citation');t">Citation</span>
+|<span class=bannerSmallLink onClick="javascript:displayCredit()">Credits</span></div>
+<div id=bannerTitle>Customary IHL</div>
+	<div id=pathblock>
+		<div id=horizMenu>
+			<ul class="HorizontalMenu"><li class="HorizontalMenuItem" onClick="javascript:openUrl('home')"><a href="javascript:openUrl('home')" class="HorizontalMenuItem">Home</a></li><li class="HorizontalMenuItem" onClick="javascript:openUrl('v1')"><a href="javascript:openUrl('v1')" class="HorizontalMenuItem">1. Rules</a></li><li class="HorizontalMenuItemActive" onClick="javascript:openUrl('v2')"><a href="javascript:openUrl('v2')" class="HorizontalMenuItem">2. Practice</a></li><li class="HorizontalMenuItemEnd" onClick="javascript:openUrl('src')"><a href="javascript:openUrl('src')" class="HorizontalMenuItem">Sources</a></li></ul>
+		</div>
+		<div id=searchBar>
+			<a href="/ihl-search/redirect.xsp?lang=EN&src=CIHL_PRACTICES" class=pathblockLink>   Advanced Search</a> 
+		</div>
+	</div>
+</div>	<!-- Page content-->
+	<div id=Content>
+<!-- LEFT MENU -->
+<div id=leftContent>
+<script>
+if (!document.layers)
+document.write('<div id="divStayTopLeft" style="position:relative">')
+</script>
+<layer id="divStayTopLeft">
+	<div id=leftMenu>
+		<ul class="leftMenu">
+			
+
+			
+
+<li class="LeftMenuRoot"><a href="javascript:openUrl('v2_cha')" class="LeftMenu" onmouseover="showdescr(this, '')" onmouseout="hidedescr()">By Chapter</a></li><li class="LeftMenuRoot"><a href="javascript:openUrl('v2_rul')" class="LeftMenu" onmouseover="showdescr(this, '')" onmouseout="hidedescr()">By Rule</a></li><li class="LeftMenuRootActive"><a href="javascript:openUrl('v2_cou')" class="LeftMenuActive" onmouseover="showdescr(this, '')" onmouseout="hidedescr()">By Country</a></li><ul class="leftMenuIndent"><li class="LeftMenuActive"><a href="javascript:openUrl('v2_cou_ph')" class="LeftMenuActive" >Philippines</a></li><ul class="leftMenuIndent"><ul class="leftMenuIndent"><li class="LeftMenuActive"><a href="javascript:openUrl('v2_cou_ph_rule47')" class="LeftMenuActive" onmouseover="showdescr(this, 'Rule 47. Attacks against Persons Hors de Combat')" onmouseout="hidedescr()">Rule 47</a></li><ul class="leftMenuIndent"><li class="LeftMenuChild"><a href="javascript:openUrl('v2_cou_ph_rule47_sectiona')" class="LeftMenu" onmouseover="showdescr(this, 'Section A. General')" onmouseout="hidedescr()">Section A</a></li><li class="LeftMenuChild"><a href="javascript:openUrl('v2_cou_ph_rule47_sectionb')" class="LeftMenu" onmouseover="showdescr(this, 'Section B. Specific categories of persons hors de combat')" onmouseout="hidedescr()">Section B</a></li></ul></ul></ul></ul>
+			
+
+			
+
+		</ul>
+		<p style="clear: both"></p>
+	</div>
+	<div id=quickLinks>
+		<ul class="leftMenuQuickLinks">
+			<li class="leftMenuRoot">Go to </li>
+			<ul class="leftMenuIndent">
+				
+<li class="LeftMenu"><a href="javascript:BackToTop()" class="LeftMenu">Top of the page</a></li>
+<li class="LeftMenu" id="gobacklink"><a href="javascript:history.back(-1)" class="LeftMenu">Back</a></li>
+			</ul>
+		</ul>
+<p style="clear: both"></p>
+	</div>
+<p id=endOfMenu style="clear: both"></p>
+</layer>
+<script type="text/javascript">
+//hide back link if no history is available
+if( (1 < history.length) && document.referrer ) {
+}else{
+	var el=$('#gobacklink');
+	if (typeof(el) == undefined){
+	}else{
+		el.hide();
+	}
+}
+/*
+Floating Menu script-  Roy Whittle (http://www.javascript-fx.com/)
+Script featured on/available at http://www.dynamicdrive.com/
+This notice must stay intact for use
+*/
+//Enter "frombottom" or "fromtop"
+var verticalpos="fromtop"
+if (!document.layers)
+document.write('</div>')
+function JSFX_FloatTopDiv()
+{
+	var startX = 3,
+	startY = 10;
+	var ns = (navigator.appName.indexOf("Netscape") != -1);
+	var d = document;
+	function ml(id)
+	{
+		var el=d.getElementById?d.getElementById(id):d.all?d.all[id]:d.layers[id];
+		if(d.layers)el.style=el;
+		el.sP=function(x,y){this.style.left=x;this.style.top=y;};
+		el.x = startX;
+		if (verticalpos=="fromtop")
+		el.y = startY;
+		else{
+		el.y = ns ? pageYOffset + innerHeight : document.body.scrollTop + document.body.clientHeight;
+		el.y -= startY;
+		}
+		return el;
+	}
+	window.stayTopLeft=function()
+	{
+		if (verticalpos=="fromtop"){
+			var pY = ns ? pageYOffset : document.body.scrollTop;
+			//Handle menu higher than screen
+			if (pY<130) {
+				ftlObj.y += (pY + startY - ftlObj.y)/8;
+			}else if (pY > (document.body.scrollHeight-document.body.clientHeight-100)){
+				//Bottom of document
+				ftlObj.y += (pY + startY - ftlObj.y)/8 -40;
+			}else{
+				if (d.getElementById("divStayTopLeft").scrollHeight>document.body.clientHeight) {
+						ftlObj.y += (pY + startY - ftlObj.y - (d.getElementById("divStayTopLeft").scrollHeight -document.body.clientHeight)-150)/8;
+				}else{
+					ftlObj.y += (pY + startY - ftlObj.y)/8;
+				}
+			}
+		}
+		else{
+			var pY = ns ? pageYOffset + innerHeight : document.body.scrollTop + document.body.clientHeight;
+			ftlObj.y += (pY - startY - ftlObj.y)/8;
+		}
+		ftlObj.sP(ftlObj.x, ftlObj.y);
+		//if (d.getElementById("endOfMenu").offsetTop<document.body.clientHeight+document.body.scrollTop) {
+			setTimeout("stayTopLeft()", 1);
+	}
+	ftlObj = ml("divStayTopLeft");
+	stayTopLeft();
+}
+JSFX_FloatTopDiv();
+</script>
+<div id=infoDebug></div>
+</div>
+<!-- PAGE CONTENT -->
+<div    id="footNotesDisplay"    class=footNotesDiv></div>
+<div id=rightContent>
+	<div id= toolBar>
+		<div id=BreadCrumb>
+			<ul class="BreadCrumb"><li class="FirstBreadcrumb"><a href="javascript:openUrl('v2')" class="breadcrumb" onmouseover="showdescr(this, '')" onmouseout="hidedescr()">2. Practice</a></li><li class="Breadcrumb"><a href="javascript:openUrl('v2_cou')" class="breadcrumb" onmouseover="showdescr(this, '')" onmouseout="hidedescr()">By Country</a></li><li class="Breadcrumb"><a href="javascript:openUrl('v2_cou_ph')" class="breadcrumb" >Philippines</a></li><li class="Breadcrumb" onmouseover="showdescr(this, 'Practice Relating to Rule 47. Attacks against Persons Hors de Combat')" onmouseout="hidedescr()">Rule 47</li></ul>
+		</div>
+		<div id=friendlyTools>
+			<img src="../textlittle.gif" border=0 onClick="javascript:resize(-0.25)" class=friendlyTools> 
+			<img src="../textbig.gif" border=0 onClick="javascript:resize(0.25)" class=friendlyTools> 
+			<img src="../print.gif" border=0 onClick="javascript:openPrintableVersion('v2_cou_ph_rule47')" class=friendlyTools> 
+			<img src="../email.gif" border=0 onClick="javascript:sendPage('customary-ihl/eng')" class=friendlyTools> 
+		</div>
+	</div>
+	<div id=PageContent>
+<!--Include link to others countries-->
+
+		<div align="justify">
+
+
+<script language="JavaScript1.2">
+  var titleArray = new Array;
+
+
+</script>
+<div class=L1>Philippines</div><div class=L2>Practice Relating to Rule 47. Attacks against Persons Hors de Combat</div><div class=L3><a href="javascript:openUrl('v2_cou_ph_rule47_SectionA')" class=L3>Section A. General</a></div><div class=L4><a href="javascript:openUrlLight('src_IIMiMa')" class=L4 name="SectionA_IIMiMa">III. Military Manuals</a></div><span class=Normal>The Soldier’s Rules of the Philippines (1989) instructs: “Do not fight enemies who are ‘out of combat’ … Disarm them and hand them over to your superior.”<img src="../fnIcon.gif" onMouseOver="javascript:dspFootNotes('footnotes_72_111' )" onMouseOut="javascript:hideFootNotes();" border=0 class=fnIcon>&nbsp;<div class=footnote id=footnotes_72_111 >	Philippines, <i>Soldier’s Rules</i>, in <i>Handbook on Discipline</i>, Annex C(I), General Headquarters, Armed Forces of the Philippines, Camp General Emilio Aguinaldo, Quezon City, 1989, § 4.<br></div><br></span><div class=2011-03><span class=Normal>The Philippine Army Soldier’s Handbook on Human Rights and International Humanitarian Law (2006) states in its glossary:<br></span><span class=Quote><i>Enemy “hors de combat”</i> – enemy who is out of combat. A person who is recognized or who, in the circumstances, is no longer able to participate in combat, shall not be attacked (e.g. surrendering, wounded, dead, shipwrecked in water, descending by parachute from an aircraft in distress).<img src="../fnIcon.gif" onMouseOver="javascript:dspFootNotes('footnotes_72_112' )" onMouseOut="javascript:hideFootNotes();" border=0 class=fnIcon>&nbsp;<div class=footnote id=footnotes_72_112 >	Philippines, <i>Philippine Army Soldier’s Handbook on Human Rights and International Humanitarian Law</i>, A Practical Guide for Internal Security Operations, 2006, Glossary, p. 68.<br></div><br></span></div><div class=L3><a href="javascript:openUrl('v2_cou_ph_rule47_SectionB')" class=L3>Section B. Specific categories of persons hors de combat</a></div><div class=L4><a href="javascript:openUrlLight('src_IIMiMa')" class=L4 name="SectionB_IIMiMa">III. Military Manuals</a></div><span class=Normal>The Soldier’s Rules (1989) of the Philippines instructs: “Do not fight enemies … who surrender. Disarm them and hand them over to your superior.”<img src="../fnIcon.gif" onMouseOver="javascript:dspFootNotes('footnotes_72_416' )" onMouseOut="javascript:hideFootNotes();" border=0 class=fnIcon>&nbsp;<div class=footnote id=footnotes_72_416 >	Philippines, <i>Soldier’s Rules</i>, in <i>Handbook on Discipline</i>, Annex C(I), General Headquarters, Armed Forces of the Philippines, Camp General Emilio Aguinaldo, Quezon City, 1989, § 4.<br></div><br></span><span class=Normal>The Rules for Combatants (1989) of the Philippines provides: “It is forbidden to attack … a wounded enemy combatant; an enemy combatant who surrenders …”<img src="../fnIcon.gif" onMouseOver="javascript:dspFootNotes('footnotes_72_417' )" onMouseOut="javascript:hideFootNotes();" border=0 class=fnIcon>&nbsp;<div class=footnote id=footnotes_72_417 >	Philippines, <i>Rules for Combatants</i>, in <i>Handbook on Discipline</i>, Annex C(II), General Headquarters, Armed Forces of the Philippines, Camp General Emilio Aguinaldo, Quezon City, 1989, § 3.<br></div><br></span><div class=2011-03><span class=Normal>The Philippine Army Soldier’s Handbook on Human Rights and International Humanitarian Law (2006) provides:<br></span><span class=Quote><i>During an engagement:<br></i></span><span class=Quote>…<br></span><span class=Quote>4. <i>Don’t kill enemy combatants who are wounded, who could no longer fight or who have already surrendered</i>. By International Humanitarian Law, it is authorized to neutralize enemy forces by reasonable means while in combat. An enemy who wields a firearm and considered a threat is still a military objective and thus considered an authorized target. As long as he is wielding his firearm, he can still be considered as target for neutralization. But as soon as he drops his firearm, raises his hand or a white cloth that is a gesture of symbol of surrender, he can no longer be shot.<img src="../fnIcon.gif" onMouseOver="javascript:dspFootNotes('footnotes_72_418' )" onMouseOut="javascript:hideFootNotes();" border=0 class=fnIcon>&nbsp;<div class=footnote id=footnotes_72_418 >	Philippines, <i>Philippine Army Soldier’s Handbook on Human Rights and International Humanitarian Law</i>, A Practical Guide for Internal Security Operations, 2006, p. 59, § 4.<br></div><br></span></div><span class=Quote><i>Enemy “hors de combat”</i> – enemy who is out of combat. A person who is recognized or who, in the circumstances, is no longer able to participate in combat, shall not be attacked (e.g. surrendering, wounded, dead, shipwrecked in water, descending by parachute from an aircraft in distress).<br></span><span class=Quote>…<br></span><span class=Quote><i>Surrender</i> … – Any intention to surrender must be clearly expressed: raising arms, throwing away one’s weapons, bearing a white flag, etc.<img src="../fnIcon.gif" onMouseOver="javascript:dspFootNotes('footnotes_72_419' )" onMouseOut="javascript:hideFootNotes();" border=0 class=fnIcon>&nbsp;<div class=footnote id=footnotes_72_419 >	Philippines, <i>Philippine Army Soldier’s Handbook on Human Rights and International Humanitarian Law</i>, A Practical Guide for Internal Security Operations, 2006, pp. 68 and 71, Glossary.<br></div><br></span>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p style="clear: both"></p>
+</div>
+<br><br>
+
+	</div>
+</div></div>
+<p style="clear: both"></p>
+<div id="Footer">
+	<P class="footer">
+                   <IMG title="Go to the ICRC homepage" alt="ICRC logo" src="../($images)/Footer/$File/logo_icrc_footer.gif?OpenElement" />
+                   <SPAN class="copyright">&nbsp; © &nbsp;2016 International Committee of the Red Cross</SPAN>
+</P>
+<!--Webtrends scripts-->
+<script>
+if (window.location.hostname=="www.icrc.org"){
+document.write('<script type="text/javascript" src="/attributes/javascript/webtrends/javascript-icrc3g.js"><\/script>');
+}else{
+document.write('<script type="text/javascript" src="/webtrends/ihl/webtrends.js"><\/script>');
+}
+</script>
+
+<script type="text/javascript">var _tag=new WebTrends(); _tag.dcsGetId(); _tag.dcsCustom=function(){ }; _tag.dcsCollect();</script>
+<noscript>
+	<img alt="DCSIMG" id="DCSIMG" width="1" height="1" src="http://jungfrau.icrc.org/dcs2e9jsg00000cpfmvedn9nn_5s9l/njs.gif?dcsuri=/nojavascript&amp;WT.js=No&amp;WT.tv=9.4.0&amp;dcssip=ihl-databases.icrc.org"/>
+</noscript>
+</div></div></div></center>
+<input name="Type" type="hidden" value="">
+<input name="LeftMenu" type="hidden" value="1">
+<input name="DesignSetupUNID" type="hidden" value="BF2D217145A076DAC125800B0030F144">
+<input name="LabelsSetupUNID" type="hidden" value="115EEF8C0D7D21F8C125800B0030F145">
+<input name="ApplicationSetupUNID" type="hidden" value="2BA67FFB02A448CDC125800B0030F146">
+<input name="Query_String" type="hidden" value="">
+<input name="Query_String_Decoded" type="hidden" value="">
+<input name="argNames" type="hidden" value="">
+<input name="argValues" type="hidden" value="">
+<input name="highlight" type="hidden" value="">
+<input name="query" type="hidden" value="">
+<input name="HTTP_REFERER" type="hidden" value="">
+<input name="Path_Info" type="hidden" value="/applic/ihl/cihlweb.nsf/docindexeng/v2_cou_ph_rule47">
+<input name="CurrentFilter" type="hidden" value="">
+<input name="VolumeAlias" type="hidden" value="volume2">
+<input name="qsIntro" type="hidden" value="Search Practice">
+<input name="qsLabel" type="hidden" value="">
+<input name="Parameters" type="hidden" value="">
+<input name="Rule" type="hidden" value="Rule 47. Attacks against Persons Hors de Combat">
+<input name="Title" type="hidden" value="Practice Relating to Rule 47. Attacks against Persons Hors de Combat"></form>
+</body>
+</html>

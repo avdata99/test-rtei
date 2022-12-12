@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='utf-8'>
+<meta content='width=device-width, initial-scale=1.0' name='viewport'>
+<title>Nigerian Army Recruitment Portal</title>
+<link rel="stylesheet" media="all" href="/assets/application-7205c655129d13d30fe4b2a1c336b3e1dcf3baad8a163a72dcc84ff5d876c258.css" data-turbolinks-track="true" />
+<link href='/apple-icon-57x57.png' rel='apple-touch-icon' sizes='57x57'>
+<link href='/apple-icon-60x60.png' rel='apple-touch-icon' sizes='60x60'>
+<link href='/apple-icon-72x72.png' rel='apple-touch-icon' sizes='72x72'>
+<link href='/apple-icon-76x76.png' rel='apple-touch-icon' sizes='76x76'>
+<link href='/apple-icon-114x114.png' rel='apple-touch-icon' sizes='114x114'>
+<link href='/apple-icon-120x120.png' rel='apple-touch-icon' sizes='120x120'>
+<link href='/apple-icon-144x144.png' rel='apple-touch-icon' sizes='144x144'>
+<link href='/apple-icon-152x152.png' rel='apple-touch-icon' sizes='152x152'>
+<link href='/apple-icon-180x180.png' rel='apple-touch-icon' sizes='180x180'>
+<link href='/android-icon-192x192.png' rel='icon' sizes='192x192' type='image/png'>
+<link href='/favicon-32x32.png' rel='icon' sizes='32x32' type='image/png'>
+<link href='/favicon-96x96.png' rel='icon' sizes='96x96' type='image/png'>
+<link href='/favicon-16x16.png' rel='icon' sizes='16x16' type='image/png'>
+<link href='/manifest.json' rel='manifest'>
+<meta content='#ffffff' name='msapplication-TileColor'>
+<meta content='/ms-icon-144x144.png' name='msapplication-TileImage'>
+<meta content='#ffffff' name='theme-color'>
+
+<script src="/assets/vendor/modernizr-74da3245def7569da28115667be6a85a2ad97464abe707c9829c46d8975597bc.js"></script>
+<script src="/assets/application-f3c5383f3aafc35ba1fa38e4426bb938a3450af8834355660c8253fe4e0e108f.js" data-turbolinks-track="true" defer="defer"></script>
+<meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="fICivsQcqFAFBX+3uTnl+1birPfVmVdT4THBfQHyZ6JF+skbcWMgAA7CR61e3eEue7xiUAOAHjkqsLkGuH6hAA==" />
+</head>
+<!-- %link{:href => "http://fonts.googleapis.com/css?family=Montserrat:400,700", :rel => "stylesheet", :type => "text/css"}/ -->
+<!-- %link{:href => "http://fonts.googleapis.com/css?family=Roboto:400,500,700,300,400italic", :rel => "stylesheet", :type => "text/css"}/ -->
+<body class='application'>
+<div data-stellar-background-ratio='0.5' id='header'>
+<nav class='top-bar' data-topbar='' role='navigation'>
+<ul class='title-area'>
+<li class='name'>
+<h4>
+<a style="color: aliceblue; font-weight:bold; width: 100%;" data-no-turbolink="true" href="/"><img src="/assets/na_logo-ebff1e021cf19ac7ee563b2090b3c2da87d3af28dc8e1ca10b60b2e619ac340f.png" alt="Na logo ebff1e021cf19ac7ee563b2090b3c2da87d3af28dc8e1ca10b60b2e619ac340f" />
+NIGERIAN ARMY
+</a></h4>
+</li>
+</ul>
+<section class='top-bar-section'>
+<!-- Right Nav Section -->
+<ul class='right hide-for-small'>
+<li class='plain show-for-large'>
+</li>
+<li class='active'>
+<a data-no-turbolink="true" href="/users/sign_up">Application</a>
+<!-- - link_path = user_signed_in? ? web_apply_path : new_user_registration_path -->
+</li>
+<li>
+<a style="background-color: orange; " href="/users/sign_in">LOGIN</a>
+</li>
+</ul>
+</section>
+</nav>
+
+<div id='header-lower'>
+<div class='row'>
+<section class='top-bar-section hide-for-small' style='background-color: inherit;'>
+<ul>
+<li>
+<a data-no-turbolink="true" href="/#eligibility">Eligibility</a>
+</li>
+<li class='divider'></li>
+<li class='has-dropdown not-click'>
+<a data-dropdown="requirements" data-options="is_hover:true; hover_timeout:1000" data-no-turbolink="true" href="/web/requirements">Requirements</a>
+<ul class='medium f-dropdown' data-dropdown-content='' id='requirements'>
+<li>
+<a data-no-turbolink="true" href="/web/requirements#non-tradesmen">Non-Tradesmen</a>
+</li>
+<li>
+<a data-no-turbolink="true" href="/web/requirements#tradesmen">Tradesmen</a>
+</li>
+</ul>
+</li>
+<li class='divider'></li>
+<li class='has-dropdown not-click'>
+<a data-dropdown="centres" data-options="is_hover:true; hover_timeout:1000" data-no-turbolink="true" href="/web/centres">Centres</a>
+<ul class='f-dropdown' data-dropdown-content='' id='centres'>
+<li>
+<a data-no-turbolink="true" href="/web/centres?type=exam">Examination Centres</a>
+</li>
+<li>
+<a data-no-turbolink="true" href="/web/centres?type=zonal">Zonal Centres</a>
+</li>
+</ul>
+</li>
+</ul>
+</section>
+<div class='off-canvas-wrap show-for-small' data-offcanvas=' '>
+<div class='inner-wrap'>
+<nav class='tab-bar'>
+<section class='middle tab-bar-section'>
+<h1 class='title'>
+<a data-no-turbolink="true" href="/users/sign_up">Application</a>
+</h1>
+</section>
+</nav>
+<a class='exit-off-canvas'></a>
+</div>
+</div>
+<!-- %nav.pushy.push-left -->
+<!-- %ul -->
+<!-- %li -->
+<!-- = link_to "Suitability", "#" -->
+<!-- %li -->
+<!-- = link_to "Requirements", "#" -->
+<!-- %div -->
+<!-- .menu-btn -->
+<!-- &#9776; Menu -->
+</div>
+</div>
+
+<div id='header_exten'>
+<div class='row'>
+<div class='large-6 medium-5 small-12 columns left panel candidate' style='background-color: #614803; opacity: 1;'>
+<div class='candidate'>
+<h4 style='color: aliceblue; color: white;'>Verify Application Status</h4>
+<hr style='border:1px #666 solid;'>
+<div class='small-12 columns' style='text-align: left;'>
+<p class='left' style='text-align: left; color: white;'>Put in your application number to confirm if you are selected.</p>
+<br>
+<div id='applicant_view_window' style='text-align: left; color: yellow;'></div>
+<br>
+<label style="color: white;" for="Applicant_Number">Applicant Number</label>
+<input type="text" name="applicant[applicant_id]" id="applicant_applicant_id" />
+<input type="submit" name="commit" value="Verify Status" class="verify_status_button" />
+</br>
+<hr style='border: none;'>
+</div>
+</div>
+</div>
+<div class='large-4 medium-5 small-12 columns right panel candidate' style='background-color: #000; opacity: 0.9;'>
+<div class='candidate'>
+<h2 style='color: aliceblue;'>Join The Army</h2>
+<hr style='border:1px #666 solid;'>
+<div class='small-12 columns'>
+<a class="bigger" style="color: #886025; font-size: 1.8rem;" data-no-turbolink="true" href="/users/sign_up">NOW CLOSED
+</a></div>
+<div class='details'>
+<p style='color: white;'>Zonal Screening Exercise scheduled from 12 June 2016 to 25 June 2016. Selected applicants have been sent an email confirmation and should bring the following to the centre.</p>
+<ol>
+<li>Pre-Screening Examination Result Notice (Log in to download)</li>
+<li>Primary School Testimonial (Original)</li>
+<li>Primary School Certificate (Original)</li>
+<li>Secondary School Testimonial (Original)</li>
+<li>Statement of Results for WAEC/NECO or equivalent (Original/Computer Printout)</li>
+<li>Trade Test Certificate (for tradesmen/tradeswomen only)</li>
+<li>Certificate of State of Origin</li>
+<li>Birth Certificate/Declaration of Age</li>
+<li>Completed and signed 75RRI form (Certificate of Guarantor with passport photograph)</li>
+<li>Sports wears (blue short, white vest and canvas)</li>
+<li>Writing materials</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<!-- .row -->
+<!-- .large-12.medium-12.small-12.columns -->
+<!-- - unless flash.nil? -->
+<!-- %br -->
+<!-- - flash.each do |name, msg| -->
+<!-- = content_tag :div, msg, class: "#{name} large-8 medium-8" -->
+</div>
+<div class='row' id='container'>
+<div class='large-12 medium-12 small-12 columns'>
+<br>
+</div>
+<div id='header_login'></div>
+
+<div class='small-12 columns' id='default'>
+<div class='content' id='home-page'>
+<div class='row' data-equalizer=''>
+<div class='large-8 medium-8 small-12 columns' style='margin-top: 1.5rem;'>
+<div class='panel suitability' data-equalizer-watch='' id='eligibility'>
+<h3>Applicant Eligibility</h3>
+<hr style='margin-top: 0;'>
+<ul>
+<li>Applicants shall be of Nigerian origin by birth.</li>
+<li>All Applicants must attend zonal screening exercise at the designated zonal centres for their respective states.</li>
+<li>Non-Tradesmen & Women Applicants must be aged between 18 - 22 years by June 1, 2016.</li>
+<li>Tradesmen & Women Applicants must be aged between 18 - 26 years by June 1, 2016.</li>
+<li>Applicants must be medically, physically, and psychologically fit and must not be less than 1.65 meters tall for male and 1.56 meters for female.</li>
+<li>Applicants must be free of any Criminal conviction.</li>
+<li>Applicants must print their completed online forms, attest it and submit it at the screening centres during the screening exercise period.</li>
+</ul>
+</div>
+
+</div>
+<div class='large-4 medium-4 hide-for-small columns end' style='margin-top: 1.5rem;'>
+<div data-equalizer-watch='' id='intro-clip' style='background-color: #649C00; height: 9rem;'>
+<div class='small-12 columns panel' style='margin-bottom: 0; text-align: center;'>
+<h4>Are You Qualified?</h4>
+</div>
+<img src="/assets/army-silhouette-bb00f6f630f237db5d82a50515a727cc87ebc8fd5f180599e741ddcc24ab0cef.png" alt="Army silhouette bb00f6f630f237db5d82a50515a727cc87ebc8fd5f180599e741ddcc24ab0cef" />
+<div class='small-12 columns'>
+<br>
+<a data-no-turbolink="true" href="/users/sign_up"><span class='btn button centered action large'>
+APPLY NOW
+</span>
+</a></div>
+</div>
+
+<!-- %hr{style: "margin:0;"} -->
+</div>
+</div>
+</div>
+
+</div>
+<!-- .large-8.medium-8.small-12.columns -->
+<!-- = yield -->
+<!-- .large-4.medium-4.small-12.columns.side-pane -->
+<!-- = yield :side_pane -->
+</div>
+<div class='row' id='footer'>
+<div class='large-12 medium-12 small-12 columns'>
+<div class='small-12 columns'>
+<hr>
+</div>
+<div class='large-4 medium-6 small-12 columns'>
+<hr style='border:none;'>
+<p>
+<b>Support Details</b>
+<hr style='border:none;'>
+<span>
+<b>Email:</b>
+<a href='mailto:recruitment@army.mil.ng'>recruitment@army.mil.ng</a>
+</span>
+</p>
+<p>
+<b>Headquarters, Nigerian Army</b>
+<br>Plot 1092, Mohammadu Buhari Way,</br>
+Area 7, Garki
+<br>
+Abuja, Nigeria
+<br>
+&nbsp;
+</p>
+</div>
+<div class='large-4 medium-6 small-12 columns'>
+<hr style='border:none;'>
+<p>
+<b>History of Nigerian Army</b>
+<hr style='border:none;'>
+The history of the Nigerian Army dates to 1863, when Lt Glover of the Royal Navy selected 18 indigenes from the Northern part of the country and organized them into a local force, known as the "Glover Hausas".
+<span>
+<a target="_blank" href="http://army.mil.ng/NA%20History.html">Read More</a>
+</span>
+</p>
+<p>
+<i class='fi-social-facebook' style='font-size:2rem;'></i>
+&nbsp;
+<i class='fi-social-linkedin' style='font-size:2rem;'></i>
+&nbsp;
+<i class='fi-social-twitter' style='font-size:2rem;'></i>
+&nbsp;
+</p>
+</div>
+<div class='large-4 medium-6 small-12 columns end'>
+<hr style='border:none;'>
+<p>
+<i class='fa fa-facebook' style='font-size:1.4rem;'></i>
+&nbsp;
+<i class='fa fa-linkedin' style='font-size:1.4rem;'></i>
+&nbsp;
+<i class='fa fa-twitter' style='font-size:1.4rem;'></i>
+&nbsp;
+</p>
+</div>
+<div class='small-12 columns'>
+<hr style='border:none;'>
+<p>
+<b>Nigerian Army copyright reserved &copy; 2016</b>
+</p>
+</div>
+
+</div>
+</div>
+<script>
+    window.scrollTo(0,0);
+</script>
+</body>
+</html>

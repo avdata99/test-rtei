@@ -3,7 +3,7 @@ RTEI.map = (function() {
 
   var homepage = window.location.href.indexOf('explore/map') === -1;
 
-  var language = 'en';
+  var language = '/en/';
 
   var stripes = new L.StripePattern({
     angle: 45,

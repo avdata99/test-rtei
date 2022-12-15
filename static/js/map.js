@@ -3,7 +3,7 @@ RTEI.map = (function() {
 
   var homepage = window.location.href.indexOf('explore/map') === -1;
 
-  var language = 'en';
+  var language = window.location.pathname.match(/^\/[a-zA-Z]{2}\//);
 
   var stripes = new L.StripePattern({
     angle: 45,
@@ -115,7 +115,7 @@ RTEI.map = (function() {
 
     if (feature.properties.index) {
       content += ' <div class="country-name has-properties">' + feature.properties.name + '</div>';
-      content += ' <div class="more-details"><a href="' + language + 'explore/rtei-country/?id=' + feature.properties.iso2 + '" title="Full country scores"></a></div>';
+      content += ' <div class="more-details"><a href="' + language + 'explore/rtei-country/' + feature.properties.iso2.toLowerCase() + '" title="Full country scores"></a></div>';
     } else {
       content += ' <div class="country-name">' + feature.properties.name + '</div>';
     }
